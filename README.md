@@ -9,6 +9,7 @@
 
 - [src](src/README.md)
   - 📹 [CameraWebServer](src/CameraWebServer/)
+  - 🔎 [RFID Reader](src/RFIDReader/)
   - ♥ [Poker](src/Poker/) API
 
 ## Blog Posts
@@ -24,4 +25,5 @@
 
 - [Docs](docs/README.md)
   - [CameraWebServer](docs/CAMERAWEBSERVER.md)
+  - [RFID Reader](docs/RFID.md)
   - [Poker](docs/POKER.md)
