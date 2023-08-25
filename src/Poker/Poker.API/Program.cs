@@ -1,4 +1,8 @@
 
+using log4net.Config;
+using Microsoft.Extensions.Logging;
+using System.Xml;
+
 namespace Poker.API
 {
     public class Program
@@ -13,6 +17,7 @@ namespace Poker.API
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
+            builder.Logging.AddLog4Net();
 
             var app = builder.Build();
 
@@ -26,8 +31,6 @@ namespace Poker.API
             app.UseHttpsRedirection();
 
             app.UseAuthorization();
-
-
             app.MapControllers();
 
             app.Run();

@@ -1,4 +1,11 @@
 # For more info on HTTP files go to https://aka.ms/vs/httpfile
+
+# HTTPS
+# @hostname=localhost
+# @port=7037
+# GET https://{{hostname}}:{{port}}/api/Poker
+
+# HTTP
 @hostname=localhost
-@port=7037
-GET https://{{hostname}}:{{port}}/api/Poker
+@port=5174
+GET http://{{hostname}}:{{port}}/api/Poker
