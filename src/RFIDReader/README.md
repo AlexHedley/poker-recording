@@ -1,5 +1,7 @@
 # RFID Reader
 
+[![Arduino](https://img.shields.io/badge/-Arduino-00979D?style=for-the-badge&logo=Arduino&logoColor=white)](https://www.arduino.cc/)
+
 ## Setup
 
 - ESP8266 Boards (2.7.1)

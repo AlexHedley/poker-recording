@@ -12,7 +12,7 @@ Update `SECRET_SSID` and `SECRET_PASS` with your WIFI login.
 
 From [espressif](https://github.com/espressif/arduino-esp32/tree/master/libraries/ESP32/examples/Camera/CameraWebServer).
 
-- [code](CameraWebServer/)
+- [code](CameraWebServer/README.md)
 - [docs](../docs/CAMERAWEBSERVER.md)
 
 - [Boards](https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_index.json)
@@ -26,5 +26,5 @@ From [espressif](https://github.com/espressif/arduino-esp32/tree/master/librarie
 
 [![C#](https://img.shields.io/badge/c%23-%23239120.svg?style=for-the-badge&logo=c-sharp&logoColor=white)](https://docs.microsoft.com/dotnet/csharp/)
 
-- [code](Poker/)
+- [code](Poker/README.md)
 - [docs](../docs/POKER.md)
