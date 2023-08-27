@@ -20,15 +20,18 @@
 | PokerOddsPro.ConsoleApp | Microsoft.NET.Sdk     | Console           |
 |                         |                       |                   |
 
+- xUnit
 - NSubstitute
 - [log4net](https://logging.apache.org/log4net/)
   - The [Microsoft.Extensions.Logging.Log4Net.AspNetCore](https://github.com/huorswords/Microsoft.Extensions.Logging.Log4Net.AspNetCore) package is written and maintained by Ángel García Santos ([@huorswords](https://github.com/huorswords/))
 
 ## Tests
 
-<!-- - [Poker API Tests](https://gist.github.com/alexhedley/###) -->
+[![Poker API Tests](https://gist.githubusercontent.com/alexhedley/e81db3939d78a6f3bf73f657d803d723/raw/poker_api_tests.md_badge.svg "Poker API Tests")](https://gist.github.com/alexhedley/e81db3939d78a6f3bf73f657d803d723)
 
-<!-- Output using [dotnet-tests-report](https://github.com/marketplace/actions/dotnet-tests-report) ([Code](https://github.com/zyborg/dotnet-tests-report)) -->
+- [Poker API Tests](https://gist.github.com/alexhedley/e81db3939d78a6f3bf73f657d803d723)
+
+Output using [dotnet-tests-report](https://github.com/marketplace/actions/dotnet-tests-report) ([Code](https://github.com/zyborg/dotnet-tests-report))
 
 ## Docs
 
