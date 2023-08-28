@@ -28,10 +28,18 @@ Output using [dotnet-tests-report](https://github.com/marketplace/actions/dotnet
 
 - [Recording Poker Games](https://alexhedley.com/blog/posts/recording-poker-games)
 - [Poker - Tracking cards](https://alexhedley.com/blog/posts/poker-tracking-cards)
+- [Poker - Table top](https://alexhedley.com/blog/posts/poker-table-top)
+<!-- - [Poker - API](https://alexhedley.com/blog/posts/poker-api) -->
 
 ## Stats
 
-- [GitHub](https://github.com/AlexHedley/poker) <!-- ([Site](https://alexhedley.com/poker)) -->
+A website to store all the game information.
+
+- [GitHub](https://github.com/AlexHedley/poker) WIP <!-- ([Site](https://alexhedley.com/poker)) -->
+
+## Resources
+
+- [Resources](resources/README.md)
 
 ## Docs
 
