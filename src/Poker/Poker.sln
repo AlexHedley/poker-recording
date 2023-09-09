@@ -18,6 +18,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PokerOddsPro.Shared", "Poke
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PokerOddsPro.ConsoleApp", "PokerOddsPro.ConsoleApp\PokerOddsPro.ConsoleApp.csproj", "{D7EEC733-2B7B-4D19-816F-5B15977BDCB3}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Poker.API.PlaywrightTests", "Poker.API.PlaywrightTests\Poker.API.PlaywrightTests.csproj", "{6A16459D-4C84-4CAB-9D3B-1B99EE6577DE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

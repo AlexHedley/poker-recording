@@ -14,8 +14,7 @@ namespace Poker.API.Tests.Controllers
         {
             // Arrange
             var mockLogger = Substitute.For<ILogger<PokerController>>();
-            var mockCardService = Substitute.For<ICardService>();
-            var controller = new PokerController(mockLogger, mockCardService);
+            var controller = new PokerController(mockLogger);
 
             // Act
             var result = controller.GetVersion();

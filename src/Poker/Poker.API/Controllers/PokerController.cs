@@ -2,8 +2,6 @@ using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 using System.Reflection;
 
-using Poker.API.Services;
-
 namespace Poker.API.Controllers
 {
     /// <summary>
@@ -16,7 +14,6 @@ namespace Poker.API.Controllers
         #region Properties
         
         private readonly ILogger<PokerController> _logger;
-        private readonly ICardService _cardService;
         private readonly IConfigurationRoot _configurationRoot;
         private string _path;
 
@@ -26,11 +23,9 @@ namespace Poker.API.Controllers
         /// Poker Controller
         /// </summary>
         /// <param name="logger"></param>
-        public PokerController(ILogger<PokerController> logger, ICardService cardService)
+        public PokerController(ILogger<PokerController> logger)
         {
             _logger = logger;
-            _cardService = cardService;
-
             _configurationRoot = new ConfigurationBuilder().AddJsonFile("appsettings.json").Build();
             _path = _configurationRoot["streaming:folder"];
             
@@ -50,28 +45,6 @@ namespace Poker.API.Controllers
             string fileVersion = FileVersionInfo.GetVersionInfo(Assembly.GetExecutingAssembly().Location).FileVersion;
             string productVersion = FileVersionInfo.GetVersionInfo(Assembly.GetExecutingAssembly().Location).ProductVersion;
             return assemblyVersion;
-        }
-
-        /// <summary>
-        /// Update Card
-        /// </summary>
-        /// <param name="player">The Player number</param>
-        ///// <param name="pos">The card position</param>
-        /// <param name="text">The RFID value of the sticker</param>
-        [HttpPut(Name = "Card")]
-        void UpdateCard(int player, /*int pos,*/ string text)
-        {
-            _cardService.UpdateCard(player, text);
-        }
-
-        /// <summary>
-        /// Clear Table
-        /// </summary>
-        [HttpDelete(Name = "Card")]
-        void ClearTable()
-        {
-            _cardService.ClearCards(0); // Board
-            _cardService.ClearCards(1); // P1, P2, P3, P4...
         }
     }
 }

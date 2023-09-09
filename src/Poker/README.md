@@ -10,20 +10,22 @@
 
 ## Solution
 
-| Project                 | Type                  | Info              |
-| ----------------------- | --------------------- | ----------------- |
-| Poker.API               | Microsoft.NET.Sdk.Web | API               |
-| Poker.API.Tests         | Microsoft.NET.Sdk     | xUnit             |
-|                         |                       |                   |
-| PokerOddsPro.OddsEngine | Microsoft.NET.Sdk     | Library (dyh1213) |
-| PokerOddsPro.Shared     | Microsoft.NET.Sdk     | Library (dyh1213) |
-| PokerOddsPro.ConsoleApp | Microsoft.NET.Sdk     | Console           |
-|                         |                       |                   |
+| Project                       | Type                  | Info                 |
+| ----------------------------- | --------------------- | -------------------- |
+| Poker.API                     | Microsoft.NET.Sdk.Web | API                  |
+| Poker.API.Tests               | Microsoft.NET.Sdk     | xUnit                |
+| Poker.API.PlaywrightTests     | Microsoft.NET.Sdk     | MSTest / Playwright  |
+|                               |                       |                      |
+| PokerOddsPro.OddsEngine       | Microsoft.NET.Sdk     | Library (dyh1213)    |
+| PokerOddsPro.Shared           | Microsoft.NET.Sdk     | Library (dyh1213)    |
+| PokerOddsPro.ConsoleApp       | Microsoft.NET.Sdk     | Console              |
+|                               |                       |                      |
 
 - xUnit
 - NSubstitute
 - [log4net](https://logging.apache.org/log4net/)
   - The [Microsoft.Extensions.Logging.Log4Net.AspNetCore](https://github.com/huorswords/Microsoft.Extensions.Logging.Log4Net.AspNetCore) package is written and maintained by Ángel García Santos ([@huorswords](https://github.com/huorswords/))
+- Microsoft.Playwright.MSTest
 
 ## Tests
 
@@ -32,6 +34,21 @@
 - [Poker API Tests](https://gist.github.com/alexhedley/e81db3939d78a6f3bf73f657d803d723)
 
 Output using [dotnet-tests-report](https://github.com/marketplace/actions/dotnet-tests-report) ([Code](https://github.com/zyborg/dotnet-tests-report))
+
+### Playwright
+
+**MSTest**
+
+`dotnet add package Microsoft.Playwright.MSTest`
+
+`dotnet build`
+
+`pwsh bin/Debug/net7.0/playwright.ps1 install`
+
+- https://playwright.dev/dotnet/docs/intro
+- https://playwright.dev/dotnet/docs/api-testing
+
+PlaywrightTests
 
 ## Docs
 

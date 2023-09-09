@@ -20,11 +20,7 @@ namespace Poker.API.Services
 
         #endregion Properties
 
-        /// <summary>
-        /// Card Service
-        /// </summary>
-        /// <param name="logger"></param>
-        /// <exception cref="DirectoryNotFoundException"></exception>
+        /// <inheritdoc />
         public CardService(ILogger<CardService> logger)
         {
             _logger = logger;
@@ -35,8 +31,8 @@ namespace Poker.API.Services
             var playersFolder = _configurationRoot["streaming:playersFolder"];
             var cardFolder = _configurationRoot["streaming:cardFolder"];
 
-            var _playersPath = Path.Combine(new string[] { _path, playersFolder });
-            var _cardsPath = Path.Combine(new string[] { _path, cardFolder });
+            _playersPath = Path.Combine(new string[] { _path, playersFolder });
+            _cardsPath = Path.Combine(new string[] { _path, cardFolder });
 
             if (!Directory.Exists(_playersPath)) throw new DirectoryNotFoundException();
             if (!Directory.Exists(_cardsPath)) throw new DirectoryNotFoundException();
@@ -160,6 +156,7 @@ namespace Poker.API.Services
         /// <returns></returns>
         private bool ClearCard(string file)
         {
+            // Change to 'Backcard.png' instead?
             try
             {
                 File.Delete(file);
