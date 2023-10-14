@@ -1,13 +1,6 @@
 ﻿// 🃏 Texas holdem Rank Card Evaluator
 // https://github.com/danielpaz6/Poker-Hand-Evaluator/tree/master/PokerHandEvaluator
 
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using static System.Runtime.InteropServices.JavaScript.JSType;
-
 namespace PokerHandEvaluator
 {
     public class ApplicationUser
