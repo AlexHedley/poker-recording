@@ -1,5 +1,13 @@
 ﻿<h3>CameraComponent</h3>
 
-@code {
+<iframe src="@src" height="100"></iframe>
 
+@code {
+    private string src;
+
+    protected override async Task OnInitializedAsync()
+    {
+        src = "https://alexhedley.com/";
+    }
+   
 }
