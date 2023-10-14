@@ -28,6 +28,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PokerHandEvaluator.Tests", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Poker.WebApp", "Poker.WebApp\Poker.WebApp.csproj", "{AB8F98C1-0DB4-487F-AE98-D4F25B503D50}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Poker.WebApp.Tests", "Poker.WebApp.Tests\Poker.WebApp.Tests.csproj", "{F050EB7E-6A0B-4FE3-A3C4-E1205DB67368}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -70,6 +72,10 @@ Global
 		{AB8F98C1-0DB4-487F-AE98-D4F25B503D50}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AB8F98C1-0DB4-487F-AE98-D4F25B503D50}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AB8F98C1-0DB4-487F-AE98-D4F25B503D50}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F050EB7E-6A0B-4FE3-A3C4-E1205DB67368}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F050EB7E-6A0B-4FE3-A3C4-E1205DB67368}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F050EB7E-6A0B-4FE3-A3C4-E1205DB67368}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F050EB7E-6A0B-4FE3-A3C4-E1205DB67368}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
