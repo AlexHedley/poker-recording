@@ -3,8 +3,6 @@
 using NSubstitute;
 
 using Poker.API.Services;
-using System;
-using System.Numerics;
 
 namespace Poker.API.Tests.Services
 {
@@ -23,7 +21,7 @@ namespace Poker.API.Tests.Services
             var result = service.UpdateCard(player, card);
 
             // Assert
-            Assert.Equal(true, result);
+            Assert.True(result);
         }
 
         //[Fact]

@@ -10,15 +10,17 @@
 
 ## Solution
 
-| Project                 | Type                  | Info              |
-| ----------------------- | --------------------- | ----------------- |
-| Poker.API               | Microsoft.NET.Sdk.Web | API               |
-| Poker.API.Tests         | Microsoft.NET.Sdk     | xUnit             |
-|                         |                       |                   |
-| PokerOddsPro.OddsEngine | Microsoft.NET.Sdk     | Library (dyh1213) |
-| PokerOddsPro.Shared     | Microsoft.NET.Sdk     | Library (dyh1213) |
-| PokerOddsPro.ConsoleApp | Microsoft.NET.Sdk     | Console           |
-|                         |                       |                   |
+| Project                       | Type                  | Info                 |
+| ----------------------------- | --------------------- | -------------------- |
+| Poker.API                     | Microsoft.NET.Sdk.Web | API                  |
+| Poker.API.Tests               | Microsoft.NET.Sdk     | xUnit                |
+|                               |                       |                      |
+| PokerOddsPro.OddsEngine       | Microsoft.NET.Sdk     | Library (dyh1213)    |
+| PokerOddsPro.Shared           | Microsoft.NET.Sdk     | Library (dyh1213)    |
+| PokerOddsPro.ConsoleApp       | Microsoft.NET.Sdk     | Console              |
+|                               |                       |                      |
+| PokerHandEvaluator            | Microsoft.NET.Sdk     | Library (danielpaz6) |
+| PokerHandEvaluator.ConsoleApp | Microsoft.NET.Sdk     | Console (danielpaz6) |
 
 - xUnit
 - NSubstitute
