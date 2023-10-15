@@ -14,6 +14,7 @@
   <ItemGroup>
     <Folder Include="wwwroot\images\" />
     <Folder Include="wwwroot\images\playingcards\" />
+    <Folder Include="wwwroot\js\" />
   </ItemGroup>
   
   <ItemGroup>
