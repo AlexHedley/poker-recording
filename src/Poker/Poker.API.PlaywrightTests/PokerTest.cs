@@ -26,7 +26,7 @@ namespace Poker.API.PlaywrightTests
         [Test]
         public async Task UpdateCard()
         {
-            await Request.PutAsync("/Card?player=1&text=2c");
+            await Request.PutAsync("/Poker?player=1&text=2c");
             Assert.AreEqual(true, true);
         }
 
