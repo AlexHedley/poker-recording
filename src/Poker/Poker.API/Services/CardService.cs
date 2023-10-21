@@ -1,8 +1,4 @@
-﻿using System.IO;
-
-using Poker.API.Controllers;
-
-namespace Poker.API.Services
+﻿namespace Poker.API.Services
 {
     /// <summary>
     /// Card Service
@@ -51,8 +47,8 @@ namespace Poker.API.Services
 
             // Players => Player{#}.txt
 
-            var card = mappings.FirstOrDefault(c => c.Key == text);
-            if ((card.Key, card.Value) == default)
+            var card = mappings.FirstOrDefault(c => c.CardHex == text);
+            if (card is null)
             {
                 _logger.LogInformation($"No card found for '{text}'");
             }
@@ -76,7 +72,8 @@ namespace Poker.API.Services
                         break;
                 }
 
-                var cardToSwap = Path.Combine(new string[] { _cardsPath, $"{card.Value}{fileExt}" }); // sj.webp
+                _logger.LogDebug($"Card: '{card.CardName}', '{card.ImageName}', '{card.CardHex}', '{card.CardHex}'.");
+                var cardToSwap = Path.Combine(new string[] { _cardsPath, $"{card.ImageName}{fileExt}" }); // sj.webp
 
                 try
                 {

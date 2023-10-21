@@ -9,3 +9,7 @@
 @hostname=localhost
 @port=5174
 GET http://{{hostname}}:{{port}}/api/Poker
+
+PUT http://{{hostname}}:{{port}}/api/Poker?player=1&text=AC
+
+DELETE http://{{hostname}}:{{port}}/api/Poker

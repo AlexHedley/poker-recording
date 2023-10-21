@@ -7,3 +7,7 @@
 ## OBS
 
 - [Poker](OBS/Poker.json)
+
+## Playing Cards
+
+- [Info](PlayingCards/README.md)

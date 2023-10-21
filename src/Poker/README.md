@@ -20,6 +20,8 @@
 | PokerOddsPro.Shared           | Microsoft.NET.Sdk     | Library (dyh1213)    |
 | PokerOddsPro.ConsoleApp       | Microsoft.NET.Sdk     | Console              |
 |                               |                       |                      |
+| PokerHandEvaluator            | Microsoft.NET.Sdk     | Library (danielpaz6) |
+| PokerHandEvaluator.ConsoleApp | Microsoft.NET.Sdk     | Console (danielpaz6) |
 
 - xUnit
 - NSubstitute
