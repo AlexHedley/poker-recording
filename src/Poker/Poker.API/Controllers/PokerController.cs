@@ -59,7 +59,7 @@ namespace Poker.API.Controllers
         ///// <param name="pos">The card position</param>
         /// <param name="text">The RFID value of the sticker</param>
         [HttpPut(Name = "Card")]
-        void UpdateCard(int player, /*int pos,*/ string text)
+        public void UpdateCard(int player, /*int pos,*/ string text)
         {
             _cardService.UpdateCard(player, text);
         }
@@ -68,7 +68,7 @@ namespace Poker.API.Controllers
         /// Clear Table
         /// </summary>
         [HttpDelete(Name = "Card")]
-        void ClearTable()
+        public void ClearTable()
         {
             _cardService.ClearCards(0); // Board
             _cardService.ClearCards(1); // P1, P2, P3, P4...
