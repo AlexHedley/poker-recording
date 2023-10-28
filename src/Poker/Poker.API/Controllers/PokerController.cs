@@ -47,27 +47,5 @@ namespace Poker.API.Controllers
             return assemblyVersion;
         }
 
-        /// <summary>
-        /// Update Card
-        /// </summary>
-        /// <param name="player">The Player number</param>
-        ///// <param name="pos">The card position</param>
-        /// <param name="text">The RFID value of the sticker</param>
-        [HttpPut(Name = "Card")]
-        public void UpdateCard(int player, /*int pos,*/ string text)
-        {
-            _cardService.UpdateCard(player, text);
-        }
-
-        /// <summary>
-        /// Clear Table
-        /// </summary>
-        [HttpDelete(Name = "Card")]
-        public void ClearTable()
-        {
-            _cardService.ClearCards(0); // Board
-            _cardService.ClearCards(1); // P1, P2, P3, P4...
-        }
-
     }
 }

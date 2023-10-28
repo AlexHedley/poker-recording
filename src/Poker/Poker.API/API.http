@@ -3,13 +3,13 @@
 # HTTPS
 # @hostname=localhost
 # @port=7037
-# GET https://{{hostname}}:{{port}}/api/Poker
+# GET https://{{hostname}}:{{port}}/api/poker
 
 # HTTP
 @hostname=localhost
 @port=5174
-GET http://{{hostname}}:{{port}}/api/Poker
+GET http://{{hostname}}:{{port}}/api/poker
 
-PUT http://{{hostname}}:{{port}}/api/Poker?player=1&text=AC
+PUT http://{{hostname}}:{{port}}/api/card?player=1&text=AC
 
-DELETE http://{{hostname}}:{{port}}/api/Poker
+DELETE http://{{hostname}}:{{port}}/api/car

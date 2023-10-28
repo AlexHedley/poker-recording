@@ -39,18 +39,7 @@ Output using [dotnet-tests-report](https://github.com/marketplace/actions/dotnet
 
 ### Playwright
 
-**MSTest**
-
-`dotnet add package Microsoft.Playwright.MSTest`
-
-`dotnet build`
-
-`pwsh bin/Debug/net7.0/playwright.ps1 install`
-
-- https://playwright.dev/dotnet/docs/intro
-- https://playwright.dev/dotnet/docs/api-testing
-
-PlaywrightTests
+- [Playwright](Poker.API.PlaywrightTests/README.md)
 
 ## Docs
 
