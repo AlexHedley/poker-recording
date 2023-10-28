@@ -12,6 +12,8 @@
     <Description>An API for use in a home poker recording setup</Description>
     <PackageProjectUrl>https://github.com/AlexHedley/poker-recording</PackageProjectUrl>
     <ApplicationIcon>favicon.ico</ApplicationIcon>
+
+    <GenerateRuntimeConfigDevFile>true</GenerateRuntimeConfigDevFile>
   </PropertyGroup>
 
   <ItemGroup>

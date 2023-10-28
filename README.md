@@ -1,4 +1,4 @@
-# ♥♣♦♠ Poker Recording 📹
+# ♥♣♦♠ Poker Recording  🃏📹
 
 > Setup for recording a home poker game
 
