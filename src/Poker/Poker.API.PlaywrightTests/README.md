@@ -17,6 +17,8 @@ _Install the required browsers and operating system dependencies_
 
 PlaywrightTests
 
+Updated Microsoft.Playwright from  Version= 1.37.1 to 1.39.0.
+
 ## Install
 
 ```powershell
