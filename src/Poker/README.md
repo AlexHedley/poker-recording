@@ -6,21 +6,26 @@
 
 ## Demo
 
-- http://localhost:5174/swagger/index.html
+- API http://localhost:5174/swagger/index.html
 
 ## Solution
 
-| Project                       | Type                  | Info                 |
-| ----------------------------- | --------------------- | -------------------- |
-| Poker.API                     | Microsoft.NET.Sdk.Web | API                  |
-| Poker.API.Tests               | Microsoft.NET.Sdk     | xUnit                |
-|                               |                       |                      |
-| PokerOddsPro.OddsEngine       | Microsoft.NET.Sdk     | Library (dyh1213)    |
-| PokerOddsPro.Shared           | Microsoft.NET.Sdk     | Library (dyh1213)    |
-| PokerOddsPro.ConsoleApp       | Microsoft.NET.Sdk     | Console              |
-|                               |                       |                      |
-| PokerHandEvaluator            | Microsoft.NET.Sdk     | Library (danielpaz6) |
-| PokerHandEvaluator.ConsoleApp | Microsoft.NET.Sdk     | Console (danielpaz6) |
+| Project                       | Type                                | Info                 |
+| ----------------------------- | ----------------------------------- | -------------------- |
+| Poker.API                     | Microsoft.NET.Sdk.Web               | API                  |
+| Poker.API.Tests               | Microsoft.NET.Sdk                   | xUnit                |
+|                               |                                     |                      |
+| Poker.Server.WebApp           | Microsoft.NET.Sdk.Web               | Web                  |
+| Poker.Server.WebApp.Tests     | Microsoft.NET.Sdk                   |                      |
+| Poker.WebApp                  | Microsoft.NET.Sdk.BlazorWebAssembly | Web                  |
+| Poker.WebApp.Tests            | Microsoft.NET.Sdk                   |                      |
+|                               |                                     |                      |
+| PokerOddsPro.OddsEngine       | Microsoft.NET.Sdk                   | Library (dyh1213)    |
+| PokerOddsPro.Shared           | Microsoft.NET.Sdk                   | Library (dyh1213)    |
+| PokerOddsPro.ConsoleApp       | Microsoft.NET.Sdk                   | Console              |
+|                               |                                     |                      |
+| PokerHandEvaluator            | Microsoft.NET.Sdk                   | Library (danielpaz6) |
+| PokerHandEvaluator.ConsoleApp | Microsoft.NET.Sdk                   | Console (danielpaz6) |
 
 - xUnit
 - NSubstitute
