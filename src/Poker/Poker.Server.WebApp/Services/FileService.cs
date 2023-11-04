@@ -10,7 +10,6 @@ namespace Poker.Server.WebApp.Services
         #region Properties
 
         private readonly ILogger<FileService> _logger;
-        private readonly IConfigurationRoot _configurationRoot;
         
         private string _path;
         private string _playersPath;
@@ -27,11 +26,9 @@ namespace Poker.Server.WebApp.Services
         {
             _logger = logger;
 
-            _configurationRoot = new ConfigurationBuilder().AddJsonFile("appsettings.json").Build();
-            _path = _configurationRoot["streaming:folder"];
-
-            var playersFolder = _configurationRoot["streaming:playersFolder"];
-            var cardFolder = _configurationRoot["streaming:cardFolder"];
+            _path = ApplicationSettings.StreamingOptions.Folder;
+            var playersFolder = ApplicationSettings.StreamingOptions.PlayersFolder;
+            var cardFolder = ApplicationSettings.StreamingOptions.CardFolder;
 
             _playersPath = Path.Combine(new string[] { _path, playersFolder });
             _cardsPath = Path.Combine(new string[] { _path, cardFolder });

@@ -22,11 +22,9 @@ public partial class Index
         // FileService.SetupWatcher();
         // _path = FileService.FilePath;
 
-        _configurationRoot = new ConfigurationBuilder().AddJsonFile("appsettings.json").Build();
-        _path = _configurationRoot["streaming:folder"];
-
-        var playersFolder = _configurationRoot["streaming:playersFolder"];
-        var cardFolder = _configurationRoot["streaming:cardFolder"];
+        _path = ApplicationSettings.StreamingOptions.Folder;
+        var playersFolder = ApplicationSettings.StreamingOptions.PlayersFolder;
+        var cardFolder = ApplicationSettings.StreamingOptions.CardFolder;
 
         _playersPath = Path.Combine(new string[] { _path, playersFolder });
         _cardsPath = Path.Combine(new string[] { _path, cardFolder });
@@ -133,11 +131,11 @@ public partial class Index
         Stats.BoardTurn = GetCard(Stats.BoardTurn);
         Stats.BoardRiver = GetCard(Stats.BoardRiver);
 
-        Stats.Player1Camera = GetCamera("one");
-        Stats.Player2Camera = GetCamera("two");
-        Stats.Player3Camera = GetCamera("three");
-        Stats.Player4Camera = GetCamera("four");
-        Stats.BoardCamera = GetCamera("five");
+        Stats.Player1Camera = GetCamera("One");
+        Stats.Player2Camera = GetCamera("Two");
+        Stats.Player3Camera = GetCamera("Three");
+        Stats.Player4Camera = GetCamera("Four");
+        Stats.BoardCamera = GetCamera("Five");
     }
 
     private string GetPlayerName(string playerNumber)
@@ -161,13 +159,16 @@ public partial class Index
     private string GetCard(string card)
     {
         // return Path.Combine(_playersPath, card);
-        return Path.Combine("/", _configurationRoot["streaming:playersFolder"], card) + "?DummyId=" + DateTime.Now.Ticks;
+        var playersFolder = ApplicationSettings.StreamingOptions.PlayersFolder;
+        return Path.Combine("/", playersFolder, card) + "?DummyId=" + DateTime.Now.Ticks;
     }
 
     private string GetCamera(string camera)
     {
-        var cameraIP = _configurationRoot[$"cameras:{camera}"];
-        // toggle-stream
+        //var cameraIP = _configurationRoot[$"cameras:{camera}"];
+        var cameraIPPropertyInfo = ApplicationSettings.CameraOptions.GetType().GetProperty(camera, System.Reflection.BindingFlags.Public | System.Reflection.BindingFlags.Static | System.Reflection.BindingFlags.Instance | System.Reflection.BindingFlags.FlattenHierarchy);
+        var cameraIP = cameraIPPropertyInfo.GetValue(ApplicationSettings.CameraOptions);
+
         // document.getElementById("toggle-stream").click();
         // <img id="stream" src="http://192.168.0.43:81/stream" crossorigin="">
 
