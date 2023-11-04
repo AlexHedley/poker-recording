@@ -17,8 +17,6 @@ namespace Poker.API.Controllers
         
         private readonly ILogger<PokerController> _logger;
         private readonly ICardService _cardService;
-        private readonly IConfigurationRoot _configurationRoot;
-        private string _path;
 
         #endregion Properties
 
@@ -30,12 +28,6 @@ namespace Poker.API.Controllers
         {
             _logger = logger;
             _cardService = cardService;
-
-            _configurationRoot = new ConfigurationBuilder().AddJsonFile("appsettings.json").Build();
-            _path = _configurationRoot["streaming:folder"];
-            
-            Debug.Print(_path);
-            _logger.LogInformation(_path, DateTime.UtcNow.ToLongTimeString());
         }
 
         /// <summary>

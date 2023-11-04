@@ -8,7 +8,6 @@
         #region Properties
 
         private readonly ILogger<CardService> _logger;
-        private readonly IConfigurationRoot _configurationRoot;
         private string _path;
 
         private string _playersPath;
@@ -25,11 +24,9 @@
         {
             _logger = logger;
 
-            _configurationRoot = new ConfigurationBuilder().AddJsonFile("appsettings.json").Build();
-            _path = _configurationRoot["streaming:folder"];
-
-            var playersFolder = _configurationRoot["streaming:playersFolder"];
-            var cardFolder = _configurationRoot["streaming:cardFolder"];
+            _path = ApplicationSettings.StreamingOptions.Folder;
+            var playersFolder = ApplicationSettings.StreamingOptions.PlayersFolder;
+            var cardFolder = ApplicationSettings.StreamingOptions.CardFolder;
 
             var _playersPath = Path.Combine(new string[] { _path, playersFolder });
             var _cardsPath = Path.Combine(new string[] { _path, cardFolder });
