@@ -62,11 +62,20 @@ namespace Poker.API.Controllers
         [HttpDelete(Name = "Clear")]
         public void ClearTable()
         {
-            _cardService.ClearCards(0); // Board
-            _cardService.ClearCards(1); // P1, P2, P3, P4...
+            // Board
+            _cardService.ClearCards(0);
+            // P1, P2, P3, P4...
+            _cardService.ClearCards(1); 
             _cardService.ClearCards(2);
             _cardService.ClearCards(3);
             _cardService.ClearCards(4);
+
+            // Clear stats in text files?
+            _cardService.ClearStats(0);
+            _cardService.ClearStats(1);
+            _cardService.ClearStats(2);
+            _cardService.ClearStats(3);
+            _cardService.ClearStats(4);
         }
     }
 }
