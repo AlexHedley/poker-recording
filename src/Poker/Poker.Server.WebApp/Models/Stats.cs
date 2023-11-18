@@ -13,8 +13,8 @@
 
         public string Player1Card1 { get; set; } = $"P1C1.png";
         public string Player1Card2 { get; set; } = $"P1C2.png";
-        public string Player2Card1 { get; set; } = $"P1C1.png";
-        public string Player2Card2 { get; set; } = $"P1C2.png";
+        public string Player2Card1 { get; set; } = $"P2C1.png";
+        public string Player2Card2 { get; set; } = $"P2C2.png";
         public string Player3Card1 { get; set; } = $"P3C1.png";
         public string Player3Card2 { get; set; } = $"P3C2.png";
         public string Player4Card1 { get; set; } = $"P4C1.png";
