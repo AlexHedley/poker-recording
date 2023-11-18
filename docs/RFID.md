@@ -31,6 +31,10 @@ https://github.com/miguelbalboa/rfid
 
 ---
 
+https://techtutorialsx.com/2019/01/30/esp8266-arduino-http-put-request/
+
+---
+
 http://arduino.esp8266.com/stable/package_esp8266com_index.json, https://dl.espressif.com/dl/package_esp32_index.json
 
 ESP8266 Boards (2.7.1)

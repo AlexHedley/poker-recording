@@ -10,7 +10,21 @@
 
 ## Code
 
-- [code](ESP8266.ino)
+Update `SECRET_SSID` and `SECRET_PASS` with your WIFI login.
+
+`ren secrets.h.example secrets.h`
+
+- [ESP8266.ino](ESP8266/ESP8266.ino)
+- [secrets.h](ESP8266/secrets.h)
+- [secrets.h.example](ESP8266/secrets.h.example)
+
+## Docs
+
+- [docs](../../docs/RFID.md)
+
+## Links
+
+- [Boards](http://arduino.esp8266.com/stable/package_esp8266com_index.json)
 
 ## Run
 
