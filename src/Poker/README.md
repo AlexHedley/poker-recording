@@ -42,10 +42,15 @@ Output using [dotnet-tests-report](https://github.com/marketplace/actions/dotnet
 
 ## Docs
 
+- [More](docs/README.md)
 - [Poker](../../docs/POKER.md)
 
 ### Blog
 
-- [Recording Poker Games](https://alexhedley.com/blog/posts/poker-recording-games)
+- [Poker - Recording Games](https://alexhedley.com/blog/posts/poker-recording-games)
 - [Poker - Tracking cards](https://alexhedley.com/blog/posts/poker-tracking-cards)
 - [Poker - Table top](https://alexhedley.com/blog/posts/poker-table-top)
+- [Poker - Chip](https://alexhedley.com/blog/posts/poker-chip)
+- [Poker - API](https://alexhedley.com/blog/posts/poker-api)
+- [Poker - Stats](https://alexhedley.com/blog/posts/poker-stats)
+- [Poker - App](https://alexhedley.com/blog/posts/poker-app)

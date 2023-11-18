@@ -1,5 +1,6 @@
 # Docs
 
+- [API](API.md)
 - [PokerOddsPro](POKERODDSPRO.md)
 - [PokerHandEvaluator](POKERHANDEVALUATOR.md)
 - [Cards](CARDS.md)

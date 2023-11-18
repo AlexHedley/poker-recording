@@ -553,7 +553,6 @@ namespace PokerHandEvaluator
                 sidePotCounter++;
             }
 
-
             // Edge case where there's still money in the room's sum pot, in that case we need to return the money to the user owned it.
             if (getZeroPotsAmount() == 4)
             {
@@ -573,7 +572,7 @@ namespace PokerHandEvaluator
             return finalPots;
         }
 
-        public List<SidePot> SpreadMoneyToWinners()
+        public Tuple<List<SidePot>, List<List<HandRank>>> SpreadMoneyToWinners()
         {
             List<HandRank> handList = new List<HandRank>();
             List<SidePot> sidePotList = null;
@@ -593,7 +592,6 @@ namespace PokerHandEvaluator
             //handList.Sort((x, y) => (int)(y.Rank - x.Rank));
             handList = handList.OrderByDescending(x => x.Rank).ToList();
 
-
             //handList = handList.GroupBy(x => x.Rank).Select(grp => grp.ToList()).ToList();
             //List<List<HandRank>> totalWinners = new List<List<HandRank>>();
             List<List<HandRank>> totalWinners = handList.GroupBy(x => x.Rank).Select(grp => grp.ToList()).ToList();
@@ -601,7 +599,6 @@ namespace PokerHandEvaluator
             //var json = JsonConvert.SerializeObject(totalWinners);
 
             sidePotList = this.CalculateMainAndSidePots();
-
 
             /*
              * For each winner group, for example 1st winners, we'll go through every main/side pot
@@ -643,7 +640,7 @@ namespace PokerHandEvaluator
             }
 
             //Console.WriteLine(totalWinners);
-            return sidePotList;
+            return new Tuple<List<SidePot>, List<List<HandRank>>>(sidePotList, totalWinners);
         }
     }
 }

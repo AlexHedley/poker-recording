@@ -1,4 +1,8 @@
 using Poker.Server.WebApp.Models;
+using static System.Net.Mime.MediaTypeNames;
+
+using System.Text.Json;
+using System.Text.Json.Serialization;
 
 namespace Poker.Server.WebApp.Pages;
 public partial class Index
@@ -13,6 +17,9 @@ public partial class Index
     private string _cardsPath;
 
     private Stats Stats;
+
+    IHttpClientFactory ClientFactory;
+    //AntiforgeryStateProvider Antiforgery;
 
     #endregion Properties
 
@@ -177,4 +184,23 @@ public partial class Index
 
 
     #endregion Stats Helper
+
+    async void Reset()
+    {
+        //var antiforgery = Antiforgery.GetAntiforgeryToken();
+        var request = new HttpRequestMessage(HttpMethod.Get,
+            "http://localhost:5174/api/Poker");
+        request.Headers.Add("Accept", "application/json");
+        request.Headers.Add("User-Agent", "HttpClientFactory-Sample");
+        //request.Headers.Add("RequestVerificationToken", antiforgery.RequestToken);
+
+        var client = ClientFactory.CreateClient();
+
+        var response = await client.SendAsync(request);
+
+        if (response.IsSuccessStatusCode)
+        {
+            using var responseStream = await response.Content.ReadAsStreamAsync();
+        }
+    }
 }
