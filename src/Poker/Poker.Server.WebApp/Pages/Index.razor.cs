@@ -3,6 +3,7 @@ using static System.Net.Mime.MediaTypeNames;
 
 using System.Text.Json;
 using System.Text.Json.Serialization;
+using Microsoft.AspNetCore.Components;
 
 namespace Poker.Server.WebApp.Pages;
 public partial class Index
@@ -18,7 +19,8 @@ public partial class Index
 
     private Stats Stats;
 
-    IHttpClientFactory ClientFactory;
+    [Inject]
+    IHttpClientFactory ClientFactory { get; set; }
     //AntiforgeryStateProvider Antiforgery;
 
     #endregion Properties
@@ -188,8 +190,7 @@ public partial class Index
     async void Reset()
     {
         //var antiforgery = Antiforgery.GetAntiforgeryToken();
-        var request = new HttpRequestMessage(HttpMethod.Get,
-            "http://localhost:5174/api/Poker");
+        var request = new HttpRequestMessage(HttpMethod.Delete, "http://localhost:5174/api/Poker");
         request.Headers.Add("Accept", "application/json");
         request.Headers.Add("User-Agent", "HttpClientFactory-Sample");
         //request.Headers.Add("RequestVerificationToken", antiforgery.RequestToken);
