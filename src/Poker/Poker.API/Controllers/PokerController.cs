@@ -64,6 +64,9 @@ namespace Poker.API.Controllers
         {
             _cardService.ClearCards(0); // Board
             _cardService.ClearCards(1); // P1, P2, P3, P4...
+            _cardService.ClearCards(2);
+            _cardService.ClearCards(3);
+            _cardService.ClearCards(4);
         }
     }
 }
