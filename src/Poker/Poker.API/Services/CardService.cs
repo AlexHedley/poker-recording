@@ -106,6 +106,22 @@
             _logger.LogDebug($"Cleared cards for Player '{player}': '{cleared}'.");
         }
 
+        /// <inheritdoc />
+        public void ClearStats(int player)
+        {
+            bool cleared;
+            switch (player)
+            {
+                case 0: // Board
+                    cleared = ClearBoardStats();
+                    break;
+                default:
+                    cleared = ClearPlayerStats(player);
+                    break;
+            }
+            _logger.LogDebug($"Cleared stats for Player '{player}': '{cleared}'.");
+        }
+
         #region Private
 
         /// <summary>
@@ -209,6 +225,64 @@
                 }
             }
             return string.Empty; // TODO: ...
+        }
+
+        /// <summary>
+        /// Clear Board Stats
+        /// </summary>
+        /// <returns></returns>
+        private bool ClearBoardStats()
+        {
+            // TODO: Are there any? - Total Pot?
+            var cleared = new List<bool>();
+            var stats = new string[] {  };
+
+            foreach (var stat in stats)
+            {
+                var statPath = Path.Combine(_playersPath, stat);
+                var clear = ClearStat(statPath);
+                cleared.Add(clear);
+            }
+
+            return cleared.All(x => x);
+        }
+
+        /// <summary>
+        /// Clear Player Stats
+        /// </summary>
+        /// <returns></returns>
+        private bool ClearPlayerStats(int player)
+        {
+            //var fileName = $"P{player}.png"; // Player1.txt - Their name
+            var fileName = $"PotOddsPlayer{player}.txt"; // PotOddsPlayer1.txt
+
+            var cardPath = Path.Combine(_playersPath, fileName);
+
+            if (File.Exists(cardPath))
+            {
+                return ClearStat(cardPath);
+            }
+
+            return false;
+        }
+
+        /// <summary>
+        /// Clear Stat
+        /// </summary>
+        /// <param name="file"></param>
+        /// <returns></returns>
+        private bool ClearStat(string file)
+        {
+            try
+            {
+                File.WriteAllText(file, "");
+                return true;
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex.Message);
+                return false;
+            }
         }
 
         #endregion Private

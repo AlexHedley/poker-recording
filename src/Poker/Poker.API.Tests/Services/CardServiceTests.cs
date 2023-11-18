@@ -38,5 +38,20 @@ namespace Poker.API.Tests.Services
             // Assert
             //Assert.Equal(, );
         }
+
+        //[Fact]
+        public void ClearStats()
+        {
+            // Arrange
+            var mockLogger = Substitute.For<ILogger<CardService>>();
+            var service = new CardService(mockLogger);
+            var player = 0;
+
+            // Act
+            service.ClearStats(player);
+
+            // Assert
+            //Assert.Equal(, );
+        }
     }
 }
