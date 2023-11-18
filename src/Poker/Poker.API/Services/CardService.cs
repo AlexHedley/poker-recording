@@ -48,7 +48,7 @@
 
             // Players => Player{#}.txt
 
-            var card = mappings.FirstOrDefault(c => c.CardHex == text);
+            var card = mappings.FirstOrDefault(c => c.CardHex.ToLowerInvariant() == text.ToLowerInvariant());
             if (card is null)
             {
                 _logger.LogInformation($"No card found for '{text}'");
