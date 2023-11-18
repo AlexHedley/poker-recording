@@ -59,7 +59,7 @@ namespace Poker.API.Controllers
         /// <summary>
         /// Clear Table
         /// </summary>
-        [HttpDelete(Name = "Card")]
+        [HttpDelete(Name = "Clear")]
         public void ClearTable()
         {
             _cardService.ClearCards(0); // Board

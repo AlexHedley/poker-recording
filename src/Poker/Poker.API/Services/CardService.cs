@@ -28,8 +28,8 @@
             var playersFolder = ApplicationSettings.StreamingOptions.PlayersFolder;
             var cardFolder = ApplicationSettings.StreamingOptions.CardFolder;
 
-            var _playersPath = Path.Combine(new string[] { _path, playersFolder });
-            var _cardsPath = Path.Combine(new string[] { _path, cardFolder });
+            _playersPath = Path.Combine(new string[] { _path, playersFolder });
+            _cardsPath = Path.Combine(new string[] { _path, cardFolder });
 
             if (!Directory.Exists(_playersPath)) throw new DirectoryNotFoundException();
             if (!Directory.Exists(_cardsPath)) throw new DirectoryNotFoundException();
