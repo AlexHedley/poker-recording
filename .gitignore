@@ -1,2 +1,6 @@
 # macOS
 .DS_Store
+
+# RFIDReader
+# doxygen output
+src/RFIDReader/ESP8266/html/
