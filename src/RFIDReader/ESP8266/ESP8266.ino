@@ -1,12 +1,46 @@
+/**
+ * @file ESP8266.ino
+ *
+ * @mainpage RFID Reader and API
+ *
+ * @section description Description
+ * A sketch that reads an RFID chip and then sends the id to a custom API.
+ *
+ * @section circuit Circuit
+ * - D0  | D5  | D6 | D7   | D8  | GND | VIN
+ * - RST | SCK | MI | MOSI | SDA | GND | 3.3
+ *
+ * @section libraries Libraries
+ * - ESP8266WiFi (https://arduino-esp8266.readthedocs.io/en/latest/esp8266wifi/readme.html)
+ * - ESP8266HTTPClient (https://github.com/esp8266/Arduino/blob/master/libraries/ESP8266HTTPClient/src/ESP8266HTTPClient.h)
+ * - MFRC522 (https://github.com/miguelbalboa/rfid)
+ * - SPI (https://www.arduino.cc/reference/en/language/functions/communication/spi/)
+ * - WiFiClient (https://www.arduino.cc/reference/en/libraries/wifi/wificlient/)
+ *
+ * @section notes Notes
+ * - Update PLAYER to the necessary number.
+ * - Update serverName to your deployed Poker API.
+ * - Update the Secrets.h to your own Wifi usr/pwd.
+ *
+ * @section author Author
+ * - Created by Alex Hedley on 19/11/2023.
+ *
+ * Copyright (c) 2023 Alex Hedley.  All rights reserved.
+ */
+
 #include <ESP8266WiFi.h>
 #include <ESP8266HTTPClient.h>
 #include <MFRC522.h>
 #include <SPI.h>
 #include <WiFiClient.h>
 
-#include "Secrets.h"
+#ifndef DOXYGEN_SHOULD_SKIP_THIS
+
+#include "secrets.h"
 const char* ssid = SECRET_SSID;
 const char* password = SECRET_PASS;
+
+#endif /* DOXYGEN_SHOULD_SKIP_THIS */
 
 #define SS_PIN D8
 #define RST_PIN D0
@@ -31,6 +65,9 @@ unsigned long lastTime = 0;
 // Set timer to 5 seconds (5000)
 unsigned long timerDelay = 5000;
 
+/**
+ * Setup
+ */
 void setup() {
   Serial.begin(115200);
 
@@ -43,7 +80,7 @@ void setup() {
   Serial.println("");
   Serial.print("Connected to WiFi network with IP Address: ");
   Serial.println(WiFi.localIP());
- 
+
   Serial.println("Timer set to 5 seconds (timerDelay variable), it will take 5 seconds before publishing the first reading.");
 
   SPI.begin(); // Init SPI bus
@@ -61,10 +98,18 @@ void setup() {
   printHex(key.keyByte, MFRC522::MF_KEY_SIZE);
 }
 
+/**
+ * Loop
+ */
 void loop() {
   scanCard();
 }
 
+/**
+ * Send Card Info
+ * 
+ * @param card The id of the card you scanned.
+ */
 void sendCardInfo(String card) {
     // Send an HTTP POST request depending on timerDelay
   if ((millis() - lastTime) > timerDelay) {
@@ -76,17 +121,14 @@ void sendCardInfo(String card) {
       // PUT http://{{hostname}}:{{port}}/api/Poker?player=1&text=AC
       String serverPath = serverName + "?player=" + PLAYER + "&text=" + card;
       Serial.println(serverPath);
-      
+
       // Your Domain name with URL path or IP address with path
       http.begin(client, serverPath.c_str());
       http.addHeader("Content-Type", "application/json");
-  
-      // If you need Node-RED/server authentication, insert user and password below
-      //http.setAuthorization("REPLACE_WITH_SERVER_USERNAME", "REPLACE_WITH_SERVER_PASSWORD");
-        
+
       // Send HTTP GET request
       int httpResponseCode = http.PUT("PUT sent from ESP8266");
-      
+
       if (httpResponseCode > 0) {
         Serial.print("HTTP Response code: ");
         Serial.println(httpResponseCode);
@@ -109,8 +151,8 @@ void sendCardInfo(String card) {
 }
 
 /**
-  Check for readings from scanning card
-*/
+ * Check for readings from scanning card
+ */
 void scanCard() {
     // Reset the loop if no new card present on the sensor/reader. This saves the entire process when idle.
   if ( ! rfid.PICC_IsNewCardPresent())
@@ -125,14 +167,6 @@ void scanCard() {
   Serial.print(F("PICC type: "));
   MFRC522::PICC_Type piccType = rfid.PICC_GetType(rfid.uid.sak);
   Serial.println(rfid.PICC_GetTypeName(piccType));
-
-  // // Check is the PICC of Classic MIFARE type
-  // if (piccType != MFRC522::PICC_TYPE_MIFARE_MINI &&
-  //     piccType != MFRC522::PICC_TYPE_MIFARE_1K &&
-  //     piccType != MFRC522::PICC_TYPE_MIFARE_4K) {
-  //   Serial.println(F("Your tag is not of type MIFARE Classic."));
-  //   return;
-  // }
 
   if (rfid.uid.uidByte[0] != nuidPICC[0] ||
       rfid.uid.uidByte[1] != nuidPICC[1] ||
@@ -158,21 +192,9 @@ void scanCard() {
 
     sendCardInfo(cardid);
   }
-  else Serial.println(F("Card read previously."));
-
-  // // Alternative
-  // if (rfid.uid.size == 0) {
-  //   Serial.println("Bad card (size = 0)");
-  // } else {
-  //   char tag[sizeof(rfid.uid.uidByte) * 4] = { 0 };
-  //   for (int i = 0; i < rfid.uid.size; i++) {
-  //     char buff[5]; // 3 digits, dash and \0.
-  //     snprintf(buff, sizeof(buff), "%s%d", i ? "-" : "", rfid.uid.uidByte[i]);
-  //     strncat(tag, buff, sizeof(tag));
-  //   };
-  //   Serial.println("Good scan: ");
-  //   Serial.println(tag);
-  // };
+  else {
+    Serial.println(F("Card read previously."));
+  }
 
   // Halt PICC (disengage with the card.)
   rfid.PICC_HaltA();
@@ -188,7 +210,7 @@ void scanCard() {
  * @param buffer .
  * @param bufferSize .
  * @param format HEX or DEC
-*/
+ */
 String getCard(byte *buffer, byte bufferSize, int format) {
   String cardid;
 
@@ -203,8 +225,8 @@ String getCard(byte *buffer, byte bufferSize, int format) {
 }
 
 /**
-  Helper routine to dump a byte array as hex values to Serial.
-*/
+ * Helper routine to dump a byte array as hex values to Serial.
+ */
 void printHex(byte *buffer, byte bufferSize) {
   for (byte i = 0; i < bufferSize; i++) {
     Serial.print(buffer[i] < 0x10 ? " 0" : " ");
@@ -213,8 +235,8 @@ void printHex(byte *buffer, byte bufferSize) {
 }
 
 /**
-  Helper routine to dump a byte array as dec values to Serial.
-*/
+ * Helper routine to dump a byte array as dec values to Serial.
+ */
 void printDec(byte *buffer, byte bufferSize) {
   for (byte i = 0; i < bufferSize; i++) {
     Serial.print(buffer[i] < 0x10 ? " 0" : " ");
