@@ -1,8 +1,5 @@
-
-using log4net.Config;
-using Microsoft.Extensions.Logging;
 using Poker.API.Services;
-using System.Xml;
+using System.Configuration;
 
 namespace Poker.API
 {
@@ -13,12 +10,16 @@ namespace Poker.API
             var builder = WebApplication.CreateBuilder(args);
 
             // Add services to the container.
-
             builder.Services.AddControllers();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
             builder.Services.AddTransient<ICardService, CardService>();
+
+            // Configuration
+            builder.Configuration.GetSection(ApplicationSettings.StreamingUrl).Bind(ApplicationSettings.StreamingOptions);
+
+            // Logging
             builder.Logging.AddLog4Net();
 
             var app = builder.Build();

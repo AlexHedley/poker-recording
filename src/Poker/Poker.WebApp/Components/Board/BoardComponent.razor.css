@@ -1,0 +1,29 @@
+﻿:root {}
+body {}
+
+#board {
+    /*display: flex;*/
+    /*flex-wrap: wrap;*/
+    /*align-items: center;*/
+    /*justify-content: center;*/
+
+    height: 500px;
+    
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr;
+    grid-gap: 0.5vw;
+    margin: 5px;
+}
+
+.flop {
+    background-color: purple;
+}
+
+.turn {
+    background-color: aqua;
+}
+
+.river {
+    background-color: orangered;
+}

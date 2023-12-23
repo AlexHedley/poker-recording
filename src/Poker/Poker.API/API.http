@@ -10,6 +10,6 @@
 @port=5174
 GET http://{{hostname}}:{{port}}/api/Poker
 
-PUT http://{{hostname}}:{{port}}/api/Poker?player=1&text=AC
+PUT http://{{hostname}}:{{port}}/api/Poker?player=1&text=0481983AE94C81
 
 DELETE http://{{hostname}}:{{port}}/api/Poker

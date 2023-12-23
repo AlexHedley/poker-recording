@@ -17,8 +17,6 @@ namespace Poker.API.Controllers
         
         private readonly ILogger<PokerController> _logger;
         private readonly ICardService _cardService;
-        private readonly IConfigurationRoot _configurationRoot;
-        private string _path;
 
         #endregion Properties
 
@@ -30,12 +28,6 @@ namespace Poker.API.Controllers
         {
             _logger = logger;
             _cardService = cardService;
-
-            _configurationRoot = new ConfigurationBuilder().AddJsonFile("appsettings.json").Build();
-            _path = _configurationRoot["streaming:folder"];
-            
-            Debug.Print(_path);
-            _logger.LogInformation(_path, DateTime.UtcNow.ToLongTimeString());
         }
 
         /// <summary>
@@ -67,11 +59,23 @@ namespace Poker.API.Controllers
         /// <summary>
         /// Clear Table
         /// </summary>
-        [HttpDelete(Name = "Card")]
+        [HttpDelete(Name = "Clear")]
         public void ClearTable()
         {
-            _cardService.ClearCards(0); // Board
-            _cardService.ClearCards(1); // P1, P2, P3, P4...
+            // Board
+            _cardService.ClearCards(0);
+            // P1, P2, P3, P4...
+            _cardService.ClearCards(1); 
+            _cardService.ClearCards(2);
+            _cardService.ClearCards(3);
+            _cardService.ClearCards(4);
+
+            // Clear stats in text files?
+            _cardService.ClearStats(0);
+            _cardService.ClearStats(1);
+            _cardService.ClearStats(2);
+            _cardService.ClearStats(3);
+            _cardService.ClearStats(4);
         }
     }
 }

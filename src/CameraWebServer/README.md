@@ -13,6 +13,12 @@ Update `SECRET_SSID` and `SECRET_PASS` with your WIFI login.
 
 `ren secrets.h.example secrets.h`
 
+## View
+
+Open the browser at the _IP address_ shown in the logs.
+
+You will get a window where you can configure the Stream, or you can see it directly at `http://{{IP address}}:81/stream`
+
 ## Docs
 
 - [docs](../../docs/CAMERAWEBSERVER.md)
