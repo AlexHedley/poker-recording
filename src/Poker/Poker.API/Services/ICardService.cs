@@ -18,5 +18,11 @@
         /// </summary>
         /// <param name="player"></param>
         void ClearCards(int player);
+
+        /// <summary>
+        /// Clear Stats
+        /// </summary>
+        /// <param name="player"></param>
+        void ClearStats(int player);
     }
 }
