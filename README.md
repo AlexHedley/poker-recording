@@ -5,6 +5,15 @@
 [![Dependabot](https://img.shields.io/badge/dependabot-025E8C?style=for-the-badge&logo=dependabot&logoColor=white)](https://github.com/AlexHedley/poker-recording/security/dependabot)
 
 [![Build / Test (with Reports)](https://github.com/AlexHedley/poker-recording/actions/workflows/build-test.yml/badge.svg)](https://github.com/AlexHedley/poker-recording/actions/workflows/build-test.yml)
+[![Build Docs](https://github.com/AlexHedley/poker-recording/actions/workflows/build-docs.yml/badge.svg)](https://github.com/AlexHedley/poker-recording/actions/workflows/build-docs.yml)
+[![Deploy to GitHub Pages](https://github.com/AlexHedley/poker-recording/actions/workflows/deploy-site.yml/badge.svg)](https://github.com/AlexHedley/poker-recording/actions/workflows/deploy-site.yml)
+[![pages-build-deployment](https://github.com/AlexHedley/poker-recording/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/AlexHedley/poker-recording/actions/workflows/pages/pages-build-deployment)
+[![CodeQL](https://github.com/AlexHedley/poker-recording/actions/workflows/github-code-scanning/codeql/badge.svg)](https://github.com/AlexHedley/poker-recording/actions/workflows/github-code-scanning/codeql)
+
+## Site
+
+- https://alexhedley.github.io/poker-recording/
+- https://alexhedley.github.io/poker-recording/rfidreader/
 
 ## src
 
