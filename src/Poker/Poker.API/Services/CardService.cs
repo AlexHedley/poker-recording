@@ -8,7 +8,6 @@
         #region Properties
 
         private readonly ILogger<CardService> _logger;
-        private readonly IConfigurationRoot _configurationRoot;
         private string _path;
 
         private string _playersPath;
@@ -25,14 +24,12 @@
         {
             _logger = logger;
 
-            _configurationRoot = new ConfigurationBuilder().AddJsonFile("appsettings.json").Build();
-            _path = _configurationRoot["streaming:folder"];
+            _path = ApplicationSettings.StreamingOptions.Folder;
+            var playersFolder = ApplicationSettings.StreamingOptions.PlayersFolder;
+            var cardFolder = ApplicationSettings.StreamingOptions.CardFolder;
 
-            var playersFolder = _configurationRoot["streaming:playersFolder"];
-            var cardFolder = _configurationRoot["streaming:cardFolder"];
-
-            var _playersPath = Path.Combine(new string[] { _path, playersFolder });
-            var _cardsPath = Path.Combine(new string[] { _path, cardFolder });
+            _playersPath = Path.Combine(new string[] { _path, playersFolder });
+            _cardsPath = Path.Combine(new string[] { _path, cardFolder });
 
             if (!Directory.Exists(_playersPath)) throw new DirectoryNotFoundException();
             if (!Directory.Exists(_cardsPath)) throw new DirectoryNotFoundException();
@@ -51,7 +48,7 @@
 
             // Players => Player{#}.txt
 
-            var card = mappings.FirstOrDefault(c => c.CardHex == text);
+            var card = mappings.FirstOrDefault(c => c.CardHex.ToLowerInvariant() == text.ToLowerInvariant());
             if (card is null)
             {
                 _logger.LogInformation($"No card found for '{text}'");
@@ -107,6 +104,22 @@
                     break;
             }
             _logger.LogDebug($"Cleared cards for Player '{player}': '{cleared}'.");
+        }
+
+        /// <inheritdoc />
+        public void ClearStats(int player)
+        {
+            bool cleared;
+            switch (player)
+            {
+                case 0: // Board
+                    cleared = ClearBoardStats();
+                    break;
+                default:
+                    cleared = ClearPlayerStats(player);
+                    break;
+            }
+            _logger.LogDebug($"Cleared stats for Player '{player}': '{cleared}'.");
         }
 
         #region Private
@@ -212,6 +225,64 @@
                 }
             }
             return string.Empty; // TODO: ...
+        }
+
+        /// <summary>
+        /// Clear Board Stats
+        /// </summary>
+        /// <returns></returns>
+        private bool ClearBoardStats()
+        {
+            // TODO: Are there any? - Total Pot?
+            var cleared = new List<bool>();
+            var stats = new string[] {  };
+
+            foreach (var stat in stats)
+            {
+                var statPath = Path.Combine(_playersPath, stat);
+                var clear = ClearStat(statPath);
+                cleared.Add(clear);
+            }
+
+            return cleared.All(x => x);
+        }
+
+        /// <summary>
+        /// Clear Player Stats
+        /// </summary>
+        /// <returns></returns>
+        private bool ClearPlayerStats(int player)
+        {
+            //var fileName = $"P{player}.png"; // Player1.txt - Their name
+            var fileName = $"PotOddsPlayer{player}.txt"; // PotOddsPlayer1.txt
+
+            var cardPath = Path.Combine(_playersPath, fileName);
+
+            if (File.Exists(cardPath))
+            {
+                return ClearStat(cardPath);
+            }
+
+            return false;
+        }
+
+        /// <summary>
+        /// Clear Stat
+        /// </summary>
+        /// <param name="file"></param>
+        /// <returns></returns>
+        private bool ClearStat(string file)
+        {
+            try
+            {
+                File.WriteAllText(file, "");
+                return true;
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex.Message);
+                return false;
+            }
         }
 
         #endregion Private

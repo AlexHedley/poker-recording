@@ -104,64 +104,64 @@ namespace Poker.API
             List<Mapping> rfidMapping = new ()
             {
                 // Clubs (k)
-                new Mapping() { CardName = "Ace of Clubs", CardHex = "04 13 16 3D B9 2A 81", CardDec = "04 19 22 61 185 42 129", ImageName = "ka" }, // Ace of Clubs
-                new Mapping() { CardName = "2 of Clubs", CardHex = "04 12 16 3D B9 2A 81", CardDec = "04 18 22 61 185 42 129", ImageName = "k2" }, // 2 of Clubs
-                new Mapping() { CardName = "3 of Clubs", CardHex = "04 11 16 3D B9 2A 81", CardDec = "04 17 22 61 185 42 129", ImageName = "k3" }, // 3 of Clubs
-                new Mapping() { CardName = "4 of Clubs", CardHex = "04 FF 15 3D B9 2A 81", CardDec = "04 255 21 61 185 42 129", ImageName = "k4" }, // 4 of Clubs
-                new Mapping() { CardName = "5 of Clubs", CardHex = "04 FA 15 3D B9 2A 81", CardDec = "04 250 21 61 185 42 129", ImageName = "k5" }, // 5 of Clubs
-                new Mapping() { CardName = "6 of Clubs", CardHex = "04 F9 15 3D B9 2A 81", CardDec = "04 249 21 61 185 42 129", ImageName = "k6" }, // 6 of Clubs
-                new Mapping() { CardName = "7 of Clubs", CardHex = "04 F8 15 3D B9 2A 81", CardDec = "04 248 21 61 185 42 129", ImageName = "k7" }, // 7 of Clubs
-                new Mapping() { CardName = "8 of Clubs", CardHex = "04 F7 15 3D B9 2A 81", CardDec = "04 247 21 61 185 42 129", ImageName = "k8" }, // 8 of Clubs
-                new Mapping() { CardName = "9 of Clubs", CardHex = "04 F2 15 3D B9 2A 81", CardDec = "04 242 21 61 185 42 129", ImageName = "k9" }, // 9 of Clubs
-                new Mapping() { CardName = "10 of Clubs", CardHex = "04 F1 15 3D B9 2A 81", CardDec = "04 241 21 61 185 42 129", ImageName = "k10" }, // 10 of Clubs
-                new Mapping() { CardName = "Jack of Clubs", CardHex = "04 EF 15 3D B9 2A 81", CardDec = "04 239 21 61 185 42 129", ImageName = "kj" }, // Jack of Clubs
-                new Mapping() { CardName = "Queen of Clubs", CardHex = "04 A6 8B 3E B9 2A 81", CardDec = "04 166 139 62 185 42 129", ImageName = "kq" }, // Queen of Clubs
-                new Mapping() { CardName = "King of Clubs", CardHex = "04 E9 15 3D B9 2A 81", CardDec = "04 233 21 61 185 42 129", ImageName = "kk" }, // King of Clubs
+                new Mapping() { CardName = "Ace of Clubs", CardHex = "0413163DB92A81", CardDec = "0419226118542129", ImageName = "ka" }, // Ace of Clubs
+                new Mapping() { CardName = "2 of Clubs", CardHex = "0412163DB92A81", CardDec = "0418226118542129", ImageName = "k2" }, // 2 of Clubs
+                new Mapping() { CardName = "3 of Clubs", CardHex = "0411163DB92A81", CardDec = "0417226118542129", ImageName = "k3" }, // 3 of Clubs
+                new Mapping() { CardName = "4 of Clubs", CardHex = "04FF153DB92A81", CardDec = "04255216118542129", ImageName = "k4" }, // 4 of Clubs
+                new Mapping() { CardName = "5 of Clubs", CardHex = "04FA153DB92A81", CardDec = "04250216118542129", ImageName = "k5" }, // 5 of Clubs
+                new Mapping() { CardName = "6 of Clubs", CardHex = "04F9153DB92A81", CardDec = "04249216118542129", ImageName = "k6" }, // 6 of Clubs
+                new Mapping() { CardName = "7 of Clubs", CardHex = "04F8153DB92A81", CardDec = "04248216118542129", ImageName = "k7" }, // 7 of Clubs
+                new Mapping() { CardName = "8 of Clubs", CardHex = "04F7153DB92A81", CardDec = "04247216118542129", ImageName = "k8" }, // 8 of Clubs
+                new Mapping() { CardName = "9 of Clubs", CardHex = "04F2153DB92A81", CardDec = "04242216118542129", ImageName = "k9" }, // 9 of Clubs
+                new Mapping() { CardName = "10 of Clubs", CardHex = "04F1153DB92A81", CardDec = "04241216118542129", ImageName = "k10" }, // 10 of Clubs
+                new Mapping() { CardName = "Jack of Clubs", CardHex = "04EF153DB92A81", CardDec = "04239216118542129", ImageName = "kj" }, // Jack of Clubs
+                new Mapping() { CardName = "Queen of Clubs", CardHex = "04A68B3EB92A81", CardDec = "041661396218542129", ImageName = "kq" }, // Queen of Clubs
+                new Mapping() { CardName = "King of Clubs", CardHex = "04E9153DB92A81", CardDec = "04233216118542129", ImageName = "kk" }, // King of Clubs
                 
                 // Diamonds (l)
-                new Mapping() { CardName = "Ace of Diamonds", CardHex = "04 E8 15 3D B9 2A 81", CardDec = "04 232 21 61 185 42 129", ImageName = "la" }, // Ace of Diamonds
-                new Mapping() { CardName = "2 of Diamonds", CardHex = "04 A5 8B 3E B9 2A 81", CardDec = "04 165 139 62 185 42 129", ImageName = "l2" }, // 2 of Diamonds
-                new Mapping() { CardName = "3 of Diamonds", CardHex = "04 E6 15 3D B9 2A 81", CardDec = "04 230 21 61 185 42 129", ImageName = "l3" }, // 3 of Diamonds
-                new Mapping() { CardName = "4 of Diamonds", CardHex = "04 E1 15 3D B9 2A 81", CardDec = "04 225 21 61 185 42 129", ImageName = "l4" }, // 4 of Diamonds
-                new Mapping() { CardName = "5 of Diamonds", CardHex = "04 DF 15 3D B9 2A 81", CardDec = "04 223 21 61 185 42 129", ImageName = "l5" }, // 5 of Diamonds
-                new Mapping() { CardName = "6 of Diamonds", CardHex = "04 DE 15 3D B9 2A 81", CardDec = "04 222 21 61 185 42 129", ImageName = "l6" }, // 6 of Diamonds
-                new Mapping() { CardName = "7 of Diamonds", CardHex = "04 DD 15 3D B9 2A 81", CardDec = "04 221 21 61 185 42 129", ImageName = "l7" }, // 7 of Diamonds
-                new Mapping() { CardName = "8 of Diamonds", CardHex = "04 D8 15 3D B9 2A 81", CardDec = "04 216 21 61 185 42 129", ImageName = "l8" }, // 8 of Diamonds
-                new Mapping() { CardName = "9 of Diamonds", CardHex = "04 D7 15 3D B9 2A 81", CardDec = "04 215 21 61 185 42 129", ImageName = "l9" }, // 9 of Diamonds
-                new Mapping() { CardName = "10 of Diamonds", CardHex = "04 D6 15 3D B9 2A 81", CardDec = "04 214 21 61 185 42 129", ImageName = "l10" }, // 10 of Diamonds
-                new Mapping() { CardName = "Jack of Diamonds", CardHex = "04 D5 15 3D B9 2A 81", CardDec = "04 213 21 61 185 42 129", ImageName = "lj" }, // Jack of Diamonds
-                new Mapping() { CardName = "Queen of Diamonds", CardHex = "04 CF 15 3D B9 2A 81", CardDec = "04 207 21 61 185 42 129", ImageName = "lq" }, // Queen of Diamonds
-                new Mapping() { CardName = "King of Diamonds", CardHex = "04 CE 15 3D B9 2A 81", CardDec = "04 206 21 61 185 42 129", ImageName = "lk" }, // King of Diamonds
+                new Mapping() { CardName = "Ace of Diamonds", CardHex = "04E8153DB92A81", CardDec = "04232216118542129", ImageName = "la" }, // Ace of Diamonds
+                new Mapping() { CardName = "2 of Diamonds", CardHex = "04A58B3EB92A81", CardDec = "041651396218542129", ImageName = "l2" }, // 2 of Diamonds
+                new Mapping() { CardName = "3 of Diamonds", CardHex = "04E6153DB92A81", CardDec = "04230216118542129", ImageName = "l3" }, // 3 of Diamonds
+                new Mapping() { CardName = "4 of Diamonds", CardHex = "04E1153DB92A81", CardDec = "04225216118542129", ImageName = "l4" }, // 4 of Diamonds
+                new Mapping() { CardName = "5 of Diamonds", CardHex = "04DF153DB92A81", CardDec = "04223216118542129", ImageName = "l5" }, // 5 of Diamonds
+                new Mapping() { CardName = "6 of Diamonds", CardHex = "04DE153DB92A81", CardDec = "04222216118542129", ImageName = "l6" }, // 6 of Diamonds
+                new Mapping() { CardName = "7 of Diamonds", CardHex = "04DD153DB92A81", CardDec = "04221216118542129", ImageName = "l7" }, // 7 of Diamonds
+                new Mapping() { CardName = "8 of Diamonds", CardHex = "04D8153DB92A81", CardDec = "04216216118542129", ImageName = "l8" }, // 8 of Diamonds
+                new Mapping() { CardName = "9 of Diamonds", CardHex = "04D7153DB92A81", CardDec = "04215216118542129", ImageName = "l9" }, // 9 of Diamonds
+                new Mapping() { CardName = "10 of Diamonds", CardHex = "04D6153DB92A81", CardDec = "04214216118542129", ImageName = "l10" }, // 10 of Diamonds
+                new Mapping() { CardName = "Jack of Diamonds", CardHex = "04D5153DB92A81", CardDec = "04213216118542129", ImageName = "lj" }, // Jack of Diamonds
+                new Mapping() { CardName = "Queen of Diamonds", CardHex = "04CF153DB92A81", CardDec = "04207216118542129", ImageName = "lq" }, // Queen of Diamonds
+                new Mapping() { CardName = "King of Diamonds", CardHex = "04CE153DB92A81", CardDec = "04206216118542129", ImageName = "lk" }, // King of Diamonds
 
                 // Spades (p)
-                new Mapping() { CardName = "Ace of Spades", CardHex = "04 CD 15 3D B9 2A 81", CardDec = "04 205 21 61 185 42 129", ImageName = "pa" }, // Ace of Spades
-                new Mapping() { CardName = "2 of Spades", CardHex = "04 CC 15 3D B9 2A 81", CardDec = "04 204 21 61 185 42 129", ImageName = "p2" }, // 2 of Spades
-                new Mapping() { CardName = "3 of Spades", CardHex = "04 C7 15 3D B9 2A 81", CardDec = "04 199 21 61 185 42 129", ImageName = "p3" }, // 3 of Spades
-                new Mapping() { CardName = "4 of Spades", CardHex = "04 C6 15 3D B9 2A 81", CardDec = "04 198 21 61 185 42 129", ImageName = "p4" }, // 4 of Spades
-                new Mapping() { CardName = "5 of Spades", CardHex = "04 C5 15 3D B9 2A 81", CardDec = "04 197 21 61 185 42 129", ImageName = "p5" }, // 5 of Spades
-                new Mapping() { CardName = "6 of Spades", CardHex = "04 C4 15 3D B9 2A 81", CardDec = "04 196 21 61 185 42 129", ImageName = "p6" }, // 6 of Spades
-                new Mapping() { CardName = "7 of Spades", CardHex = "04 BE 15 3D B9 2A 81", CardDec = "04 190 21 61 185 42 129", ImageName = "p7" }, // 7 of Spades
-                new Mapping() { CardName = "8 of Spades", CardHex = "04 BD 15 3D B9 2A 81", CardDec = "04 189 21 61 185 42 129", ImageName = "p8" }, // 8 of Spades
-                new Mapping() { CardName = "9 of Spades", CardHex = "04 BC 15 3D B9 2A 81", CardDec = "04 188 21 61 185 42 129", ImageName = "p9" }, // 9 of Spades
-                new Mapping() { CardName = "10 of Spades", CardHex = "04 BB 15 3D B9 2A 81", CardDec = "04 187 21 61 185 42 129", ImageName = "p10" }, // 10 of Spades
-                new Mapping() { CardName = "Jack of Spades", CardHex = "04 B6 15 3D B9 2A 81", CardDec = "04 182 21 61 185 42 129", ImageName = "pj" }, // Jack of Spades
-                new Mapping() { CardName = "Queen of Spades", CardHex = "04 B5 15 3D B9 2A 81", CardDec = "04 181 21 61 185 42 129", ImageName = "pq" }, // Queen of Spades
-                new Mapping() { CardName = "King of Spades", CardHex = "04 B4 15 3D B9 2A 81", CardDec = "04 180 21 61 185 42 129", ImageName = "pk" }, // King of Spades
+                new Mapping() { CardName = "Ace of Spades", CardHex = "04CD153DB92A81", CardDec = "04205216118542129", ImageName = "pa" }, // Ace of Spades
+                new Mapping() { CardName = "2 of Spades", CardHex = "04CC153DB92A81", CardDec = "04204216118542129", ImageName = "p2" }, // 2 of Spades
+                new Mapping() { CardName = "3 of Spades", CardHex = "04C7153DB92A81", CardDec = "04199216118542129", ImageName = "p3" }, // 3 of Spades
+                new Mapping() { CardName = "4 of Spades", CardHex = "04C6153DB92A81", CardDec = "04198216118542129", ImageName = "p4" }, // 4 of Spades
+                new Mapping() { CardName = "5 of Spades", CardHex = "04C5153DB92A81", CardDec = "04197216118542129", ImageName = "p5" }, // 5 of Spades
+                new Mapping() { CardName = "6 of Spades", CardHex = "04C4153DB92A81", CardDec = "04196216118542129", ImageName = "p6" }, // 6 of Spades
+                new Mapping() { CardName = "7 of Spades", CardHex = "04BE153DB92A81", CardDec = "04190216118542129", ImageName = "p7" }, // 7 of Spades
+                new Mapping() { CardName = "8 of Spades", CardHex = "04BD153DB92A81", CardDec = "04189216118542129", ImageName = "p8" }, // 8 of Spades
+                new Mapping() { CardName = "9 of Spades", CardHex = "04BC153DB92A81", CardDec = "04188216118542129", ImageName = "p9" }, // 9 of Spades
+                new Mapping() { CardName = "10 of Spades", CardHex = "04BB153DB92A81", CardDec = "04187216118542129", ImageName = "p10" }, // 10 of Spades
+                new Mapping() { CardName = "Jack of Spades", CardHex = "04B6153DB92A81", CardDec = "04182216118542129", ImageName = "pj" }, // Jack of Spades
+                new Mapping() { CardName = "Queen of Spades", CardHex = "04B5153DB92A81", CardDec = "04181216118542129", ImageName = "pq" }, // Queen of Spades
+                new Mapping() { CardName = "King of Spades", CardHex = "04B4153DB92A81", CardDec = "04180216118542129", ImageName = "pk" }, // King of Spades
                 
                 // Hearts (s)
-                new Mapping() { CardName = "Ace of Hearts", CardHex = "04 B3 15 3D B9 2A 81", CardDec = "04 179 21 61 185 42 129", ImageName = "sa" }, // Ace of Hearts
-                new Mapping() { CardName = "2 of Hearts", CardHex = "04 AD 15 3D B9 2A 81", CardDec = "04 173 21 61 185 42 129", ImageName = "s2" }, // 2 of Hearts
-                new Mapping() { CardName = "3 of Hearts", CardHex = "04 AC 15 3D B9 2A 81", CardDec = "04 172 21 61 185 42 129", ImageName = "s3" }, // 3 of Hearts
-                new Mapping() { CardName = "4 of Hearts", CardHex = "04 AB 15 3D B9 2A 81", CardDec = "04 171 21 61 185 42 129", ImageName = "s4" }, // 4 of Hearts
-                new Mapping() { CardName = "5 of Hearts", CardHex = "04 AA 15 3D B9 2A 81", CardDec = "04 170 21 61 185 42 129", ImageName = "s5" }, // 5 of Hearts
-                new Mapping() { CardName = "6 of Hearts", CardHex = "04 A4 15 3D B9 2A 81", CardDec = "04 164 21 61 185 42 129", ImageName = "s6" }, // 6 of Hearts
-                new Mapping() { CardName = "7 of Hearts", CardHex = "04 A3 15 3D B9 2A 81", CardDec = "04 163 21 61 185 42 129", ImageName = "s7" }, // 7 of Hearts
-                new Mapping() { CardName = "8 of Hearts", CardHex = "04 A2 15 3D B9 2A 81", CardDec = "04 162 21 61 185 42 129", ImageName = "s8" }, // 8 of Hearts
-                new Mapping() { CardName = "9 of Hearts", CardHex = "04 9C 15 3D B9 2A 81", CardDec = "04 156 21 61 185 42 129", ImageName = "s9" }, // 9 of Hearts
-                new Mapping() { CardName = "10 of Hearts", CardHex = "04 9A 15 3D B9 2A 81", CardDec = "04 154 21 61 185 42 129", ImageName = "s10" }, // 10 of Hearts
-                new Mapping() { CardName = "Jack of Hearts", CardHex = "04 99 15 3D B9 2A 81", CardDec = "04 153 21 61 185 42 129", ImageName = "sj" }, // Jack of Hearts
-                new Mapping() { CardName = "Queen of Hearts", CardHex = "04 48 9A 3A E9 4C 81", CardDec = "04 72 154 58 233 76 129", ImageName = "sq" }, // Queen of Hearts
-                new Mapping() { CardName = "King of Hearts", CardHex = "04 81 98 3A E9 4C 81", CardDec = "04 129 152 58 233 76 129", ImageName = "sk" } // King of Hearts
+                new Mapping() { CardName = "Ace of Hearts", CardHex = "04B3153DB92A81", CardDec = "04179216118542129", ImageName = "sa" }, // Ace of Hearts
+                new Mapping() { CardName = "2 of Hearts", CardHex = "04AD153DB92A81", CardDec = "04173216118542129", ImageName = "s2" }, // 2 of Hearts
+                new Mapping() { CardName = "3 of Hearts", CardHex = "04AC153DB92A81", CardDec = "04172216118542129", ImageName = "s3" }, // 3 of Hearts
+                new Mapping() { CardName = "4 of Hearts", CardHex = "04AB153DB92A81", CardDec = "04171216118542129", ImageName = "s4" }, // 4 of Hearts
+                new Mapping() { CardName = "5 of Hearts", CardHex = "04AA153DB92A81", CardDec = "04170216118542129", ImageName = "s5" }, // 5 of Hearts
+                new Mapping() { CardName = "6 of Hearts", CardHex = "04A4153DB92A81", CardDec = "04164216118542129", ImageName = "s6" }, // 6 of Hearts
+                new Mapping() { CardName = "7 of Hearts", CardHex = "04A3153DB92A81", CardDec = "04163216118542129", ImageName = "s7" }, // 7 of Hearts
+                new Mapping() { CardName = "8 of Hearts", CardHex = "04A2153DB92A81", CardDec = "04162216118542129", ImageName = "s8" }, // 8 of Hearts
+                new Mapping() { CardName = "9 of Hearts", CardHex = "049C153DB92A81", CardDec = "04156216118542129", ImageName = "s9" }, // 9 of Hearts
+                new Mapping() { CardName = "10 of Hearts", CardHex = "049A153DB92A81", CardDec = "04154216118542129", ImageName = "s10" }, // 10 of Hearts
+                new Mapping() { CardName = "Jack of Hearts", CardHex = "0499153DB92A81", CardDec = "04153216118542129", ImageName = "sj" }, // Jack of Hearts
+                new Mapping() { CardName = "Queen of Hearts", CardHex = "04489A3AE94C81", CardDec = "04721545823376129", ImageName = "sq" }, // Queen of Hearts
+                new Mapping() { CardName = "King of Hearts", CardHex = "0481983AE94C81", CardDec = "041291525823376129", ImageName = "sk" } // King of Hearts
             };
 
             return rfidMapping;

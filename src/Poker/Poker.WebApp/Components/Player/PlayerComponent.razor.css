@@ -1,0 +1,29 @@
+﻿body {
+}
+
+.player {
+    background-color: yellow;
+}
+
+.name {
+    background-color: darkred;
+    color: white;
+    border: 2px white solid;
+    border-radius: 10px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+}
+
+.camera {
+    background-color: blue;
+}
+
+.cards {
+    background-color: green;
+}
+
+.stats {
+    background-color: red;
+}
+
