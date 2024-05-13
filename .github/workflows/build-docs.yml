@@ -20,7 +20,7 @@ jobs:
     #   working-directory: src/RFIDReader/ESP8266
 
     - name: 🔨 Build
-      uses: mattnotmitt/doxygen-action@v1.9.5
+      uses: mattnotmitt/doxygen-action@v1.9.8
       with:
         working-directory: "src/RFIDReader/ESP8266"
 
