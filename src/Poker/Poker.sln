@@ -34,7 +34,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Poker.Server.WebApp", "Poke
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Poker.Server.WebApp.Tests", "Poker.Server.WebApp.Tests\Poker.Server.WebApp.Tests.csproj", "{09CC575D-8FC4-4513-829D-1C3DF9D36340}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PokerHandEvaluator.Web", "PokerHandEvaluator.Web\PokerHandEvaluator.Web.csproj", "{F10DA99A-B1C0-4D2A-B2B9-469D9D7ECC9C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PokerHandEvaluator.Web", "PokerHandEvaluator.Web\PokerHandEvaluator.Web.csproj", "{F10DA99A-B1C0-4D2A-B2B9-469D9D7ECC9C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
