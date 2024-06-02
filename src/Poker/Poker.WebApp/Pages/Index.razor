@@ -1,33 +1,28 @@
 ﻿@page "/"
-@using Poker.WebApp.Components.Player;
-@using Poker.WebApp.Components.Board;
 
 <PageTitle>Index</PageTitle>
 
-<h1>Poker ♣♦♥♠</h1>
-
-<img src="images/logo.png" alt="Logo" width="200" />
-
-<div class="row">
-    <div class="col-md-4">
-        <PlayerComponent></PlayerComponent>
-    </div>
-    <div class="col-md-4"></div>
-    <div class="col-md-4">
-        <PlayerComponent></PlayerComponent>
-    </div>
-</div>
 <div class="row">
     <div class="col">
-        <BoardComponent></BoardComponent>
+        <h1>Poker ♣♦♥♠</h1>
     </div>
 </div>
+
+<br />
+
 <div class="row">
-    <div class="col-md-4">
-        <PlayerComponent></PlayerComponent>
+    <div class="col">
+        <img src="images/logo.png" alt="Logo" width="200" />
     </div>
-    <div class="col-md-4"></div>
-    <div class="col-md-4">
-        <PlayerComponent></PlayerComponent>
+</div>
+
+<br />
+
+<div class="row">
+    <div class="col">
+        <ul>
+            <li><a href="/components">Components</a></li>
+            <li><a href="/hud">HUD</a></li>
+        </ul>
     </div>
 </div>
