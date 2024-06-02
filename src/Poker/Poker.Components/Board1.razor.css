@@ -21,8 +21,9 @@
 .table_1 {
     background-color: lightgray;
     border-top: 2px solid darkred;
-    height: 10px;
+    height: 15px;
     width: 100%;
+    border-radius: 2px;
 }
 
 .cards {
