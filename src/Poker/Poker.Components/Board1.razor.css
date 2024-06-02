@@ -18,6 +18,13 @@
     justify-content: center;
 }
 
+.table_1 {
+    background-color: lightgray;
+    border-top: 2px solid darkred;
+    height: 10px;
+    width: 100%;
+}
+
 .cards {
     display: flex;
     /*flex-wrap: nowrap;*/
