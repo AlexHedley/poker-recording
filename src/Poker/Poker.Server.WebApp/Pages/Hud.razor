@@ -1,4 +1,6 @@
 ﻿@page "/hud"
+@using Poker.Components
+
 <PageTitle>HUD</PageTitle>
 
 <h1>HUD</h1>
@@ -10,11 +12,13 @@
         </div>
     </div>
 
+    <br />
+
     <div class="row">
         <div class="col">
-            <img src="images/playingcards/10-clubs.png" alt="10 Clubs (♣♦♥♠)" />
-            <img src="images/cards/10-club.png" alt="10 Clubs (♣)" class="card" />
-            <div >
+            <img src="_content/Poker.Components/images/playingcards/10-clubs.png" alt="10 Clubs (♣♦♥♠)" />
+            <img src="_content/Poker.Components/images/cards/10-club.png" alt="10 Clubs (♣)" class="card" />
+            <div>
                 @* <card-t cid=Ah /> *@
                 <card-t cid=Qh class="card" />
                 @* <card-t rank=0 backtext=" "></card-t> *@
@@ -27,58 +31,52 @@
     <div class="row">
         <div class="col">
             <h3>1</h3>
-
-            <div class="board_1">
-                <div class="cards">
-                    <img src="images/cards/12-club.png" alt="Queen Clubs (♣)" class="card" />
-                    <img src="images/cards/9-club.png" alt="9 Clubs (♣)" class="card" />
-                    <img src="images/cards/13-diamond.png" alt="King Diamonds (♦)" class="card" />
-                    <img src="images/cards/4-heart.png" alt="4 Hearts (♥)" class="card" />
-                    <img src="images/cards/13-club.png" alt="King Clubs (♣)" class="card" />
-                </div>
-                <div class="break"></div> <!-- break -->
-                <div class="table_1"></div>
-            </div>
-
-            @* https://codepen.io/AlexHedley/pen/KKLWXpO *@
-            <div class="players_1">
-                <div class="container">
-                    <div class="Player-Picture">
-                        <img src="images/players/man1.svg" alt="Player 1" />
-                    </div>
-                    <div class="Flag">
-                        <flag-nl style="width: 30px;"></flag-nl>
-                    </div>
-                    <div class="Card-1">
-                        <img src="images/cards/12-spade.png" alt="Queen Spades (♠)" style="width: 150px;" />
-                    </div>
-                    <div class="Card-2">
-                        <img src="images/cards/11-spade.png" alt="Jack Spades (♠)" style="width: 150px;" />
-                    </div>
-                    <div class="Pot-Odds">
-                        100%
-                    </div>
-                    <div class="Name">
-                        Gareth
-                    </div>
-                    <div class="Move">
-                        Check
-                    </div>
-                    <div class="Unknown">
-                        SB
-                    </div>
-                    <div class="Chips">
-                        869k
-                    </div>
-                    <div class="Info">
-                        Bluff
-                    </div>
-                    <div class="Empty_2"></div>
-                </div>
-            </div>
-            
         </div>
     </div>
+
+    <div class="row">
+        <div class="col-8">
+
+            <Board1 BoardFlopOne="_content/Poker.Components/images/cards/12-club.png"
+                    BoardFlopTwo="_content/Poker.Components/images/cards/9-club.png"
+                    BoardFlopThree="_content/Poker.Components/images/cards/13-diamond.png"
+                    BoardTurn="_content/Poker.Components/images/cards/4-heart.png"
+                    BoardRiver="_content/Poker.Components/images/cards/13-club.png" />
+
+        </div>
+
+        <div class="col-4">
+
+            <img src="_content/Poker.Components/images/examples/Board_1.png" alt="Board (1)" />
+
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-8">
+
+            <Player1 Player="@Player" />
+
+        </div>
+
+        <div class="col-4">
+
+            <img src="_content/Poker.Components/images/examples/Players_1.png" alt="Players (1)" />
+
+        </div>
+
+    </div>
+
+    <div class="row">
+        <div class="col-8">
+        </div>
+
+        <div class="col-4">
+            <img src="_content/Poker.Components/images/examples/Pot_1.png" alt="Pot (1)" />
+        </div>
+    </div>
+
+    <hr />
 
     <div class="row">
         <div class="col">
@@ -86,11 +84,69 @@
         </div>
     </div>
 
-     <div class="row">
+    <div class="row">
+        <div class="col-8">
+        </div>
+
+        <div class="col-4">
+            <img src="_content/Poker.Components/images/examples/Board_2.png" alt="Board (2)" />
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-8">
+        </div>
+
+        <div class="col-4">
+            <img src="_content/Poker.Components/images/examples/Players_2.png" alt="Players (2)" />
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-8">
+        </div>
+
+        <div class="col-4">
+            <img src="_content/Poker.Components/images/examples/Pot_2.png" alt="Pot (2)" />
+        </div>
+    </div>
+
+    <hr />
+
+    <div class="row">
         <div class="col">
             <h3>3</h3>
         </div>
     </div>
+
+    <div class="row">
+        <div class="col-8">
+        </div>
+
+        <div class="col-4">
+            <img src="_content/Poker.Components/images/examples/Board_3.png" alt="Board (3)" />
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-8">
+        </div>
+
+        <div class="col-4">
+            <img src="_content/Poker.Components/images/examples/Players_3.png" alt="Players (3)" />
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-8">
+        </div>
+
+        <div class="col-4">
+            <img src="_content/Poker.Components/images/examples/Pot_3.png" alt="Pot (3)" />
+        </div>
+    </div>
+
+    <hr />
 
     <div class="row">
         <div class="col">
@@ -99,83 +155,107 @@
     </div>
 
     <div class="row">
+        <div class="col-8">
+        </div>
+
+        <div class="col-4">
+            <img src="_content/Poker.Components/images/examples/Board_4.png" alt="Board (4)" />
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-8">
+        </div>
+
+        <div class="col-4">
+            <img src="_content/Poker.Components/images/examples/Players_4.png" alt="Players (4)" />
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-8">
+            <p><em>No <strong>Pot</strong> to copy</em></p>
+        </div>
+
+        <div class="col-4">
+            @* <img src="_content/Poker.Components/images/examples/Pot_4.png" alt="Pot (4)" /> *@
+        </div>
+    </div>
+
+    <hr />
+
+    <div class="row">
         <div class="col">
             <h3>5</h3>
         </div>
     </div>
 
     <div class="row">
+        <div class="col-8">
+        </div>
+
+        <div class="col-4">
+            <img src="_content/Poker.Components/images/examples/Board_5.png" alt="Board (5)" />
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-8">
+        </div>
+
+        <div class="col-4">
+            <img src="_content/Poker.Components/images/examples/Players_5.png" alt="Players (5)" />
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-8">
+        </div>
+
+        <div class="col-4">
+            <img src="_content/Poker.Components/images/examples/Pot_5.png" alt="Pot (5)" />
+        </div>
+    </div>
+
+    <hr />
+
+    <div class="row">
         <div class="col">
             <h3>6</h3>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-8">
+            <p><em>No <strong>Board</strong> to copy</em></p>
+        </div>
+
+        <div class="col-4">
+            @* <img src="_content/Poker.Components/images/examples/Board_6.png" alt="Board (6)" /> *@
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-8">
+        </div>
+
+        <div class="col-4">
+            <img src="_content/Poker.Components/images/examples/Players_6.png" alt="Players (6)" />
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-8">
+        </div>
+
+        <div class="col-4">
+            <img src="_content/Poker.Components/images/examples/Pot_6.png" alt="Pot (6)" />
         </div>
     </div>
 
 </div>
 
 <hr />
-
-<div>
-    <div class="row">
-        <div class="col">
-            <h2>Examples</h2>
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="col">
-            <h3>1</h3>
-            <img src="images/examples/Board_1.png" alt="Board (1)" />
-            <img src="images/examples/Players_1.png" alt="Players (1)" />
-            <img src="images/examples/Pot_1.png" alt="Pot (1)" />
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="col">
-            <h3>2</h3>
-            <img src="images/examples/Board_2.png" alt="Board (2)" />
-            <img src="images/examples/Players_2.png" alt="Players (2)" />
-            <img src="images/examples/Pot_2.png" alt="Pot (2)" />
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="col">
-            <h3>3</h3>
-            <img src="images/examples/Board_3.png" alt="Board (3)" />
-            <img src="images/examples/Players_3.png" alt="Players (3)" />
-            <img src="images/examples/Pot_3.png" alt="Pot (3)" />
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="col">
-            <h3>4</h3>
-            <img src="images/examples/Board_4.png" alt="Board (4)" />
-            <img src="images/examples/Players_4.png" alt="Players (4)" />
-            @* <img src="images/examples/Pot_4.png" alt="Pot (4)" /> *@
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="col">
-            <h3>5</h3>
-            <img src="images/examples/Board_5.png" alt="Board (5)" />
-            <img src="images/examples/Players_5.png" alt="Players (5)" />
-            <img src="images/examples/Pot_5.png" alt="Pot (5)" />
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="col">
-            <h3>6</h3>
-            @* <img src="images/examples/Board_6.png" alt="Board (6)" /> *@
-            <img src="images/examples/Players_5.png" alt="Players (6)" />
-            <img src="images/examples/Pot_6.png" alt="Pot (6)" />
-        </div>
-    </div>
-</div>
-
 
 @code {
     // See Code Behind
