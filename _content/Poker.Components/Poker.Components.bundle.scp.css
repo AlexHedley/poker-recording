@@ -22,8 +22,9 @@
 .table_1[b-3g766cvjux] {
     background-color: lightgray;
     border-top: 2px solid darkred;
-    height: 10px;
+    height: 15px;
     width: 100%;
+    border-radius: 2px;
 }
 
 .cards[b-3g766cvjux] {
@@ -41,11 +42,21 @@
     height: 0;
 }
 /* _content/Poker.Components/Player1.razor.rz.scp.css */
+/* ----- ----- */
+/*  Player 1   */
+/* ----- ----- */
+
+.player_1[b-72g1rq78ig] {
+    width: 200px;
+}
+
 .container[b-72g1rq78ig] {
+    height: 100%;
+    margin: 0;
     display: grid;
     grid-template-columns: 1.1fr 1fr 1fr 0.9fr 2fr;
     grid-template-rows: 0.6fr 0.2fr 0.2fr;
-    gap: 0px 0px;
+    gap: 0px 1px;
     grid-auto-flow: row;
     grid-template-areas:
         "Player-Picture Card-1 Card-2 Pot-Odds Empty_2"
@@ -53,15 +64,35 @@
         "Flag Move Move Chips Info";
     /*align-items: center;*/
     justify-content: center;
+    width: fit-content;
+    /*margin: auto;*/
 }
+
+/* ----- */
+/* Grid  */
+/* ----- */
 
 .Player-Picture[b-72g1rq78ig] {
     grid-area: Player-Picture;
+    width: 50px;
+    align-content: center;
 }
+
+    .Player-Picture > img[b-72g1rq78ig] {
+        width: 100px;
+        /*margin: auto;*/
+        margin-left: -25px;
+    }
 
 .Flag[b-72g1rq78ig] {
     grid-area: Flag;
 }
+
+    .Flag > img[b-72g1rq78ig] {
+        /*margin: auto;*/
+        /*width: fit-content;*/
+        margin-left: 5px;
+    }
 
 .Card-1[b-72g1rq78ig] {
     grid-area: Card-1;
@@ -73,17 +104,26 @@
 
 .Pot-Odds[b-72g1rq78ig] {
     grid-area: Pot-Odds;
+    width: fit-content;
+    margin: auto;
+    background-color: #191c3b;
+    color: white;
+    font-weight: bold;
 }
 
 .Name[b-72g1rq78ig] {
     grid-area: Name;
-    text-align: center;
+    color: black;
+    background-color: #bcbcbc;
+    font-weight: bold;
     text-transform: uppercase;
 }
 
 .Move[b-72g1rq78ig] {
     grid-area: Move;
-    text-align: center;
+    background-color: #191c3b;
+    color: white;
+    font-weight: bold;
     text-transform: uppercase;
 }
 
@@ -91,10 +131,16 @@
     grid-area: Unknown;
     text-align: center;
     text-transform: uppercase;
+    background-color: #bcbcbc;
+    font-weight: bold;
 }
 
 .Chips[b-72g1rq78ig] {
     grid-area: Chips;
+    color: white;
+    font-weight: bold;
+    background-color: #464c5c;
+    padding: 1px;
 }
 
 .Info[b-72g1rq78ig] {
@@ -102,27 +148,34 @@
     text-align: center;
     text-transform: uppercase;
     color: red;
-    width: fit-content;
-    margin: auto;
+    /*width: fit-content;*/
+    /*margin: auto;*/
+    font-weight: bold;
+    background-color: #191c3b;
 }
 
 .Empty_2[b-72g1rq78ig] {
     grid-area: Empty_2;
 }
 
-.container[b-72g1rq78ig] {
-    height: 100%;
-    margin: 0;
+/* ----- */
+/* Other */
+/* ----- */
+
+.card[b-72g1rq78ig] {
+    width: 40px;
 }
+
+/* ----- ----- ----- ----- */
 
 /* For presentation only, no need to copy the code below */
 
 /*.container * {
     border: 1px solid red;
     position: relative;
-}
+}*/
 
-.container *:after {
+/*.container *:after {
     content: attr(class);
     position: absolute;
     top: 0;
@@ -133,3 +186,20 @@
     align-items: center;
     justify-content: center;
 }*/
+/* _content/Poker.Components/Pot1.razor.rz.scp.css */
+.pot_1[b-r2s2gsq13w] {
+    font-weight: bold;
+}
+
+.pot[b-r2s2gsq13w] {
+    text-align: right;
+    font-weight: bold;
+    /*font-feature-settings: "dgsp";*/
+}
+
+.pot_1 > span[b-r2s2gsq13w] {
+    background-image: linear-gradient(to right, darkgrey, grey);
+    width: 100px;
+    display: inline-block;
+    padding: 1px;
+}
