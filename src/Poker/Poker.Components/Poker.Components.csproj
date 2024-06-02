@@ -6,13 +6,16 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
-
-  <ItemGroup>
+  <!-- <ItemGroup>
     <SupportedPlatform Include="browser" />
-  </ItemGroup>
+  </ItemGroup> -->
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="7.0.20" />
   </ItemGroup>
+
+  <!--<ItemGroup>
+    <None Update="Components/*/*.razor.css" CssScope="inherit-scope" />
+  </ItemGroup>-->
 
 </Project>
