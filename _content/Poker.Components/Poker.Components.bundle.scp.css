@@ -1,0 +1,135 @@
+/* _content/Poker.Components/Board1.razor.rz.scp.css */
+/* ----- */
+/* Board */
+/* ----- */
+
+.card[b-3g766cvjux] {
+    width: 30px;
+}
+
+.flag_svg[b-3g766cvjux] {
+    width: 30px;
+}
+
+.board_1[b-3g766cvjux] {
+    display: flex;
+    flex-wrap: wrap;
+    width: 200px;
+    align-items: center;
+    justify-content: center;
+}
+
+.table_1[b-3g766cvjux] {
+    background-color: lightgray;
+    border-top: 2px solid darkred;
+    height: 10px;
+    width: 100%;
+}
+
+.cards[b-3g766cvjux] {
+    display: flex;
+    /*flex-wrap: nowrap;*/
+    /*align-items: center;*/
+    /*align-content: center;*/
+    /*justify-content: center;*/
+    /*text-align: center;*/
+}
+
+/* https://tobiasahlin.com/blog/flexbox-break-to-new-row/ */
+.break[b-3g766cvjux] {
+    flex-basis: 100%;
+    height: 0;
+}
+/* _content/Poker.Components/Player1.razor.rz.scp.css */
+.container[b-72g1rq78ig] {
+    display: grid;
+    grid-template-columns: 1.1fr 1fr 1fr 0.9fr 2fr;
+    grid-template-rows: 0.6fr 0.2fr 0.2fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "Player-Picture Card-1 Card-2 Pot-Odds Empty_2"
+        "Player-Picture Name Name Unknown Info"
+        "Flag Move Move Chips Info";
+    /*align-items: center;*/
+    justify-content: center;
+}
+
+.Player-Picture[b-72g1rq78ig] {
+    grid-area: Player-Picture;
+}
+
+.Flag[b-72g1rq78ig] {
+    grid-area: Flag;
+}
+
+.Card-1[b-72g1rq78ig] {
+    grid-area: Card-1;
+}
+
+.Card-2[b-72g1rq78ig] {
+    grid-area: Card-2;
+}
+
+.Pot-Odds[b-72g1rq78ig] {
+    grid-area: Pot-Odds;
+}
+
+.Name[b-72g1rq78ig] {
+    grid-area: Name;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.Move[b-72g1rq78ig] {
+    grid-area: Move;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.Unknown[b-72g1rq78ig] {
+    grid-area: Unknown;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.Chips[b-72g1rq78ig] {
+    grid-area: Chips;
+}
+
+.Info[b-72g1rq78ig] {
+    grid-area: Info;
+    text-align: center;
+    text-transform: uppercase;
+    color: red;
+    width: fit-content;
+    margin: auto;
+}
+
+.Empty_2[b-72g1rq78ig] {
+    grid-area: Empty_2;
+}
+
+.container[b-72g1rq78ig] {
+    height: 100%;
+    margin: 0;
+}
+
+/* For presentation only, no need to copy the code below */
+
+/*.container * {
+    border: 1px solid red;
+    position: relative;
+}
+
+.container *:after {
+    content: attr(class);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}*/
