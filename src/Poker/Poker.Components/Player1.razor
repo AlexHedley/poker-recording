@@ -1,0 +1,37 @@
+﻿@* https://codepen.io/AlexHedley/pen/KKLWXpO *@
+<div class="players_1">
+    <div class="container">
+        <div class="Player-Picture">
+            <img src="@Player.Picture" alt="Player Picture" style="width: 100px;" />
+        </div>
+        <div class="Flag">
+            @* <flag-nl style="width: 30px;"></flag-nl> *@
+            <img src="@Player.Flag" alt="Flag" />
+        </div>
+        <div class="Card-1">
+            <img src="@Player.Card1" alt="Card 1" style="width: 150px;" />
+        </div>
+        <div class="Card-2">
+            <img src="@Player.Card2" alt="Card 2" style="width: 150px;" />
+        </div>
+        <div class="Pot-Odds">
+            @Player.PotOdds
+        </div>
+        <div class="Name">
+            @Player.Name
+        </div>
+        <div class="Move">
+            @Player.Move
+        </div>
+        <div class="Unknown">
+            @Player.Unknown
+        </div>
+        <div class="Chips">
+            @Player.Chips
+        </div>
+        <div class="Info">
+            @Player.Info
+        </div>
+        <div class="Empty_2"></div>
+    </div>
+</div>
