@@ -16,8 +16,10 @@
 
     <div class="row">
         <div class="col">
-            <img src="_content/Poker.Components/images/playingcards/10-clubs.png" alt="10 Clubs (♣♦♥♠)" />
-            <img src="_content/Poker.Components/images/cards/10-club.png" alt="10 Clubs (♣)" class="card" />
+            <div>
+                <img src="_content/Poker.Components/images/playingcards/k10.png" alt="10 Clubs (♣♦♥♠)" class="card" />
+                <img src="_content/Poker.Components/images/cards/10-club.png" alt="10 Clubs (♣)" class="card" />
+            </div>
             <div >
                 @* <card-t cid=Ah /> *@
                 <card-t cid=Qh class="card" />
@@ -53,10 +55,14 @@
         </div>
     </div>
 
+    <br />
+
     <div class="row">
         <div class="col-8">
 
-            <Player1 Player="@Player" />
+            <Player1 Player="@Player1" />
+            <br />
+            <Player1 Player="@Player2" />
 
         </div>
 
@@ -68,8 +74,13 @@
 
     </div>
 
+    <br />
+
     <div class="row">
         <div class="col-8">
+
+            <Pot1 Pot="292000" />
+
         </div>
 
         <div class="col-4">
