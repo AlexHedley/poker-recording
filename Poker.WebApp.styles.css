@@ -95,6 +95,7 @@ body[b-jwdaywoqf8] {
     text-align: center;
     font-weight: bold;
 }
+/* /Pages/Components.razor.rz.scp.css */
 /* /Pages/Hud.razor.rz.scp.css */
 /* ----- */
 /*  HUD  */
@@ -124,6 +125,14 @@ img[is*="queen"] {
 }*/
 /* /Pages/Index.razor.rz.scp.css */
 body[b-agzntvclyi] {
+}
+/* /Pages/PlayingCards.razor.rz.scp.css */
+/* ----- ----- ----- */
+/*   Playing Cards   */
+/* ----- ----- -----*/
+
+.card[b-ggzvyej0t0] {
+    width: 50px;
 }
 /* /Shared/MainLayout.razor.rz.scp.css */
 .page[b-0l5qxp3lcy] {
