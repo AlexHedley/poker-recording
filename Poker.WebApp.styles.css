@@ -134,6 +134,19 @@ body[b-agzntvclyi] {
 .card[b-ggzvyej0t0] {
     width: 50px;
 }
+/* /Pages/Screen.razor.rz.scp.css */
+#poker-table[b-80y9rheyca] {
+    margin: 20px;
+    padding: 20px;
+    background-color: #505620;
+}
+
+.brand[b-80y9rheyca] {
+    font-family: 'Rye', Helvetica, Arial, sans-serif;
+    font-size: 70px;
+    color: yellow;
+    text-align: center;
+}
 /* /Shared/MainLayout.razor.rz.scp.css */
 .page[b-0l5qxp3lcy] {
     position: relative;

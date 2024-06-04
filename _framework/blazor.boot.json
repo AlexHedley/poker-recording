@@ -1,7 +1,7 @@
 {
   "entryAssembly": "Poker.WebApp",
   "resources": {
-    "hash": "sha256-syQcBIv3t/Zn1WmciXRbxSQ2ELUpnjt1nLfnXzUT5ZE=",
+    "hash": "sha256-VPFDtTkY5QjICMFAdFigOfkEo5qUKKXRWDJm4ezpCNY=",
     "runtime": {
       "dotnet.7.0.19.bv2k1sd33u.js": "sha256-J9IVsSLjfEIyn/0XKSDWXHMve5eK11v9Aj06G7zPUYo=",
       "dotnet.timezones.blat": "sha256-kK6U8Vo/Xb8zgDH6JtdgAGSA6NUASHhvZoB+hINV0ms=",
@@ -25,8 +25,8 @@
       "Microsoft.Extensions.Primitives.dll": "sha256-eXvGx2jcjpTPEJoAHBsW/VuMPbNyyU+AsuhPmkzSSRY=",
       "Microsoft.JSInterop.dll": "sha256-yW0GYHVn35X8usmcd//P1gil42NtL243awJrrz8hQ3c=",
       "Microsoft.JSInterop.WebAssembly.dll": "sha256-rCEiCTvZ4q9Hh8faiYWMd8w8UxYteM1bNxGJ376zsmU=",
-      "Poker.Components.dll": "sha256-Q3ew9lnbxeYUDbds0mSGtIH62tOyY2FfIrPmWhqOgFo=",
-      "Poker.WebApp.dll": "sha256-4oyJDaXt8i2FSWHfIlaOwy7G5NYNcpEqpdty6NlKqfs=",
+      "Poker.Components.dll": "sha256-RwS452I1M3k46vSioKn6wYqDhIpxE9arL/jVeYjcHsw=",
+      "Poker.WebApp.dll": "sha256-QLZAY4teBbEmmDvgpPoEgvAEYkTdD7sqS6ZjmaXTkA8=",
       "System.Collections.Concurrent.dll": "sha256-eBx6n9N8468ATXpVFH5QDGfKO3RtCc6UqpMcKH0Z2hU=",
       "System.Collections.dll": "sha256-paQc9KBm/V2xDauL4m2x9vpa0Y1bAPy+dUY5nhd6ZRM=",
       "System.ComponentModel.dll": "sha256-yMmUsvXFdwmnYxJdw1RmF+gFNer9bn6wBtO8uQX0Ayc=",
