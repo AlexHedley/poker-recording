@@ -1,6 +1,7 @@
 using Poker.Components.Models;
 
 namespace Poker.WebApp.Pages;
+
 public partial class Hud
 {
     public Player? Player1;
