@@ -4,7 +4,7 @@
 
 ![OBS Poker Scene](Poker-Scene.png)
 
-- [Poker](Poker.json)
+- [Poker.json](Poker.json)
 
 Before adding this scene to your OBS you will need to either create the same path or update this is all the places.
 

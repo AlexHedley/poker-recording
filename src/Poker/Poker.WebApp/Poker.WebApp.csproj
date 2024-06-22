@@ -14,7 +14,6 @@
   <ItemGroup>
     <Folder Include="wwwroot\images\" />
     <Folder Include="wwwroot\images\playingcards\" />
-    <Folder Include="wwwroot\js\" />
   </ItemGroup>
   
   <ItemGroup>
@@ -70,6 +69,10 @@
     <Content Include="..\..\..\resources\PlayingCards\9-diamond.png" Link="wwwroot\images\playingcards\9-diamond.png"><CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory></Content>
     <Content Include="..\..\..\resources\PlayingCards\9-heart.png" Link="wwwroot\images\playingcards\9-heart.png"><CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory></Content>
     <Content Include="..\..\..\resources\PlayingCards\9-spade.png" Link="wwwroot\images\playingcards\9-spade.png"><CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory></Content>
+  </ItemGroup>
+  
+  <ItemGroup>
+    <ProjectReference Include="..\Poker.Components\Poker.Components.csproj" />
   </ItemGroup>
 
 </Project>

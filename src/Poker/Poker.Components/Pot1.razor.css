@@ -1,0 +1,16 @@
+.pot_1 {
+    font-weight: bold;
+}
+
+.pot {
+    text-align: right;
+    font-weight: bold;
+    /*font-feature-settings: "dgsp";*/
+}
+
+.pot_1 > span {
+    background-image: linear-gradient(to right, darkgrey, grey);
+    width: 100px;
+    display: inline-block;
+    padding: 1px;
+}

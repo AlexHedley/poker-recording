@@ -1,6 +1,10 @@
 @import url('open-iconic/font/css/open-iconic-bootstrap.min.css');
 
 html, body {
+    /*font-family: 'Rye', Helvetica, Arial, sans-serif;*/
+}
+
+h1, h2, h3 {
     font-family: 'Rye', Helvetica, Arial, sans-serif;
 }
 

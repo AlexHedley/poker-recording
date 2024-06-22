@@ -1,6 +1,15 @@
 # macOS
 .DS_Store
 
+## Links
+OBS.lnk
+src/Poker/Poker.API/Controllers/POC.cs
+src/Poker/docs/CoverageReport.zip
+resources/fonts/
+
 # RFIDReader
 # doxygen output
 src/RFIDReader/ESP8266/html/
+
+# WIP
+src/Poker/docs/images/examples/WIP
