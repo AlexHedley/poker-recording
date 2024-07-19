@@ -1,0 +1,59 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 0.5fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "F1 F2 F3 T R"
+        "Flop Flop Flop Turn River";
+    width: 100px;
+    color: red;
+}
+
+.F1 {
+    grid-area: F1;
+    text-align: center;
+}
+
+.F2 {
+    grid-area: F2;
+    text-align: center;
+}
+
+.F3 {
+    grid-area: F3;
+    text-align: center;
+}
+
+.Flop {
+    grid-area: Flop;
+}
+
+.T {
+    grid-area: T;
+    text-align: center;
+}
+
+.R {
+    grid-area: R;
+    text-align: center;
+}
+
+.Turn {
+    grid-area: Turn;
+}
+
+.River {
+    grid-area: River;
+}
+
+.info {
+    color: white;
+    font-weight: bold;
+    background-color: red;
+    border-radius: 2px;
+    border: 1px solid white;
+    text-align: center;
+    text-transform: uppercase;
+}
