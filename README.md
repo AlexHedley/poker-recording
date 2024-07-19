@@ -11,7 +11,7 @@
 -   https://alexhedley.github.io/poker-recording/
 -   https://alexhedley.github.io/poker-recording/rfidreader/
 
-[![Video](src\Poker\docs\images\video.png "Video")](https://youtu.be/wJCgOoJmJX0)
+[![Video](src/Poker/docs/images/video.png "Video")](https://youtu.be/wJCgOoJmJX0)
 
 ## src
 
@@ -34,6 +34,17 @@ Output using [dotnet-tests-report](https://github.com/marketplace/actions/dotnet
 -   Poker.WebApp.Tests
 -   PokerHandEvaluator.Tests
 
+## Resources
+
+-   [Resources](resources/README.md)
+
+## Docs
+
+-   [Docs](docs/README.md)
+    -   [CameraWebServer](docs/CAMERAWEBSERVER.md)
+    -   [RFID Reader](docs/RFID.md)
+    -   [Poker](docs/POKER.md)
+
 ## Blog Posts
 
 -   [Poker - Recording Games](https://alexhedley.com/blog/posts/recording-poker-games)
@@ -51,14 +62,3 @@ Output using [dotnet-tests-report](https://github.com/marketplace/actions/dotnet
 A website to store all the game information.
 
 -   [GitHub](https://github.com/AlexHedley/poker) WIP <!-- ([Site](https://alexhedley.com/poker)) -->
-
-## Resources
-
--   [Resources](resources/README.md)
-
-## Docs
-
--   [Docs](docs/README.md)
-    -   [CameraWebServer](docs/CAMERAWEBSERVER.md)
-    -   [RFID Reader](docs/RFID.md)
-    -   [Poker](docs/POKER.md)
