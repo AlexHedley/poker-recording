@@ -13,6 +13,6 @@ updates:
       
   # Maintain dependencies for nuget
   - package-ecosystem: "nuget"
-    directory: "/src/poker"
+    directory: "/src/Poker"
     schedule:
       interval: "weekly"

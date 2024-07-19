@@ -2,7 +2,7 @@ name: Build / Test (with Reports)
 
 # Run workflow on every push to the master branch
 on:
-  workflow_dispatch:
+    workflow_dispatch:
 #   push:
 #     branches: [ main, dev ]
 #     paths: src/**
@@ -19,81 +19,81 @@ on:
 #   #id-token: write
 
 jobs:
-  build-test:
-    # use ubuntu-latest image to run steps on
-    runs-on: ubuntu-latest
-    
-#     defaults:
-#       run:
-#         working-directory: src/Poker
-    
-    steps:
-    # uses GitHub's checkout action to checkout code form the master branch
-    - name: 🛎️ Checkout
-      uses: actions/checkout@v4
-    
-    - name: ⚙ Setup .NET 7.0
-      uses: actions/setup-dotnet@v4
-      with:
-        dotnet-version: '7.0.x'
-        # include-prerelease: true
-    
-    - name: ⬇️ Restore dependencies
-      run: dotnet restore
-      working-directory: src/Poker
-      
-    - name: 🔨 Build
-      run: dotnet build --no-restore
-      working-directory: src/Poker
-    
-    # Run Tests
-    - name: 🧪 Unit Testing
-      # run: dotnet test BlazorInteractive.Tests/BlazorInteractive.Tests.csproj --collect:"XPlat Code Coverage"
-      # run: dotnet test BlazorInteractive.Compilation.Tests/BlazorInteractive.Compilation.Tests.csproj --collect:"XPlat Code Coverage"
-      run: dotnet test --collect:"XPlat Code Coverage"
-      working-directory: src/Poker
-      
-    - name: ⬆ Publish Test Results
-      uses: EnricoMi/publish-unit-test-result-action@v2
-      if: always()
-      with:
-        xunit_files: 'src/Poker/**/TestResults/**/coverage.cobertura.xml'
-    
-    # ReportGenerator -reports:"src/**/TestResults/**/coverage.cobertura.xml" -targetdir:coveragereport
-    - name: 📃 Report Generator
-      uses: danielpalme/ReportGenerator-GitHub-Action@5.3.4
-      with:
-        reports: 'src/Poker/**/TestResults/**/coverage.cobertura.xml' # REQUIRED # The coverage reports that should be parsed (separated by semicolon). Globbing is supported.
-        targetdir: 'coveragereport' # REQUIRED # The directory where the generated report should be saved.
-        reporttypes: 'HtmlInline;Cobertura' # The output formats and scope (separated by semicolon) Values: Badges, Clover, Cobertura, CsvSummary, Html, Html_Dark, Html_Light, HtmlChart, HtmlInline, HtmlInline_AzurePipelines, HtmlInline_AzurePipelines_Dark, HtmlInline_AzurePipelines_Light, HtmlSummary, JsonSummary, Latex, LatexSummary, lcov, MarkdownSummary, MHtml, PngChart, SonarQube, TeamCitySummary, TextSummary, Xml, XmlSummary
-        # sourcedirs: '' # Optional directories which contain the corresponding source code (separated by semicolon). The source directories are used if coverage report contains classes without path information.
-        # historydir: '' # Optional directory for storing persistent coverage information. Can be used in future reports to show coverage evolution.
-        # plugins: '' # Optional plugin files for custom reports or custom history storage (separated by semicolon).
-        assemblyfilters: '+Poker.API*;-XUnit.*;-Bunit.*;-AltCover.*;-AngleSharpWrappers' # Optional list of assemblies that should be included or excluded in the report. Exclusion filters take precedence over inclusion filters. Wildcards are allowed.
-        classfilters: '+*;-Poker.API.Tests' # Optional list of classes that should be included or excluded in the report. Exclusion filters take precedence over inclusion filters. Wildcards are allowed.
-        filefilters: '+*' # Optional list of files that should be included or excluded in the report. Exclusion filters take precedence over inclusion filters. Wildcards are allowed.
-        verbosity: 'Info' # The verbosity level of the log messages. Values: Verbose, Info, Warning, Error, Off
-        # title: '' # Optional title.
-        tag: '${{ github.run_number }}_${{ github.run_id }}' # Optional tag or build version.
-        # license: '' # Optional license for PRO version. Get your license here: https://reportgenerator.io/pro
-        # customSettings: '' # Optional custom settings (separated by semicolon). See: https://github.com/danielpalme/ReportGenerator/wiki/Settings.
-        toolpath: 'reportgeneratortool' # Default directory for installing the dotnet tool.
-    
-    - name: ⬆ Upload coverage report artifact
-      uses: actions/upload-artifact@v4.3.3
-      with:
-        name: CoverageReport # Artifact name        
-        path: coveragereport # Directory containing files to upload
-    
-    # https://github.com/zyborg/dotnet-tests-report
-    # https://github.com/marketplace/actions/dotnet-tests-report
-    - name: 🧪📃 Unit Tests - Poker API
-      uses: zyborg/dotnet-tests-report@v1
-      with:
-        project_path: src/Poker/Poker.API.Tests
-        report_name: Poker API Tests
-        report_title: Poker API Tests
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        gist_name: poker_api_tests.md
-        gist_badge_label: 'Poker API: %Counters_passed%/%Counters_total%'
-        gist_token: ${{ secrets.GIST_TOKEN }}
+    build-test:
+        # use ubuntu-latest image to run steps on
+        runs-on: ubuntu-latest
+
+        #     defaults:
+        #       run:
+        #         working-directory: src/Poker
+
+        steps:
+            # uses GitHub's checkout action to checkout code form the master branch
+            - name: 🛎️ Checkout
+              uses: actions/checkout@v4
+
+            - name: ⚙ Setup .NET 8.0
+              uses: actions/setup-dotnet@v4
+              with:
+                  dotnet-version: "8.0.x"
+                  # include-prerelease: true
+
+            - name: ⬇️ Restore dependencies
+              run: dotnet restore
+              working-directory: src/Poker
+
+            - name: 🔨 Build
+              run: dotnet build --no-restore
+              working-directory: src/Poker
+
+            # Run Tests
+            - name: 🧪 Unit Testing
+              # run: dotnet test BlazorInteractive.Tests/BlazorInteractive.Tests.csproj --collect:"XPlat Code Coverage"
+              # run: dotnet test BlazorInteractive.Compilation.Tests/BlazorInteractive.Compilation.Tests.csproj --collect:"XPlat Code Coverage"
+              run: dotnet test --collect:"XPlat Code Coverage"
+              working-directory: src/Poker
+
+            - name: ⬆ Publish Test Results
+              uses: EnricoMi/publish-unit-test-result-action@v2
+              if: always()
+              with:
+                  xunit_files: "src/Poker/**/TestResults/**/coverage.cobertura.xml"
+
+            # ReportGenerator -reports:"src/**/TestResults/**/coverage.cobertura.xml" -targetdir:coveragereport
+            - name: 📃 Report Generator
+              uses: danielpalme/ReportGenerator-GitHub-Action@5.3.8
+              with:
+                  reports: "src/Poker/**/TestResults/**/coverage.cobertura.xml" # REQUIRED # The coverage reports that should be parsed (separated by semicolon). Globbing is supported.
+                  targetdir: "coveragereport" # REQUIRED # The directory where the generated report should be saved.
+                  reporttypes: "HtmlInline;Cobertura" # The output formats and scope (separated by semicolon) Values: Badges, Clover, Cobertura, CsvSummary, Html, Html_Dark, Html_Light, HtmlChart, HtmlInline, HtmlInline_AzurePipelines, HtmlInline_AzurePipelines_Dark, HtmlInline_AzurePipelines_Light, HtmlSummary, JsonSummary, Latex, LatexSummary, lcov, MarkdownSummary, MHtml, PngChart, SonarQube, TeamCitySummary, TextSummary, Xml, XmlSummary
+                  # sourcedirs: '' # Optional directories which contain the corresponding source code (separated by semicolon). The source directories are used if coverage report contains classes without path information.
+                  # historydir: '' # Optional directory for storing persistent coverage information. Can be used in future reports to show coverage evolution.
+                  # plugins: '' # Optional plugin files for custom reports or custom history storage (separated by semicolon).
+                  assemblyfilters: "+Poker.API*;-XUnit.*;-Bunit.*;-AltCover.*;-AngleSharpWrappers" # Optional list of assemblies that should be included or excluded in the report. Exclusion filters take precedence over inclusion filters. Wildcards are allowed.
+                  classfilters: "+*;-Poker.API.Tests" # Optional list of classes that should be included or excluded in the report. Exclusion filters take precedence over inclusion filters. Wildcards are allowed.
+                  filefilters: "+*" # Optional list of files that should be included or excluded in the report. Exclusion filters take precedence over inclusion filters. Wildcards are allowed.
+                  verbosity: "Info" # The verbosity level of the log messages. Values: Verbose, Info, Warning, Error, Off
+                  # title: '' # Optional title.
+                  tag: "${{ github.run_number }}_${{ github.run_id }}" # Optional tag or build version.
+                  # license: '' # Optional license for PRO version. Get your license here: https://reportgenerator.io/pro
+                  # customSettings: '' # Optional custom settings (separated by semicolon). See: https://github.com/danielpalme/ReportGenerator/wiki/Settings.
+                  toolpath: "reportgeneratortool" # Default directory for installing the dotnet tool.
+
+            - name: ⬆ Upload coverage report artifact
+              uses: actions/upload-artifact@v4.3.4
+              with:
+                  name: CoverageReport # Artifact name
+                  path: coveragereport # Directory containing files to upload
+
+            # https://github.com/zyborg/dotnet-tests-report
+            # https://github.com/marketplace/actions/dotnet-tests-report
+            - name: 🧪📃 Unit Tests - Poker API
+              uses: zyborg/dotnet-tests-report@v1
+              with:
+                  project_path: src/Poker/Poker.API.Tests
+                  report_name: Poker API Tests
+                  report_title: Poker API Tests
+                  github_token: ${{ secrets.GITHUB_TOKEN }}
+                  gist_name: poker_api_tests.md
+                  gist_badge_label: "Poker API: %Counters_passed%/%Counters_total%"
+                  gist_token: ${{ secrets.GIST_TOKEN }}

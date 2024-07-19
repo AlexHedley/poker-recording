@@ -1,74 +1,178 @@
-﻿<Project Sdk="Microsoft.NET.Sdk.BlazorWebAssembly">
-
+<Project Sdk="Microsoft.NET.Sdk.BlazorWebAssembly">
+  
   <PropertyGroup>
-    <TargetFramework>net7.0</TargetFramework>
+    <TargetFramework>net8.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
-
-  <ItemGroup>
-    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="7.0.10" />
-    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="7.0.10" PrivateAssets="all" />
-  </ItemGroup>
-
+  
   <ItemGroup>
     <Folder Include="wwwroot\images\" />
     <Folder Include="wwwroot\images\playingcards\" />
   </ItemGroup>
   
   <ItemGroup>
-    <Content Include="..\..\..\resources\PlayingCards\10-club.png" Link="wwwroot\images\playingcards\10-club.png"><CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory></Content>
-    <Content Include="..\..\..\resources\PlayingCards\10-diamond.png" Link="wwwroot\images\playingcards\10-diamond.png"><CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory></Content>
-    <Content Include="..\..\..\resources\PlayingCards\10-heart.png" Link="wwwroot\images\playingcards\10-heart.png"><CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory></Content>
-    <Content Include="..\..\..\resources\PlayingCards\10-spade.png" Link="wwwroot\images\playingcards\10-spade.png"><CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory></Content>
-    <Content Include="..\..\..\resources\PlayingCards\11-club.png" Link="wwwroot\images\playingcards\11-club.png"><CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory></Content>
-    <Content Include="..\..\..\resources\PlayingCards\11-diamond.png" Link="wwwroot\images\playingcards\11-diamond.png"><CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory></Content>
-    <Content Include="..\..\..\resources\PlayingCards\11-heart.png" Link="wwwroot\images\playingcards\11-heart.png"><CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory></Content>
-    <Content Include="..\..\..\resources\PlayingCards\11-spade.png" Link="wwwroot\images\playingcards\11-spade.png"><CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory></Content>
-    <Content Include="..\..\..\resources\PlayingCards\12-club.png" Link="wwwroot\images\playingcards\12-club.png"><CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory></Content>
-    <Content Include="..\..\..\resources\PlayingCards\12-diamond.png" Link="wwwroot\images\playingcards\12-diamond.png"><CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory></Content>
-    <Content Include="..\..\..\resources\PlayingCards\12-heart.png" Link="wwwroot\images\playingcards\12-heart.png"><CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory></Content>
-    <Content Include="..\..\..\resources\PlayingCards\12-spade.png" Link="wwwroot\images\playingcards\12-spade.png"><CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory></Content>
-    <Content Include="..\..\..\resources\PlayingCards\13-club.png" Link="wwwroot\images\playingcards\13-club.png"><CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory></Content>
-    <Content Include="..\..\..\resources\PlayingCards\13-diamond.png" Link="wwwroot\images\playingcards\13-diamond.png"><CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory></Content>
-    <Content Include="..\..\..\resources\PlayingCards\13-heart.png" Link="wwwroot\images\playingcards\13-heart.png"><CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory></Content>
-    <Content Include="..\..\..\resources\PlayingCards\13-spade.png" Link="wwwroot\images\playingcards\13-spade.png"><CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory></Content>
-    <Content Include="..\..\..\resources\PlayingCards\14-club.png" Link="wwwroot\images\playingcards\14-club.png"><CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory></Content>
-    <Content Include="..\..\..\resources\PlayingCards\14-diamond.png" Link="wwwroot\images\playingcards\14-diamond.png"><CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory></Content>
-    <Content Include="..\..\..\resources\PlayingCards\14-heart.png" Link="wwwroot\images\playingcards\14-heart.png"><CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory></Content>
-    <Content Include="..\..\..\resources\PlayingCards\14-spade.png" Link="wwwroot\images\playingcards\14-spade.png"><CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory></Content>
-    <Content Include="..\..\..\resources\PlayingCards\2-club.png" Link="wwwroot\images\playingcards\2-club.png"><CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory></Content>
-    <Content Include="..\..\..\resources\PlayingCards\2-diamond.png" Link="wwwroot\images\playingcards\2-diamond.png"><CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory></Content>
-    <Content Include="..\..\..\resources\PlayingCards\2-heart.png" Link="wwwroot\images\playingcards\2-heart.png"><CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory></Content>
-    <Content Include="..\..\..\resources\PlayingCards\2-spade.png" Link="wwwroot\images\playingcards\2-spade.png"><CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory></Content>
-    <Content Include="..\..\..\resources\PlayingCards\3-club.png" Link="wwwroot\images\playingcards\3-club.png"><CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory></Content>
-    <Content Include="..\..\..\resources\PlayingCards\3-diamond.png" Link="wwwroot\images\playingcards\3-diamond.png"><CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory></Content>
-    <Content Include="..\..\..\resources\PlayingCards\3-heart.png" Link="wwwroot\images\playingcards\3-heart.png"><CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory></Content>
-    <Content Include="..\..\..\resources\PlayingCards\3-spade.png" Link="wwwroot\images\playingcards\3-spade.png"><CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory></Content>
-    <Content Include="..\..\..\resources\PlayingCards\4-club.png" Link="wwwroot\images\playingcards\4-club.png"><CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory></Content>
-    <Content Include="..\..\..\resources\PlayingCards\4-diamond.png" Link="wwwroot\images\playingcards\4-diamond.png"><CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory></Content>
-    <Content Include="..\..\..\resources\PlayingCards\4-heart.png" Link="wwwroot\images\playingcards\4-heart.png"><CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory></Content>
-    <Content Include="..\..\..\resources\PlayingCards\4-spade.png" Link="wwwroot\images\playingcards\4-spade.png"><CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory></Content>
-    <Content Include="..\..\..\resources\PlayingCards\5-club.png" Link="wwwroot\images\playingcards\5-club.png"><CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory></Content>
-    <Content Include="..\..\..\resources\PlayingCards\5-diamond.png" Link="wwwroot\images\playingcards\5-diamond.png"><CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory></Content>
-    <Content Include="..\..\..\resources\PlayingCards\5-heart.png" Link="wwwroot\images\playingcards\5-heart.png"><CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory></Content>
-    <Content Include="..\..\..\resources\PlayingCards\5-spade.png" Link="wwwroot\images\playingcards\5-spade.png"><CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory></Content>
-    <Content Include="..\..\..\resources\PlayingCards\6-club.png" Link="wwwroot\images\playingcards\6-club.png"><CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory></Content>
-    <Content Include="..\..\..\resources\PlayingCards\6-diamond.png" Link="wwwroot\images\playingcards\6-diamond.png"><CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory></Content>
-    <Content Include="..\..\..\resources\PlayingCards\6-heart.png" Link="wwwroot\images\playingcards\6-heart.png"><CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory></Content>
-    <Content Include="..\..\..\resources\PlayingCards\6-spade.png" Link="wwwroot\images\playingcards\6-spade.png"><CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory></Content>
-    <Content Include="..\..\..\resources\PlayingCards\7-club.png" Link="wwwroot\images\playingcards\7-club.png"><CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory></Content>
-    <Content Include="..\..\..\resources\PlayingCards\7-diamond.png" Link="wwwroot\images\playingcards\7-diamond.png"><CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory></Content>
-    <Content Include="..\..\..\resources\PlayingCards\7-heart.png" Link="wwwroot\images\playingcards\7-heart.png"><CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory></Content>
-    <Content Include="..\..\..\resources\PlayingCards\7-spade.png" Link="wwwroot\images\playingcards\7-spade.png"><CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory></Content>
-    <Content Include="..\..\..\resources\PlayingCards\8-club.png" Link="wwwroot\images\playingcards\8-club.png"><CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory></Content>
-    <Content Include="..\..\..\resources\PlayingCards\8-diamond.png" Link="wwwroot\images\playingcards\8-diamond.png"><CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory></Content>
-    <Content Include="..\..\..\resources\PlayingCards\8-heart.png" Link="wwwroot\images\playingcards\8-heart.png"><CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory></Content>
-    <Content Include="..\..\..\resources\PlayingCards\8-spade.png" Link="wwwroot\images\playingcards\8-spade.png"><CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory></Content>
-    <Content Include="..\..\..\resources\PlayingCards\9-club.png" Link="wwwroot\images\playingcards\9-club.png"><CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory></Content>
-    <Content Include="..\..\..\resources\PlayingCards\9-diamond.png" Link="wwwroot\images\playingcards\9-diamond.png"><CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory></Content>
-    <Content Include="..\..\..\resources\PlayingCards\9-heart.png" Link="wwwroot\images\playingcards\9-heart.png"><CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory></Content>
-    <Content Include="..\..\..\resources\PlayingCards\9-spade.png" Link="wwwroot\images\playingcards\9-spade.png"><CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory></Content>
+    <Content Include="..\..\..\resources\PlayingCards\10-club.png" Link="wwwroot\images\playingcards\10-club.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\..\resources\PlayingCards\10-diamond.png" Link="wwwroot\images\playingcards\10-diamond.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\..\resources\PlayingCards\10-heart.png" Link="wwwroot\images\playingcards\10-heart.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\..\resources\PlayingCards\10-spade.png" Link="wwwroot\images\playingcards\10-spade.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\..\resources\PlayingCards\11-club.png" Link="wwwroot\images\playingcards\11-club.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\..\resources\PlayingCards\11-diamond.png" Link="wwwroot\images\playingcards\11-diamond.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\..\resources\PlayingCards\11-heart.png" Link="wwwroot\images\playingcards\11-heart.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\..\resources\PlayingCards\11-spade.png" Link="wwwroot\images\playingcards\11-spade.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\..\resources\PlayingCards\12-club.png" Link="wwwroot\images\playingcards\12-club.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\..\resources\PlayingCards\12-diamond.png" Link="wwwroot\images\playingcards\12-diamond.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\..\resources\PlayingCards\12-heart.png" Link="wwwroot\images\playingcards\12-heart.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\..\resources\PlayingCards\12-spade.png" Link="wwwroot\images\playingcards\12-spade.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\..\resources\PlayingCards\13-club.png" Link="wwwroot\images\playingcards\13-club.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\..\resources\PlayingCards\13-diamond.png" Link="wwwroot\images\playingcards\13-diamond.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\..\resources\PlayingCards\13-heart.png" Link="wwwroot\images\playingcards\13-heart.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\..\resources\PlayingCards\13-spade.png" Link="wwwroot\images\playingcards\13-spade.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\..\resources\PlayingCards\14-club.png" Link="wwwroot\images\playingcards\14-club.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\..\resources\PlayingCards\14-diamond.png" Link="wwwroot\images\playingcards\14-diamond.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\..\resources\PlayingCards\14-heart.png" Link="wwwroot\images\playingcards\14-heart.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\..\resources\PlayingCards\14-spade.png" Link="wwwroot\images\playingcards\14-spade.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\..\resources\PlayingCards\2-club.png" Link="wwwroot\images\playingcards\2-club.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\..\resources\PlayingCards\2-diamond.png" Link="wwwroot\images\playingcards\2-diamond.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\..\resources\PlayingCards\2-heart.png" Link="wwwroot\images\playingcards\2-heart.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\..\resources\PlayingCards\2-spade.png" Link="wwwroot\images\playingcards\2-spade.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\..\resources\PlayingCards\3-club.png" Link="wwwroot\images\playingcards\3-club.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\..\resources\PlayingCards\3-diamond.png" Link="wwwroot\images\playingcards\3-diamond.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\..\resources\PlayingCards\3-heart.png" Link="wwwroot\images\playingcards\3-heart.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\..\resources\PlayingCards\3-spade.png" Link="wwwroot\images\playingcards\3-spade.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\..\resources\PlayingCards\4-club.png" Link="wwwroot\images\playingcards\4-club.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\..\resources\PlayingCards\4-diamond.png" Link="wwwroot\images\playingcards\4-diamond.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\..\resources\PlayingCards\4-heart.png" Link="wwwroot\images\playingcards\4-heart.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\..\resources\PlayingCards\4-spade.png" Link="wwwroot\images\playingcards\4-spade.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\..\resources\PlayingCards\5-club.png" Link="wwwroot\images\playingcards\5-club.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\..\resources\PlayingCards\5-diamond.png" Link="wwwroot\images\playingcards\5-diamond.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\..\resources\PlayingCards\5-heart.png" Link="wwwroot\images\playingcards\5-heart.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\..\resources\PlayingCards\5-spade.png" Link="wwwroot\images\playingcards\5-spade.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\..\resources\PlayingCards\6-club.png" Link="wwwroot\images\playingcards\6-club.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\..\resources\PlayingCards\6-diamond.png" Link="wwwroot\images\playingcards\6-diamond.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\..\resources\PlayingCards\6-heart.png" Link="wwwroot\images\playingcards\6-heart.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\..\resources\PlayingCards\6-spade.png" Link="wwwroot\images\playingcards\6-spade.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\..\resources\PlayingCards\7-club.png" Link="wwwroot\images\playingcards\7-club.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\..\resources\PlayingCards\7-diamond.png" Link="wwwroot\images\playingcards\7-diamond.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\..\resources\PlayingCards\7-heart.png" Link="wwwroot\images\playingcards\7-heart.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\..\resources\PlayingCards\7-spade.png" Link="wwwroot\images\playingcards\7-spade.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\..\resources\PlayingCards\8-club.png" Link="wwwroot\images\playingcards\8-club.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\..\resources\PlayingCards\8-diamond.png" Link="wwwroot\images\playingcards\8-diamond.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\..\resources\PlayingCards\8-heart.png" Link="wwwroot\images\playingcards\8-heart.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\..\resources\PlayingCards\8-spade.png" Link="wwwroot\images\playingcards\8-spade.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\..\resources\PlayingCards\9-club.png" Link="wwwroot\images\playingcards\9-club.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\..\resources\PlayingCards\9-diamond.png" Link="wwwroot\images\playingcards\9-diamond.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\..\resources\PlayingCards\9-heart.png" Link="wwwroot\images\playingcards\9-heart.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\..\resources\PlayingCards\9-spade.png" Link="wwwroot\images\playingcards\9-spade.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="8.0.7" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="8.0.7" />
   </ItemGroup>
   
   <ItemGroup>
