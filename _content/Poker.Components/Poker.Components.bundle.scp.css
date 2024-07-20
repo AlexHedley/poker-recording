@@ -100,6 +100,66 @@
     text-align: center;
     text-transform: uppercase;
 }
+/* _content/Poker.Components/Board3.razor.rz.scp.css */
+.container[b-xtn1t6xiuq] {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 0.5fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "F1 F2 F3 T R"
+        "Flop Flop Flop Turn River";
+    width: 100px;
+    color: red;
+}
+
+.F1[b-xtn1t6xiuq] {
+    grid-area: F1;
+    text-align: center;
+}
+
+.F2[b-xtn1t6xiuq] {
+    grid-area: F2;
+    text-align: center;
+}
+
+.F3[b-xtn1t6xiuq] {
+    grid-area: F3;
+    text-align: center;
+}
+
+.Flop[b-xtn1t6xiuq] {
+    grid-area: Flop;
+}
+
+.T[b-xtn1t6xiuq] {
+    grid-area: T;
+    text-align: center;
+}
+
+.R[b-xtn1t6xiuq] {
+    grid-area: R;
+    text-align: center;
+}
+
+.Turn[b-xtn1t6xiuq] {
+    grid-area: Turn;
+}
+
+.River[b-xtn1t6xiuq] {
+    grid-area: River;
+}
+
+.info[b-xtn1t6xiuq] {
+    color: white;
+    font-weight: bold;
+    background-color: red;
+    border-radius: 2px;
+    border: 1px solid white;
+    text-align: center;
+    text-transform: uppercase;
+}
 /* _content/Poker.Components/Player1.razor.rz.scp.css */
 /* ----- ----- */
 /*  Player 1   */
@@ -305,6 +365,53 @@
     text-align: center;
     text-transform: uppercase;
 }
+/* _content/Poker.Components/Player3.razor.rz.scp.css */
+.container[b-8hf7njet1q] {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-auto-columns: 1fr;
+    grid-auto-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        ". Card-1 Card-2 . ."
+        ". Card-1 Card-2 . ."
+        "Name Name Name Name Bet"
+}
+
+.Card-1[b-8hf7njet1q] {
+    grid-area: Card-1;
+    margin: auto;
+}
+
+.Card-2[b-8hf7njet1q] {
+    grid-area: Card-2;
+    margin: auto;
+}
+
+.Name[b-8hf7njet1q] {
+    grid-area: Name;
+    color: white;
+    background-color: red;
+    border-radius: 5px;
+    border: 2px solid white;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.Bet[b-8hf7njet1q] {
+    grid-area: Bet;
+    /*   margin: auto; */
+
+    color: black;
+    background-color: white;
+    border-radius: 5px;
+    border: 2px solid white;
+    text-align: center;
+    text-transform: uppercase;
+}
 /* _content/Poker.Components/Pot1.razor.rz.scp.css */
 .pot_1[b-r2s2gsq13w] {
     font-weight: bold;
@@ -321,4 +428,38 @@
     width: 100px;
     display: inline-block;
     padding: 1px;
+}
+/* _content/Poker.Components/Pot2.razor.rz.scp.css */
+.pot_2[b-bs7wgb7iyo] {
+    font-weight: bold;
+    text-align: center;
+}
+
+.pot[b-bs7wgb7iyo] {
+    color: white;
+    background-color: black;
+    border-radius: 5px;
+    border: 2px solid white;
+}
+
+.pot_2 > span[b-bs7wgb7iyo] {
+    color: black;
+    background-color: white;
+}
+/* _content/Poker.Components/Pot3.razor.rz.scp.css */
+.pot_3[b-b3cz5bi2v4] {
+    font-weight: bold;
+    text-align: center;
+}
+
+.pot[b-b3cz5bi2v4] {
+    color: white;
+    background-color: red;
+    border-radius: 5px;
+    border: 2px solid white;
+}
+
+.pot_3 > span[b-b3cz5bi2v4] {
+    color: black;
+    background-color: white;
 }
