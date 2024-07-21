@@ -1,0 +1,61 @@
+﻿@page "/night"
+
+<PageTitle>Poker Night</PageTitle>
+
+<h1>Poker Night ♣♦♥♠ 🃏</h1>
+
+<div class="row">
+    <div class="col">
+        
+        <FluentWizard StepperPosition="@(StepperPosition.Top)"
+              StepSequence="@StepSequence"
+              DisplayStepNumber="@(WizardStepStatus.Current | WizardStepStatus.Next)"
+              Border="WizardBorder.Outside"
+              StepTitleHiddenWhen="@GridItemHidden.XsAndDown"
+              Height="300px"
+              OnFinish="@OnFinishedAsync">
+            <Steps>
+                <FluentWizardStep Label="How many players?"
+                                  OnChange="@OnStepChange">
+                    <img id="pokerTable" src="images/poker-table.svg" width="400px" alt="Poker Table" />
+                    @* <img id="pokerTable" src="images/poker-table.png" width="500px" alt="Poker Table" /> *@
+                </FluentWizardStep>
+                <FluentWizardStep Label="Who is playing?"
+                                  OnChange="@OnStepChange">
+                    <FluentTextField @bind-Value=Player1 Label="Player 1"></FluentTextField>
+                </FluentWizardStep>
+                <FluentWizardStep Label="Chips"
+                                  OnChange="@OnStepChange">
+                    <img src="images/poker-chip.svg" width="50px" alt="Poker Chip" />
+                </FluentWizardStep>
+                <FluentWizardStep Label="How long?"
+                                  OnChange="@OnStepChange">
+                    <FluentTextField @bind-Value=Time Label="Time"></FluentTextField>
+                </FluentWizardStep>
+                <FluentWizardStep Label="Buy In?"
+                                  OnChange="@OnStepChange">
+                    <FluentTextField @bind-Value=BuyIn Label="BuyIn"></FluentTextField>
+                </FluentWizardStep>
+                <FluentWizardStep Label="Summary"
+                                  OnChange="@OnStepChange">
+                    <FluentLabel Typo="Typography.Body">@Player1</FluentLabel>
+                    <FluentLabel Typo="Typography.Body">@Time</FluentLabel>
+                    <FluentLabel Typo="Typography.Body">@BuyIn</FluentLabel>
+                </FluentWizardStep>
+            </Steps>
+        </FluentWizard>
+
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="col">
+        <ul>
+            <li><a href="https://github.com/AlexHedley/poker-night/" target="_blank">https://github.com/AlexHedley/poker-night/</a></li>
+            <li><a href="https://alexhedley.github.io/poker-night/" target="_blank">https://alexhedley.github.io/poker-night/</a></li>
+        </ul>
+    </div>
+</div>
+
+@code {}
