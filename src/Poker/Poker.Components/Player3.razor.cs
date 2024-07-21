@@ -1,5 +1,5 @@
 namespace Poker.Components;
-public partial class Player2
+public partial class Player3
 {
 
 }
