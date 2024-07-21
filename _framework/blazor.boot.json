@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "Poker.WebApp",
   "resources": {
-    "hash": "sha256-HNTCL1ERvqgqOsE8lxiZmPReZrDJ6pVOHqi0wgPPjtM=",
+    "hash": "sha256-cKW+nOeNa0wikhysECerX3oz5HTFGgQcHlGeBZGRlAg=",
     "jsModuleNative": {
       "dotnet.native.8.0.7.pvkr2na9g4.js": "sha256-tFsxPBbhkdn6GKNBKvCRLzrfAHdyM86odYTe0MtrwMk="
     },
@@ -31,8 +31,8 @@
       "Microsoft.Extensions.Primitives.wasm": "sha256-6187ynEahDlSLMBvD4vAmiLpZ3clRb5xu6rM7O8AxNo=",
       "Microsoft.JSInterop.wasm": "sha256-2sr0xqhiAx9LGE7r2x+hppcv18IJ91umOMG7UFkCh0U=",
       "Microsoft.JSInterop.WebAssembly.wasm": "sha256-rhDkGvVEd5YGb2JsVk1xQC7gCF8TXNfpDfo9dGFhuyI=",
-      "Poker.Components.wasm": "sha256-nl7rInLxADwkW+veaT10Dd3v7JYJi3bV3+iQ88nQXnU=",
-      "Poker.WebApp.wasm": "sha256-53fAKqd/yj57UmP9OT/kwjfQI8fZLIPAnF0o/hJ9SmQ=",
+      "Poker.Components.wasm": "sha256-g1Jc02wfne/sGrycQnF8IGhmEggvP+siXe98VJXF/po=",
+      "Poker.WebApp.wasm": "sha256-eU7NrdxWiX/3w7UL+xeBSxz73yYT2phv9cOQtaygmx8=",
       "System.Collections.Concurrent.wasm": "sha256-esrXJViSl51Ig4J0nVUn2bAyFzJSYNEiCGfpOMqSGJQ=",
       "System.Collections.wasm": "sha256-j3Q8RCpRoFDuZRZkPV4kLJYX6cPA9X2KCYiMjZ0Vc70=",
       "System.ComponentModel.wasm": "sha256-TglF9Cma6UOoLFYnvaWKbPJjgEG7PgkN5biRsqmZKiQ=",
