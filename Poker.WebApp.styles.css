@@ -1,3 +1,4 @@
+@import '_content/Microsoft.FluentUI.AspNetCore.Components/Microsoft.FluentUI.AspNetCore.Components.bundle.scp.css';
 @import '_content/Poker.Components/Poker.Components.bundle.scp.css';
 
 /* /Components/Board/BoardComponent.razor.rz.scp.css */
@@ -126,6 +127,9 @@ img[is*="queen"] {
 /* /Pages/Index.razor.rz.scp.css */
 body[b-agzntvclyi] {
 }
+/* /Pages/Night.razor.rz.scp.css */
+body[b-4n1e0g4aak] {
+}
 /* /Pages/PlayingCards.razor.rz.scp.css */
 /* ----- ----- ----- */
 /*   Playing Cards   */
@@ -147,6 +151,89 @@ body[b-agzntvclyi] {
     color: yellow;
     text-align: center;
 }
+/* /Pages/WIP.razor.rz.scp.css */
+.example[b-fcklwh9yny] {
+    display: flex;
+    flex-direction: row;
+    background-color: aqua;
+    height: 400px;
+    width: 1000px;
+}
+
+.box1[b-fcklwh9yny] {
+    height: 100px;
+    width: 100px;
+    background-color: beige;
+}
+
+.box2[b-fcklwh9yny] {
+    height: 100px;
+    width: 100px;
+    background-color: pink;
+}
+
+.box3[b-fcklwh9yny] {
+    height: 300px;
+    width: 100px;
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /*align-items: center;*/
+}
+
+.boxa1[b-fcklwh9yny] {
+    height: 100px;
+    width: 100px;
+    background-color: rgb(192, 255, 239);
+}
+
+.boxa2[b-fcklwh9yny] {
+    height: 100px;
+    width: 100px;
+    background-color: rgb(26, 123, 99);
+}
+
+/*.example {
+    display: flex;
+    flex-direction: row;
+    background-color: aqua;
+    height: 400px;
+    width: 1000px;
+
+    .box1 {
+        height: 100px;
+        width: 100px;
+        background-color: beige;
+    }
+
+    .box2 {
+        height: 100px;
+        width: 100px;
+        background-color: pink;
+    }
+
+    .box3 {
+        height: 200px;
+        width: 100px;
+        background-color: red;
+        display: flex;
+        flex-direction: column;
+
+        .boxa1 {
+            height: 200px;
+            width: 100px;
+            background-color: rgb(192, 255, 239);
+        }
+
+        .boxa2 {
+            height: 200px;
+            width: 100px;
+            background-color: rgb(26, 123, 99);
+        }
+
+    }
+}*/
 /* /Shared/MainLayout.razor.rz.scp.css */
 .page[b-0l5qxp3lcy] {
     position: relative;
