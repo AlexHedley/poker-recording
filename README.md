@@ -11,6 +11,8 @@
 -   https://alexhedley.github.io/poker-recording/
 -   https://alexhedley.github.io/poker-recording/rfidreader/
 
+[![Video](src/Poker/docs/images/video.png "Video")](https://youtu.be/wJCgOoJmJX0)
+
 ## src
 
 [![Arduino](https://img.shields.io/badge/-Arduino-00979D?style=for-the-badge&logo=Arduino&logoColor=white)](https://www.arduino.cc/) [![C#](https://img.shields.io/badge/c%23-%23239120.svg?style=for-the-badge&logo=c-sharp&logoColor=white)](https://docs.microsoft.com/dotnet/csharp/)
@@ -28,18 +30,9 @@
 
 Output using [dotnet-tests-report](https://github.com/marketplace/actions/dotnet-tests-report) ([Code](https://github.com/zyborg/dotnet-tests-report))
 
-## Blog Posts
-
--   [Recording Poker Games](https://alexhedley.com/blog/posts/recording-poker-games)
--   [Poker - Tracking cards](https://alexhedley.com/blog/posts/poker-tracking-cards)
--   [Poker - Table top](https://alexhedley.com/blog/posts/poker-table-top)
-<!-- - [Poker - API](https://alexhedley.com/blog/posts/poker-api) -->
-
-## Stats
-
-A website to store all the game information.
-
--   [GitHub](https://github.com/AlexHedley/poker) WIP <!-- ([Site](https://alexhedley.com/poker)) -->
+-   Poker.Server.WebApp.Tests
+-   Poker.WebApp.Tests
+-   PokerHandEvaluator.Tests
 
 ## Resources
 
@@ -52,10 +45,29 @@ A website to store all the game information.
     -   [RFID Reader](docs/RFID.md)
     -   [Poker](docs/POKER.md)
 
+## Blog Posts
+
+-   [Poker - Recording Games](https://alexhedley.com/blog/posts/recording-poker-games)
+-   [Poker - Tracking cards](https://alexhedley.com/blog/posts/poker-tracking-cards)
+-   [Poker - Table top](https://alexhedley.com/blog/posts/poker-table-top)
+-   [Poker - Chip](https://alexhedley.com/blog/posts/poker-chip)
+-   [Poker - API](https://alexhedley.com/blog/posts/poker-api)
+-   [Poker - Stats](https://alexhedley.com/blog/posts/poker-stats)
+-   [Poker - App](https://alexhedley.com/blog/posts/poker-app)
+-   [Poker - Docs](https://alexhedley.com/blog/posts/poker-docs)
+-   [Poker - HUD](https://alexhedley.com/blog/posts/poker-hud)
+
+## Stats
+
+A website to store all the game information.
+
+- [GitHub](https://github.com/AlexHedley/poker) WIP 
+- ([Site](https://alexhedley.com/poker))
+
 ## Related
 
--   https://github.com/AlexHedley/poker
 -   https://github.com/AlexHedley/poker-night
 
 -   https://github.com/AlexHedley/PokerOddsPro
 -   https://github.com/AlexHedley/Poker-Hand-Evaluator
+

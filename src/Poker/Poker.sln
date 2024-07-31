@@ -36,6 +36,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Poker.Server.WebApp.Tests",
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PokerHandEvaluator.Web", "PokerHandEvaluator.Web\PokerHandEvaluator.Web.csproj", "{F10DA99A-B1C0-4D2A-B2B9-469D9D7ECC9C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Poker.Components", "Poker.Components\Poker.Components.csproj", "{37C262D5-2EBD-4F23-ABC6-460A485D06C9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -94,6 +96,10 @@ Global
 		{F10DA99A-B1C0-4D2A-B2B9-469D9D7ECC9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F10DA99A-B1C0-4D2A-B2B9-469D9D7ECC9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F10DA99A-B1C0-4D2A-B2B9-469D9D7ECC9C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{37C262D5-2EBD-4F23-ABC6-460A485D06C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37C262D5-2EBD-4F23-ABC6-460A485D06C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37C262D5-2EBD-4F23-ABC6-460A485D06C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37C262D5-2EBD-4F23-ABC6-460A485D06C9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

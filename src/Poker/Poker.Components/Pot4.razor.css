@@ -1,0 +1,33 @@
+.pot_4 {
+    display: flex;
+    /*justify-content: space-between;*/
+    align-items: center;
+
+    font-weight: bold;
+    background-color: black;
+    border-radius: 5px;
+    border: 2px solid white;
+    color: white;
+    padding: 0px 10px;
+    /*height: 50px;*/
+    /*line-height: 50px;*/
+}
+
+span:last-of-type {
+    flex: 1;
+}
+
+/*.pot_4 > span {
+    margin: auto;
+}*/
+
+.pot {
+    color: white;
+    font-size: 30px;
+    text-align: right;
+}
+
+/*span {
+    display: table;
+    margin: 0 auto;
+}*/
