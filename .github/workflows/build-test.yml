@@ -97,3 +97,47 @@ jobs:
                   gist_name: poker_api_tests.md
                   gist_badge_label: "Poker API: %Counters_passed%/%Counters_total%"
                   gist_token: ${{ secrets.GIST_TOKEN }}
+
+            - name: 🧪📃 Unit Tests - Poker Server WebApp
+              uses: zyborg/dotnet-tests-report@v1
+              with:
+                  project_path: src/Poker/Poker.Server.WebApp.Tests
+                  report_name: Poker Server WebApp
+                  report_title: Poker Server WebApp
+                  github_token: ${{ secrets.GITHUB_TOKEN }}
+                  gist_name: poker_server_webapp_tests.md
+                  gist_badge_label: "Poker Server WebApp: %Counters_passed%/%Counters_total%"
+                  gist_token: ${{ secrets.GIST_TOKEN }}
+
+            - name: 🧪📃 Unit Tests - Poker API
+              uses: zyborg/dotnet-tests-report@v1
+              with:
+                  project_path: src/Poker/Poker.WebApp.Tests
+                  report_name: Poker WebApp Tests
+                  report_title: Poker WebApp Tests
+                  github_token: ${{ secrets.GITHUB_TOKEN }}
+                  gist_name: poker_webapp_tests.md
+                  gist_badge_label: "Poker WebApp: %Counters_passed%/%Counters_total%"
+                  gist_token: ${{ secrets.GIST_TOKEN }}
+
+            - name: 🧪📃 Unit Tests - PokerHandEvaluator
+              uses: zyborg/dotnet-tests-report@v1
+              with:
+                  project_path: src/Poker/PokerHandEvaluator.Tests
+                  report_name: PokerHandEvaluator Tests
+                  report_title: PokerHandEvaluator Tests
+                  github_token: ${{ secrets.GITHUB_TOKEN }}
+                  gist_name: pokerhandevaluator_tests.md
+                  gist_badge_label: "PokerHandEvaluator: %Counters_passed%/%Counters_total%"
+                  gist_token: ${{ secrets.GIST_TOKEN }}
+
+            # - name: 🧪📃 Unit Tests - PokerOddsPro
+            #   uses: zyborg/dotnet-tests-report@v1
+            #   with:
+            #       project_path: src/Poker/PokerOddsPro.Tests
+            #       report_name: PokerOddsPro
+            #       report_title: PokerOddsPro
+            #       github_token: ${{ secrets.GITHUB_TOKEN }}
+            #       gist_name: pokeroddspro_tests.md
+            #       gist_badge_label: "PokerOddsPro: %Counters_passed%/%Counters_total%"
+            #       gist_token: ${{ secrets.GIST_TOKEN }}

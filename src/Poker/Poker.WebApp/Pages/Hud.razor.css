@@ -1,0 +1,26 @@
+/* ----- */
+/*  HUD  */
+/* ----- */
+
+.card {
+    width: 50px;
+}
+
+/* ----- ----- ----- ----- */
+
+/* https://github.com/cardmeister/cardmeister.github.io?tab=readme-ov-file#styling-card-t-with-css */
+
+/*[rank="queen"] img {
+    border: 3px solid greenyellow;
+    transform: rotate(15deg);
+}
+
+img[is*="queen"] {
+    border: 3px solid greenyellow;
+    transform: rotate(15deg);
+}
+
+[rank="ace"] img {*/
+    /*height: 20px;*/
+    /*width: 20px;
+}*/

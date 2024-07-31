@@ -1,0 +1,16 @@
+.pot_3 {
+    font-weight: bold;
+    text-align: center;
+}
+
+.pot {
+    color: white;
+    background-color: red;
+    border-radius: 5px;
+    border: 2px solid white;
+}
+
+.pot_3 > span {
+    color: black;
+    background-color: white;
+}

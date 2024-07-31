@@ -1,0 +1,12 @@
+#poker-table {
+    margin: 20px;
+    padding: 20px;
+    background-color: #505620;
+}
+
+.brand {
+    font-family: 'Rye', Helvetica, Arial, sans-serif;
+    font-size: 70px;
+    color: yellow;
+    text-align: center;
+}
