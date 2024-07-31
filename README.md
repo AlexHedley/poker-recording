@@ -61,4 +61,13 @@ Output using [dotnet-tests-report](https://github.com/marketplace/actions/dotnet
 
 A website to store all the game information.
 
--   [GitHub](https://github.com/AlexHedley/poker) WIP <!-- ([Site](https://alexhedley.com/poker)) -->
+- [GitHub](https://github.com/AlexHedley/poker) WIP 
+- ([Site](https://alexhedley.com/poker))
+
+## Related
+
+-   https://github.com/AlexHedley/poker-night
+
+-   https://github.com/AlexHedley/PokerOddsPro
+-   https://github.com/AlexHedley/Poker-Hand-Evaluator
+
