@@ -179,6 +179,7 @@
   
   <ItemGroup>
     <ProjectReference Include="..\Poker.Components\Poker.Components.csproj" />
+    <ProjectReference Include="..\PokerHandEvaluator\PokerHandEvaluator.csproj" />
   </ItemGroup>
 
 </Project>
