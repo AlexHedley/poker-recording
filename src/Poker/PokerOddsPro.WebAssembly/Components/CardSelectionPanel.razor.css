@@ -1,0 +1,17 @@
+.display-panel {
+    background-color: #3D3D3D;
+}
+
+    .display-panel.vertical {
+        height: calc(100vh - 56px);
+        flex: 1 0 440px;
+    }
+
+.accordion-content {
+    -webkit-transition: max-height 1s;
+    -moz-transition: max-height 1s;
+    -ms-transition: max-height 1s;
+    -o-transition: max-height 1s;
+    transition: max-height 1s;
+    overflow: hidden;
+}

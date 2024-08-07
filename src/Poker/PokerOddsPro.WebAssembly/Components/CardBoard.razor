@@ -1,0 +1,16 @@
+@using Microsoft.AspNetCore.Components
+@using Microsoft.AspNetCore.Components.Web
+@using PokerOddsPro.Shared.Services;
+@using PokerOddsPro.Shared.Dto.PokerDto.General;
+@using PokerOddsPro.Shared.Dto;
+@using PokerOddsPro.Shared.ViewModels;
+@using PokerOddsPro.Shared.Helpers;
+
+<div class="card-board-container">
+    <div class="card-board">
+        @for (int i = 0; i < Cards.Count; i++)
+        {
+            <CardDisplay card="@Cards[i]" CustomWrapperCss="@GetCssForCard(i)" DisplayMode="@DisplayModeEnum.LightMode" CardDisplayType="@cardDisplayType" />
+        }
+    </div>
+</div>

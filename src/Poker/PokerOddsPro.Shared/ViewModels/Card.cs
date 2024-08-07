@@ -16,12 +16,12 @@ namespace PokerOddsPro.Shared.ViewModels
                 if (IsAvailable_ != value)
                 {
                     IsAvailable_ = value;
-                    //IsAvailableUpdated?.Invoke(null, EventArgs.Empty);
+                    IsAvailableUpdated?.Invoke(null, EventArgs.Empty);
                 }
             }
         }
 
-        //public event EventHandler IsAvailableUpdated;
+        public event EventHandler IsAvailableUpdated;
 
         public override string ToString()
         {
