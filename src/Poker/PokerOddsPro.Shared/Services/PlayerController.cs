@@ -21,13 +21,13 @@ namespace PokerOddsPro.Shared.Services
                 {
                     _LatestResults.streets = _LatestResults.streets.OrderBy(x => x.streetDescriptor.StreetStartCardIndex).ToList();
                 }
-                //LatestResultsUpdated.Invoke(null, EventArgs.Empty);
+                LatestResultsUpdated.Invoke(null, EventArgs.Empty);
             }
         }
 
         public List<PlayerTrackingStreet> streets => LatestResults?.streets;
 
-        //public event EventHandler LatestResultsUpdated;
+        public event EventHandler LatestResultsUpdated;
 
         public double WinPercentage => LatestResults != null ? LatestResults.streets.Last().TotalWins / (double)LatestResults.streets.Last().TotalMesurements : 0;
         public double TiePercentage => LatestResults != null ? LatestResults.streets.Last().TotalTies / (double)LatestResults.streets.Last().TotalMesurements : 0;
