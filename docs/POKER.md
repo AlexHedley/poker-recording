@@ -2,6 +2,33 @@
 
 - [code](../src/Poker/)
 
+## 🔨 Build
+
+`cd src/Poker`
+
+`dotnet build Poker.sln`
+
+`dotnet build Poker.Server.WebApp.sln`
+
+`dotnet build Poker.WebApp.sln`
+
+## ▶ Run
+
+`cd src/Poker`
+
+`dotnet run --project Poker.WebApp/Poker.WebApp.csproj`
+
+🌍 http://localhost:5041/
+
+`dotnet run --project Poker.API/Poker.API.csproj`
+
+- http://localhost:5174/swagger/index.html
+- https://localhost:7037/swagger/index.html
+
+Try out the requests with [API.http](../src/Poker/Poker.API/API.http).
+
+Update `applicationUrl` to `0.0.0.0` in [launchSettings.json](..\src\Poker\Poker.API\Properties\launchSettings.json) to allow remote connections.
+
 ## Concept
 
 Place a playing card (with an RFID/NFC sticker) on an RFID/NFC reader, this will send a request to this API with the value A♥ (♣♦♠) and the position - Player or board.
@@ -16,20 +43,11 @@ flowchart LR
 
 From the cards currently shown, calculate pot odds (can't be guaranteed?).
 
-## Setup
+## ⚙ Setup
 
 `dotnet new globaljson`
 
 `dotnet new gitignore`
-
-## Run
-
-- http://localhost:5174/swagger/index.html
-- https://localhost:7037/swagger/index.html
-
-Try out the requests with [API.http](../src/Poker/Poker.API/API.http).
-
-Update `applicationUrl` to `0.0.0.0` in [launchSettings.json](..\src\Poker\Poker.API\Properties\launchSettings.json) to allow remote connections.
 
 ---
 
