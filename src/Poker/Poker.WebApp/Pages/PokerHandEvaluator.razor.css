@@ -1,0 +1,30 @@
+#phe {
+    width: 500px;
+}
+
+.table_phe {
+    width: 600px;
+    height: 300px;
+    border: 2px solid #737373;
+    box-shadow: inset 0px 0px 0px 4px #f1f1f1;
+    margin: auto;
+    margin-top: 20%;
+    margin-left: 10%;
+    border-radius: 20px;
+    position: relative;
+}
+
+.table-title {
+    position: absolute;
+    transform: translateX(-50%) translateY(-50%);
+    top: -15%;
+    left: 50%;
+}
+
+    .table-title h1 {
+        font-size: 30px;
+    }
+
+#shuffle-cards {
+    display: none;
+}
