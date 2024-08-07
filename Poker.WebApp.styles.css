@@ -40,6 +40,151 @@ body[b-o93yddtxav] {
 /* /Components/Cards/CardsComponent.razor.rz.scp.css */
 body[b-0j41e45e7w] {
 }
+/* /Components/LoadScenario.razor.rz.scp.css */
+/* 🃏 Texas holdem Rank Card Evaluator */
+/* https://github.com/danielpaz6/Poker-Hand-Evaluator/tree/master/PokerHandEvaluator */
+
+
+
+.table-cards[b-qf5ombl3df] {
+    position: absolute;
+    transform: translateX(-50%) translateY(-50%);
+    top: 45%;
+    left: 49.5%;
+    box-sizing: border-box;
+    width: 225px;
+    height: 30px;
+}
+
+
+    .table-cards img[b-qf5ombl3df], .player img[b-qf5ombl3df] {
+        display: inline-block;
+        margin-right: -10px;
+        opacity: 0.8;
+        cursor: pointer;
+        width: 50px;
+        height: 50px;
+    }
+
+        .table-cards img:hover[b-qf5ombl3df], .player img:hover[b-qf5ombl3df] {
+            opacity: 1;
+        }
+
+.player[b-qf5ombl3df] {
+    position: absolute;
+    transform: translateX(-50%) translateY(-50%);
+    background: #fff;
+    border: 1px solid #fff;
+    width: 130px;
+    height: 130px;
+    padding: 15px;
+    border-radius: 10px;
+    transition: all 0.3s;
+}
+
+.table-text[b-qf5ombl3df] {
+    position: absolute;
+    transform: translateX(-50%) translateY(-50%);
+    left: 50%;
+    top: 20%;
+}
+
+    .table-text h2[b-qf5ombl3df] {
+        font-size: 16px;
+        color: #6b6b6b;
+    }
+
+.details[b-qf5ombl3df] {
+    font-size: 10px;
+    line-height: 1.6em;
+    margin-top: 7px;
+    /*display: none;*/
+}
+
+.active .player[b-qf5ombl3df] {
+    border-color: #efefef;
+    height: 130px;
+}
+
+.active .first[b-qf5ombl3df] {
+    border-color: green;
+    transition: border-color 0.4s linear 0.3s;
+}
+
+.active .player .details[b-qf5ombl3df] {
+    display: block;
+}
+
+/*
+.player:hover {
+    border-color: #efefef;
+    height: 130px;
+}
+*/
+
+.player1[b-qf5ombl3df] {
+    /*top: 20%;*/
+    /*left: 0%;*/
+}
+
+.player2[b-qf5ombl3df] {
+    /*top: 20%;*/
+    left: 100%;
+}
+
+.player3[b-qf5ombl3df] {
+    top: 80%;
+    left: 100%;
+}
+
+.player4[b-qf5ombl3df] {
+    left: 50%;
+    top: 100%;
+}
+
+.player5[b-qf5ombl3df] {
+    top: 80%;
+    /*left: 0%;*/
+}
+
+.right-panel[b-qf5ombl3df] {
+    position: fixed;
+    top: 25px;
+    right: 30px;
+    width: 30px;
+}
+
+    .right-panel img[b-qf5ombl3df] {
+        margin-bottom: 20px;
+        width: 30px;
+        height: 30px;
+        opacity: 0.5;
+        transition: all 0.5s;
+    }
+
+    .right-panel a:hover img[b-qf5ombl3df] {
+        opacity: 1;
+    }
+
+    .right-panel .tooltip[b-qf5ombl3df] {
+        left: -5px !important;
+    }
+
+.left-panel[b-qf5ombl3df] {
+    position: fixed;
+    left: 10px;
+    top: 10px;
+}
+
+    .left-panel img[b-qf5ombl3df] {
+        width: 50px;
+        height: 50px;
+        opacity: 0.5;
+    }
+
+    .left-panel a:hover img[b-qf5ombl3df] {
+        opacity: 1;
+    }
 /* /Components/Player/PlayerComponent.razor.rz.scp.css */
 body[b-jwdaywoqf8] {
 }
@@ -138,6 +283,38 @@ body[b-4n1e0g4aak] {
 .card[b-ggzvyej0t0] {
     width: 50px;
 }
+/* /Pages/PokerHandEvaluator.razor.rz.scp.css */
+#phe[b-xupnb9r6kn] {
+    width: 500px;
+}
+
+.table_phe[b-xupnb9r6kn] {
+    width: 600px;
+    height: 300px;
+    border: 2px solid #737373;
+    box-shadow: inset 0px 0px 0px 4px #f1f1f1;
+    margin: auto;
+    margin-top: 20%;
+    margin-left: 10%;
+    border-radius: 20px;
+    position: relative;
+}
+
+.table-title[b-xupnb9r6kn] {
+    position: absolute;
+    transform: translateX(-50%) translateY(-50%);
+    top: -15%;
+    left: 50%;
+}
+
+    .table-title h1[b-xupnb9r6kn] {
+        font-size: 30px;
+    }
+
+#shuffle-cards[b-xupnb9r6kn] {
+    display: none;
+}
+/* /Pages/PokerOddsPro.razor.rz.scp.css */
 /* /Pages/Screen.razor.rz.scp.css */
 #poker-table[b-80y9rheyca] {
     margin: 20px;
