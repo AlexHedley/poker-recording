@@ -5,6 +5,8 @@
 - [CameraWebServer](CAMERAWEBSERVER.md)
 - [RFID](RFID.md)
 - [Poker](POKER.md)
+  - [Poker Hand Evaluator](POKER-HAND-EVALUATOR.md)
+  - [Poker Odds Pro](POKERODDSPRO.md)
 - [API](API.md)
 
 ## Documentation

@@ -1,7 +1,9 @@
 
 .card-board-container {
-    height: auto;
-    width: auto;
+    /*height: auto;*/
+    height: 250px;
+    /*width: auto;*/
+    width: 1000px;
     display: flex;
     align-items: center;
     display: flex;
@@ -18,10 +20,10 @@
     max-width: 600px;
     flex: 1;
     min-height: 100px;
-    box-shadow: @GlobalStyles.ShadowCss;
+    box-shadow: "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)"; /*@GlobalStyles.ShadowCss;*/
 }
 
-@@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 500px) {
     .card-board {
         margin: 0px;
         padding: 10px 20px 10px 20px;
