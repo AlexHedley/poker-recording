@@ -10,6 +10,13 @@
 
 ## Solution
 
+- [Poker.sln](Poker.sln)
+- [Poker.API.sln](Poker.API.sln)
+- [Poker.Server.WebApp.sln](Poker.Server.WebApp.sln)
+- [Poker.WebApp.sln](Poker.WebApp.sln)
+- [PokerHandEvaluator.sln](PokerHandEvaluator.sln)
+- [PokerOddsPro.sln](PokerOddsPro.sln)
+
 | Project                       | Type                                | Info                 |
 | ----------------------------- | ----------------------------------- | -------------------- |
 | Poker.API                     | Microsoft.NET.Sdk.Web               | API                  |
@@ -27,6 +34,8 @@
 |                               |                                     |                      |
 | PokerHandEvaluator            | Microsoft.NET.Sdk                   | Library (danielpaz6) |
 | PokerHandEvaluator.ConsoleApp | Microsoft.NET.Sdk                   | Console (danielpaz6) |
+| PokerHandEvaluator.Tests      | Microsoft.NET.Sdk                   | xUnit                |
+| PokerHandEvaluator.Web        | Microsoft.NET.Sdk.BlazorWebAssembly | WASM                 |
 
 - xUnit
 - NSubstitute
