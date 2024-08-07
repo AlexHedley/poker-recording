@@ -2,6 +2,8 @@
     height: 100%;
     display: flex;
     flex-direction: column;
+    width: 100%;
+    flex-direction: row;
 }
 
 .flex-left {
@@ -11,9 +13,11 @@
     flex: 1 1 auto;
     overflow-y: auto;
     height: 0px;
+    flex: 5 0 500px;
+    height: calc(100vh - 56px);
 }
 
-@@media only screen and (min-width:@IntToDisplayString(HorizontalToVerticalCardThreshold)) {
+@media only screen and (min-width:1250) {
     .flex-layout {
         width: 100%;
         flex-direction: row;
