@@ -1,0 +1,50 @@
+﻿@* 🃏 Texas holdem Rank Card Evaluator */ *@
+@* https://github.com/danielpaz6/Poker-Hand-Evaluator/tree/master/PokerHandEvaluator *@
+
+@using System.Security.Cryptography
+@using Poker.WebApp.Models
+
+<div class="table-cards">
+    @foreach (var item in ViewModel.Room.CardsOnTable)
+    {
+        <img data-toggle="tooltip" 
+            data-placement="top"
+            title="@(item[0]) of @(item[1])" alt="@(item[0]) of @(item[1]) icon" 
+            src="https://img.icons8.com/ios/2x/@(FixedValue[item[0]])-of-@(FixedSuit[item[1]]).png" 
+            style="height: 50px; width: 50px;">
+    }
+</div>
+
+@for (int i = 0; i < ViewModel.Users.Count(); i++)
+{
+    var user = ViewModel.Users[i];
+    var userInfo = ViewModel.FindUserSidePot(user);
+
+    <div class="player player@(i + 1) @(userInfo.Item2 == 1 ? " first" : "")">
+        @for (int j = 0; j < 2; j++)
+        {
+            var item = user.PlayerCards[j];
+
+            <img data-toggle="tooltip" 
+                data-placement="top" 
+                title="@(item[0]) of @(item[1])" alt="@(item[0]) of @(item[1]) icon" 
+                src="https://img.icons8.com/ios/2x/@(FixedValue[item[0]])-of-@(FixedSuit[item[1]]).png" 
+                style="height: 50px; width: 50px;">
+        }
+
+        <div class="details">
+            <strong style="text-decoration: underline;">@(userInfo.Item1.RankName)</strong><br />
+            Rank Value: <strong>@string.Format("{0:F3}", userInfo.Item1.Rank)</strong><br />
+            Position: <strong>@(FixedPosition[userInfo.Item2])</strong><br />
+        </div>
+    </div>
+}
+
+<script>
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip();
+    });
+</script>
+
+@code {
+}
