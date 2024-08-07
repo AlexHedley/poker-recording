@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35027.167
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PokerOddsPro.ConsoleApp", "PokerOddsPro.ConsoleApp\PokerOddsPro.ConsoleApp.csproj", "{2C8AC5A8-1E9F-4522-BB72-11C747723827}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PokerOddsPro.OddsEngine", "PokerOddsPro.OddsEngine\PokerOddsPro.OddsEngine.csproj", "{7A39D6B7-C52D-4CAC-8AC3-D6864079EFB2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PokerOddsPro.Shared", "PokerOddsPro.Shared\PokerOddsPro.Shared.csproj", "{7CBC3166-0FF4-4CCD-B5A5-CDB7CDF470D6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PokerOddsPro.WebAssembly", "PokerOddsPro.WebAssembly\PokerOddsPro.WebAssembly.csproj", "{8FE5C77A-05B4-4BB0-AAA9-375487B44561}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2C8AC5A8-1E9F-4522-BB72-11C747723827}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C8AC5A8-1E9F-4522-BB72-11C747723827}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C8AC5A8-1E9F-4522-BB72-11C747723827}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C8AC5A8-1E9F-4522-BB72-11C747723827}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A39D6B7-C52D-4CAC-8AC3-D6864079EFB2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A39D6B7-C52D-4CAC-8AC3-D6864079EFB2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A39D6B7-C52D-4CAC-8AC3-D6864079EFB2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A39D6B7-C52D-4CAC-8AC3-D6864079EFB2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7CBC3166-0FF4-4CCD-B5A5-CDB7CDF470D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7CBC3166-0FF4-4CCD-B5A5-CDB7CDF470D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7CBC3166-0FF4-4CCD-B5A5-CDB7CDF470D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7CBC3166-0FF4-4CCD-B5A5-CDB7CDF470D6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8FE5C77A-05B4-4BB0-AAA9-375487B44561}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8FE5C77A-05B4-4BB0-AAA9-375487B44561}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8FE5C77A-05B4-4BB0-AAA9-375487B44561}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8FE5C77A-05B4-4BB0-AAA9-375487B44561}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A9521975-F22D-4C24-AAA5-7CC6550DA715}
+	EndGlobalSection
+EndGlobal

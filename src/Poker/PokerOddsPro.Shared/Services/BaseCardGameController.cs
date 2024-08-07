@@ -105,7 +105,7 @@ namespace PokerOddsPro.Shared.Services
             return playerCards;
         }
 
-        internal virtual void ResetBoard()
+        public virtual void ResetBoard()
         {
             foreach (var card in AllCards)
             {
