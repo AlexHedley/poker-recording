@@ -5,6 +5,10 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{D9E2F7EE-F9BA-4B98-ADAD-BBCD1FF28E8E}"
 	ProjectSection(SolutionItems) = preProject
 		..\..\docs\API.md = ..\..\docs\API.md
+		..\..\.github\workflows\build-docs.yml = ..\..\.github\workflows\build-docs.yml
+		..\..\.github\workflows\build-test.yml = ..\..\.github\workflows\build-test.yml
+		..\..\.github\workflows\depcheck.yml = ..\..\.github\workflows\depcheck.yml
+		..\..\.github\workflows\deploy-site.yml = ..\..\.github\workflows\deploy-site.yml
 		global.json = global.json
 		README.md = README.md
 	EndProjectSection
