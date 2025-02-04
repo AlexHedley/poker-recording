@@ -1,6 +1,6 @@
 ﻿using Bunit;
-using Poker.WebApp.Pages;
-using Index = Poker.WebApp.Pages.Index;
+using Poker.Shared.Pages;
+using Index = Poker.Shared.Pages.Index;
 
 namespace Poker.WebApp.Tests.Pages
 {
