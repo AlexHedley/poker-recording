@@ -43,3 +43,10 @@ I recently found that they had been made available to purchase as an assets set,
 ![Royal Flush](icon/icon.png "Royal Flush")
 
 - [icon](icon/README.md)
+
+## Rank Of Hands
+
+- [Doc](RankOfHands.docx) (.docx)
+
+![Rank Of Hands](RankOfHands.png "Rank Of Hands")
+From https://www.wsop.com/poker-hands/
