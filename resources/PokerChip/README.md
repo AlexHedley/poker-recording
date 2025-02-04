@@ -5,6 +5,10 @@
 
 - [Poker Chip (.pdn)](pokerchip.pdn) - use [Paint.NET](https://www.getpaint.net/)
 
+Font: Rye
+
+Update to largest size 36.75 on NEJE.
+
 ---
 
 Poker Chip - Linh Nguyen
