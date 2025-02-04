@@ -18,6 +18,19 @@
 - [2](PlayingCards_2/README.md)
 - [3](PlayingCards_3/README.md)
 
+## 8 Bit Deck
+
+A few years back I bought **The 8Bit Deck: A pixel art playing card deck** from Michael B. Myers Jr. See it on my [Playing Cards](https://alexhedley.com/playingcards/) site.
+
+I recently found that they had been made available to purchase as an assets set, $2 how could I not! Now to add them to the site.
+
+- https://drawsgood.itch.io/8bit-deck-card-assets
+- https://www.kickstarter.com/projects/drawsgood/the-8bit-deck-a-pixel-art-playing-card-deck
+- https://the8bitdeck.com/
+
+![8 Bit Deck Assets](8BitDeckCard/8BitDeckAssets.png "8 Bit Deck Assets")
+![8 Bit Deck Assets (Gameboy)](8BitDeckCard/8BitDeckAssets_GB.png "8 Bit Deck Assets (Gameboy)")
+
 ## Icon
 
 ![Royal Flush](icon/icon.png "Royal Flush")
