@@ -1,0 +1,310 @@
+/* _content/Poker.Shared/Layout/MainLayout.razor.rz.scp.css */
+.page[b-mm9rrt78qj] {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+main[b-mm9rrt78qj] {
+    flex: 1;
+}
+
+.sidebar[b-mm9rrt78qj] {
+    background-image: linear-gradient(180deg, rgb(5, 39, 103) 0%, #3a0647 70%);
+}
+
+.top-row[b-mm9rrt78qj] {
+    background-color: #f7f7f7;
+    border-bottom: 1px solid #d6d5d5;
+    justify-content: flex-end;
+    height: 3.5rem;
+    display: flex;
+    align-items: center;
+}
+
+    .top-row[b-mm9rrt78qj]  a, .top-row .btn-link[b-mm9rrt78qj] {
+        white-space: nowrap;
+        margin-left: 1.5rem;
+    }
+
+    .top-row a:first-child[b-mm9rrt78qj] {
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+@media (max-width: 640.98px) {
+    .top-row:not(.auth)[b-mm9rrt78qj] {
+        display: none;
+    }
+
+    .top-row.auth[b-mm9rrt78qj] {
+        justify-content: space-between;
+    }
+
+    .top-row a[b-mm9rrt78qj], .top-row .btn-link[b-mm9rrt78qj] {
+        margin-left: 0;
+    }
+}
+
+@media (min-width: 641px) {
+    .page[b-mm9rrt78qj] {
+        flex-direction: row;
+    }
+
+    .sidebar[b-mm9rrt78qj] {
+        width: 250px;
+        height: 100vh;
+        position: sticky;
+        top: 0;
+    }
+
+    .top-row[b-mm9rrt78qj] {
+        position: sticky;
+        top: 0;
+        z-index: 1;
+    }
+
+    .top-row[b-mm9rrt78qj], article[b-mm9rrt78qj] {
+        padding-left: 2rem !important;
+        padding-right: 1.5rem !important;
+    }
+}
+/* _content/Poker.Shared/Layout/NavMenu.razor.rz.scp.css */
+.navbar-toggler[b-282fvnrk7w] {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.top-row[b-282fvnrk7w] {
+    height: 3.5rem;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.navbar-brand[b-282fvnrk7w] {
+    font-size: 1.1rem;
+}
+
+.oi[b-282fvnrk7w] {
+    width: 2rem;
+    font-size: 1.1rem;
+    vertical-align: text-top;
+    top: -2px;
+}
+
+.nav-item[b-282fvnrk7w] {
+    font-size: 0.9rem;
+    padding-bottom: 0.5rem;
+}
+
+    .nav-item:first-of-type[b-282fvnrk7w] {
+        padding-top: 1rem;
+    }
+
+    .nav-item:last-of-type[b-282fvnrk7w] {
+        padding-bottom: 1rem;
+    }
+
+    .nav-item[b-282fvnrk7w]  a {
+        color: #d7d7d7;
+        border-radius: 4px;
+        height: 3rem;
+        display: flex;
+        align-items: center;
+        line-height: 3rem;
+    }
+
+.nav-item[b-282fvnrk7w]  a.active {
+    background-color: rgba(255,255,255,0.25);
+    color: white;
+}
+
+.nav-item[b-282fvnrk7w]  a:hover {
+    background-color: rgba(255,255,255,0.1);
+    color: white;
+}
+
+@media (min-width: 641px) {
+    .navbar-toggler[b-282fvnrk7w] {
+        display: none;
+    }
+
+    .collapse[b-282fvnrk7w] {
+        /* Never collapse the sidebar for wide screens */
+        display: block;
+    }
+    
+    .nav-scrollable[b-282fvnrk7w] {
+        /* Allow sidebar to scroll for tall menus */
+        height: calc(100vh - 3.5rem);
+        overflow-y: auto;
+    }
+}
+/* _content/Poker.Shared/Pages/Components.razor.rz.scp.css */
+/* _content/Poker.Shared/Pages/Hud.razor.rz.scp.css */
+/* ----- */
+/*  HUD  */
+/* ----- */
+
+.card[b-2sxrw0a5ip] {
+    width: 50px;
+}
+
+/* ----- ----- ----- ----- */
+
+/* https://github.com/cardmeister/cardmeister.github.io?tab=readme-ov-file#styling-card-t-with-css */
+
+/*[rank="queen"] img {
+    border: 3px solid greenyellow;
+    transform: rotate(15deg);
+}
+
+img[is*="queen"] {
+    border: 3px solid greenyellow;
+    transform: rotate(15deg);
+}
+
+[rank="ace"] img {*/
+    /*height: 20px;*/
+    /*width: 20px;
+}*/
+/* _content/Poker.Shared/Pages/Index.razor.rz.scp.css */
+body[b-kkamhab4lm] {
+}
+/* _content/Poker.Shared/Pages/Night.razor.rz.scp.css */
+body[b-x1s2lhe9x9] {
+}
+/* _content/Poker.Shared/Pages/PlayingCards.razor.rz.scp.css */
+/* ----- ----- ----- */
+/*   Playing Cards   */
+/* ----- ----- -----*/
+
+.card[b-rp6t5o9zlt] {
+    width: 50px;
+}
+/* _content/Poker.Shared/Pages/PokerHandEvaluator.razor.rz.scp.css */
+#phe[b-mw192hh1e8] {
+    width: 500px;
+}
+
+.table_phe[b-mw192hh1e8] {
+    width: 600px;
+    height: 300px;
+    border: 2px solid #737373;
+    box-shadow: inset 0px 0px 0px 4px #f1f1f1;
+    margin: auto;
+    margin-top: 20%;
+    margin-left: 10%;
+    border-radius: 20px;
+    position: relative;
+}
+
+.table-title[b-mw192hh1e8] {
+    position: absolute;
+    transform: translateX(-50%) translateY(-50%);
+    top: -15%;
+    left: 50%;
+}
+
+    .table-title h1[b-mw192hh1e8] {
+        font-size: 30px;
+    }
+
+#shuffle-cards[b-mw192hh1e8] {
+    display: none;
+}
+/* _content/Poker.Shared/Pages/PokerOddsPro.razor.rz.scp.css */
+/* _content/Poker.Shared/Pages/Screen.razor.rz.scp.css */
+#poker-table[b-1mdu6uc3is] {
+    margin: 20px;
+    padding: 20px;
+    background-color: #505620;
+}
+
+.brand[b-1mdu6uc3is] {
+    font-family: 'Rye', Helvetica, Arial, sans-serif;
+    font-size: 70px;
+    color: yellow;
+    text-align: center;
+}
+/* _content/Poker.Shared/Pages/WIP.razor.rz.scp.css */
+.example[b-hxqc7ad9o6] {
+    display: flex;
+    flex-direction: row;
+    background-color: aqua;
+    height: 400px;
+    width: 1000px;
+}
+
+.box1[b-hxqc7ad9o6] {
+    height: 100px;
+    width: 100px;
+    background-color: beige;
+}
+
+.box2[b-hxqc7ad9o6] {
+    height: 100px;
+    width: 100px;
+    background-color: pink;
+}
+
+.box3[b-hxqc7ad9o6] {
+    height: 300px;
+    width: 100px;
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /*align-items: center;*/
+}
+
+.boxa1[b-hxqc7ad9o6] {
+    height: 100px;
+    width: 100px;
+    background-color: rgb(192, 255, 239);
+}
+
+.boxa2[b-hxqc7ad9o6] {
+    height: 100px;
+    width: 100px;
+    background-color: rgb(26, 123, 99);
+}
+
+/*.example {
+    display: flex;
+    flex-direction: row;
+    background-color: aqua;
+    height: 400px;
+    width: 1000px;
+
+    .box1 {
+        height: 100px;
+        width: 100px;
+        background-color: beige;
+    }
+
+    .box2 {
+        height: 100px;
+        width: 100px;
+        background-color: pink;
+    }
+
+    .box3 {
+        height: 200px;
+        width: 100px;
+        background-color: red;
+        display: flex;
+        flex-direction: column;
+
+        .boxa1 {
+            height: 200px;
+            width: 100px;
+            background-color: rgb(192, 255, 239);
+        }
+
+        .boxa2 {
+            height: 200px;
+            width: 100px;
+            background-color: rgb(26, 123, 99);
+        }
+
+    }
+}*/

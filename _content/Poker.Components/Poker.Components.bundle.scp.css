@@ -1,3 +1,33 @@
+/* _content/Poker.Components/Board/BoardComponent.razor.rz.scp.css */
+:root[b-zanbref5k4] {}
+body[b-zanbref5k4] {}
+
+#board[b-zanbref5k4] {
+    /*display: flex;*/
+    /*flex-wrap: wrap;*/
+    /*align-items: center;*/
+    /*justify-content: center;*/
+
+    height: 500px;
+    
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr;
+    grid-gap: 0.5vw;
+    margin: 5px;
+}
+
+.flop[b-zanbref5k4] {
+    background-color: purple;
+}
+
+.turn[b-zanbref5k4] {
+    background-color: aqua;
+}
+
+.river[b-zanbref5k4] {
+    background-color: orangered;
+}
 /* _content/Poker.Components/Board1.razor.rz.scp.css */
 /* ----- */
 /* Board */
@@ -198,6 +228,160 @@
     grid-area: R;
     text-align: center;
 }
+/* _content/Poker.Components/Camera/CameraComponent.razor.rz.scp.css */
+body[b-gy58f4enku] {
+}
+/* _content/Poker.Components/Cards/CardComponent.razor.rz.scp.css */
+body[b-x2gkpeg81q] {
+}
+/* _content/Poker.Components/Cards/CardsComponent.razor.rz.scp.css */
+body[b-q0ikyhj9vc] {
+}
+/* _content/Poker.Components/LoadScenario.razor.rz.scp.css */
+/* 🃏 Texas holdem Rank Card Evaluator */
+/* https://github.com/danielpaz6/Poker-Hand-Evaluator/tree/master/PokerHandEvaluator */
+
+
+
+.table-cards[b-pnztxlpxm0] {
+    position: absolute;
+    transform: translateX(-50%) translateY(-50%);
+    top: 45%;
+    left: 49.5%;
+    box-sizing: border-box;
+    width: 225px;
+    height: 30px;
+}
+
+
+    .table-cards img[b-pnztxlpxm0], .player img[b-pnztxlpxm0] {
+        display: inline-block;
+        margin-right: -10px;
+        opacity: 0.8;
+        cursor: pointer;
+        width: 50px;
+        height: 50px;
+    }
+
+        .table-cards img:hover[b-pnztxlpxm0], .player img:hover[b-pnztxlpxm0] {
+            opacity: 1;
+        }
+
+.player[b-pnztxlpxm0] {
+    position: absolute;
+    transform: translateX(-50%) translateY(-50%);
+    background: #fff;
+    border: 1px solid #fff;
+    width: 130px;
+    height: 130px;
+    padding: 15px;
+    border-radius: 10px;
+    transition: all 0.3s;
+}
+
+.table-text[b-pnztxlpxm0] {
+    position: absolute;
+    transform: translateX(-50%) translateY(-50%);
+    left: 50%;
+    top: 20%;
+}
+
+    .table-text h2[b-pnztxlpxm0] {
+        font-size: 16px;
+        color: #6b6b6b;
+    }
+
+.details[b-pnztxlpxm0] {
+    font-size: 10px;
+    line-height: 1.6em;
+    margin-top: 7px;
+    /*display: none;*/
+}
+
+.active .player[b-pnztxlpxm0] {
+    border-color: #efefef;
+    height: 130px;
+}
+
+.active .first[b-pnztxlpxm0] {
+    border-color: green;
+    transition: border-color 0.4s linear 0.3s;
+}
+
+.active .player .details[b-pnztxlpxm0] {
+    display: block;
+}
+
+/*
+.player:hover {
+    border-color: #efefef;
+    height: 130px;
+}
+*/
+
+.player1[b-pnztxlpxm0] {
+    /*top: 20%;*/
+    /*left: 0%;*/
+}
+
+.player2[b-pnztxlpxm0] {
+    /*top: 20%;*/
+    left: 100%;
+}
+
+.player3[b-pnztxlpxm0] {
+    top: 80%;
+    left: 100%;
+}
+
+.player4[b-pnztxlpxm0] {
+    left: 50%;
+    top: 100%;
+}
+
+.player5[b-pnztxlpxm0] {
+    top: 80%;
+    /*left: 0%;*/
+}
+
+.right-panel[b-pnztxlpxm0] {
+    position: fixed;
+    top: 25px;
+    right: 30px;
+    width: 30px;
+}
+
+    .right-panel img[b-pnztxlpxm0] {
+        margin-bottom: 20px;
+        width: 30px;
+        height: 30px;
+        opacity: 0.5;
+        transition: all 0.5s;
+    }
+
+    .right-panel a:hover img[b-pnztxlpxm0] {
+        opacity: 1;
+    }
+
+    .right-panel .tooltip[b-pnztxlpxm0] {
+        left: -5px !important;
+    }
+
+.left-panel[b-pnztxlpxm0] {
+    position: fixed;
+    left: 10px;
+    top: 10px;
+}
+
+    .left-panel img[b-pnztxlpxm0] {
+        width: 50px;
+        height: 50px;
+        opacity: 0.5;
+    }
+
+    .left-panel a:hover img[b-pnztxlpxm0] {
+        opacity: 1;
+    }
 /* _content/Poker.Components/Player1.razor.rz.scp.css */
 /* ----- ----- */
 /*  Player 1   */
@@ -523,6 +707,36 @@
     text-align: left;
     font-size: 20px;
 }
+/* _content/Poker.Components/PlayerComponent/PlayerComponent.razor.rz.scp.css */
+body[b-dad1p57yrf] {
+}
+
+.player[b-dad1p57yrf] {
+    background-color: yellow;
+}
+
+.name[b-dad1p57yrf] {
+    background-color: darkred;
+    color: white;
+    border: 2px white solid;
+    border-radius: 10px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+}
+
+.camera[b-dad1p57yrf] {
+    background-color: blue;
+}
+
+.cards[b-dad1p57yrf] {
+    background-color: green;
+}
+
+.stats[b-dad1p57yrf] {
+    background-color: red;
+}
+
 /* _content/Poker.Components/Pot1.razor.rz.scp.css */
 .pot_1[b-r2s2gsq13w] {
     font-weight: bold;
@@ -608,3 +822,29 @@ span:last-of-type[b-kkd6oiy9id] {
     display: table;
     margin: 0 auto;
 }*/
+/* _content/Poker.Components/Stats/StatsComponent.razor.rz.scp.css */
+:root[b-8phh825qmg] {
+    background-color: black;
+    color: white;
+    border: 2px white solid;
+    border-radius: 10px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+}
+
+.pot-odds[b-8phh825qmg] {
+    float: right;
+}
+
+.bet[b-8phh825qmg] {
+    float: left;
+
+    background-color: black;
+    color: white;
+    border: 2px white solid;
+    border-radius: 5px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+}
