@@ -1,0 +1,59 @@
+<div class="top-row ps-3 navbar navbar-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="">Poker.WebApp</a>
+        <button title="Navigation menu" class="navbar-toggler" @onclick="ToggleNavMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </div>
+</div>
+
+<div class="@NavMenuCssClass nav-scrollable" @onclick="ToggleNavMenu">
+    <nav class="flex-column">
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="" Match="NavLinkMatch.All">
+                <span class="oi oi-home" aria-hidden="true"></span> Home
+            </NavLink>
+            <NavLink class="nav-link" href="night">
+                <span class="oi oi-document" aria-hidden="true"></span> Poker Night
+            </NavLink>
+            <NavLink class="nav-link" href="rankofhands">
+                <span class="oi oi-people" aria-hidden="true"></span> Rank Of Hands
+            </NavLink>
+            <NavLink class="nav-link" href="rankofhands">
+                <span class="oi oi-document" aria-hidden="true"></span> Rank Of Hands
+            </NavLink>
+            <NavLink class="nav-link" href="screen">
+                <span class="oi oi-monitor" aria-hidden="true"></span> Screen
+            </NavLink>
+            <NavLink class="nav-link" href="components">
+                <span class="oi oi-target" aria-hidden="true"></span> Components
+            </NavLink>
+            <NavLink class="nav-link" href="hud">
+                <span class="oi oi-monitor" aria-hidden="true"></span> HUD
+            </NavLink>
+            <NavLink class="nav-link" href="playingcards">
+                <span class="oi oi-document" aria-hidden="true"></span> Playing Cards
+            </NavLink>
+            <NavLink class="nav-link" href="wip">
+                <span aria-hidden="true"></span> WIP
+            </NavLink>
+            <NavLink class="nav-link" href="phe">
+                <span aria-hidden="true"></span> Poker Hand Evaluator
+            </NavLink>
+            <NavLink class="nav-link" href="pop">
+                <span aria-hidden="true"></span> PokerOddsPro
+            </NavLink>
+        </div>
+    </nav>
+</div>
+
+@code {
+    private bool collapseNavMenu = true;
+
+    private string? NavMenuCssClass => collapseNavMenu ? "collapse" : null;
+
+    private void ToggleNavMenu()
+    {
+        collapseNavMenu = !collapseNavMenu;
+    }
+}

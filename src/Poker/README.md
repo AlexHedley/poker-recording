@@ -27,6 +27,7 @@
 | Poker.WebApp                  | Microsoft.NET.Sdk.BlazorWebAssembly | Web                  |
 | Poker.WebApp.Tests            | Microsoft.NET.Sdk                   |                      |
 | Poker.Components              | Microsoft.NET.Sdk.Razor             | Library              |
+| Poker.Shared                  | Microsoft.NET.Sdk.Razor             | Library              |
 |                               |                                     |                      |
 | PokerOddsPro.OddsEngine       | Microsoft.NET.Sdk                   | Library (dyh1213)    |
 | PokerOddsPro.Shared           | Microsoft.NET.Sdk                   | Library (dyh1213)    |

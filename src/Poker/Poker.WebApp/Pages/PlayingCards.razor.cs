@@ -1,5 +1,0 @@
-namespace Poker.WebApp.Pages;
-public partial class PlayingCards
-{
-
-}
