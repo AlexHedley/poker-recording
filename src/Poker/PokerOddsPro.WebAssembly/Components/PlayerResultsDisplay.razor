@@ -1,0 +1,72 @@
+﻿@using Microsoft.AspNetCore.Components
+@using Microsoft.AspNetCore.Components.Web
+@using static PokerOddsPro.Shared.Helpers.Helper;
+@using PokerOddsPro.OddsEngine.Dto;
+@using PokerOddsPro.Shared.Helpers;
+
+
+@if (streetsHaveResults)
+{
+    <div class="accordion-content" style="max-height:@Height;">
+        <div class="table-container" aria-label="Destinations">
+            <div class="flex-table header">
+                <div class="flex-row first">Hand</div>
+                @foreach (var street in streets)
+                {
+                    <div class="flex-row" style="width: @WidthOfPercentageColumn;">@street.streetDescriptor.StreetName</div>
+                }
+            </div>
+            @foreach (HandTypeEnum handType in (HandTypeEnum[])Enum.GetValues(typeof(HandTypeEnum)))
+            {
+                <div class="flex-table row" role="rowgroup">
+                    <div class="flex-row first"> @GetEnumDescription(handType)</div>
+                    @foreach (var street in streets)
+                    {
+                        <div class="flex-row" style="width: @WidthOfPercentageColumn;"> @GetStreetDisplay(street, handType)</div>
+                    }
+                </div>
+            }
+        </div>
+    </div>
+}
+
+@code {
+
+    [Parameter]
+    public List<PlayerTrackingStreet> streets
+    {
+        get { return _streets; }
+        set
+        {
+            _streets = value;
+            if (_streets == null) ToggleOff();
+        }
+    }
+    private List<PlayerTrackingStreet> _streets { get; set; }
+
+    private bool streetsHaveResults => (streets != null && streets.Any());
+
+    public bool IsToggleOn = false;
+    public void ToggleOff() => IsToggleOn = false;
+    public void FlipToggle() => IsToggleOn = !IsToggleOn;
+
+    private string WidthOfPercentageColumn => Helper.IntToDisplayString(66 / streets.Count, PokerOddsPro.Shared.Dto.DisplayMeasurementTypeEnum.percentage);
+    private string Height => (IsToggleOn) ? "500px" : "0px";
+
+    private string GetStreetDisplay(PlayerTrackingStreet street, HandTypeEnum handType)
+    {
+        if (street == null) return "";
+
+        var total = street.TotalMesurements;
+        var value = street.resultsByHand[handType];
+
+        if (value == 0)
+        {
+            return "";
+        }
+
+        var winPercentage = (double)value / total;
+
+        return winPercentage.ToString("P");
+    }
+}

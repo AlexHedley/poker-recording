@@ -1,0 +1,76 @@
+﻿@using Microsoft.AspNetCore.Components
+@using Microsoft.AspNetCore.Components.Web
+@using BlazorPro.BlazorSize;
+@using PokerOddsPro.Shared.Services;
+@using PokerOddsPro.Shared.Dto;
+@using PokerOddsPro.WebAssembly.Components
+@using static PokerOddsPro.Shared.Helpers.Helper;
+
+@inject IResizeListener listener;
+@implements IDisposable;
+@page "/";
+
+<div class="flex-layout">
+    <div class="flex-left">
+
+        <CardBoard BoardDetails="@_cardGameController.BoardDetails" Cards="@_cardGameController.BoardCardSlots" browserSize="@browser" />
+
+        @for (int i = 0; i < PlayerCount; i++)
+        {
+            var player = _cardGameController.Players[i];
+            <PlayerDisplay player=@player
+                           RemovePlayer="RemovePlayer"
+                           playerNumber="@(i+1)"
+                           browserSize="@browser" />
+        }
+
+        <div class="add-player-button" @onclick="AddPlayer">ADD PLAYER</div>
+    </div>
+
+    <CardSelectionPanel _cardGameController="@_cardGameController" displayDirection="(browser.IsSmallMedia) ? DisplayDirectionEnum.Horizonal : DisplayDirectionEnum.Vertical" />
+
+</div>
+
+@code {
+
+    private HoldemCardGameManager _cardGameController { get; set; }
+    private int PlayerCount => _cardGameController.Players.Count();
+
+    private BrowserWindowSizeContainer browser { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        _cardGameController = new HoldemCardGameManager(numberOfPlayers: 2, minimumBoardCards: 2);
+        browser = new BrowserWindowSizeContainer();
+    }
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            listener.OnResized += WindowResized;
+        }
+        var result = await listener.GetBrowserWindowSize();
+        WindowResized(null, result);
+    }
+
+    private void RenderPage(object sender, EventArgs e) => StateHasChanged();
+
+    private async Task AddPlayer() => await _cardGameController.AddPlayer();
+
+    private async Task RemovePlayer(PlayerController player) => await _cardGameController.RemovePlayer(player);
+
+    private async void WindowResized(object _, BrowserWindowSize window)
+    {
+        var sizeUpdated = browser.UpdateSize(window);
+        if (sizeUpdated)
+        {
+            StateHasChanged();
+        }
+    }
+
+    void IDisposable.Dispose()
+    {
+        listener.OnResized -= WindowResized;
+    }
+}
