@@ -52,7 +52,7 @@ jobs:
       #     xunit_files: 'src/**/TestResults/**/coverage.cobertura.xml'
 
       - name: 👴🏻 Check vulnerable packages
-        run: dotnet list package --vulnerable
+        run: dotnet list package --vulnerable Poker.sln
         working-directory: src/Poker
 
       - name: 🏁 Dependency Check
