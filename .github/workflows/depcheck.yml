@@ -34,7 +34,7 @@ jobs:
           # include-prerelease: true
 
       - name: ⬇️ Restore dependencies
-        run: dotnet restore
+        run: dotnet restore Poker.sln
         working-directory: src/Poker
 
       - name: 🔨 Build
