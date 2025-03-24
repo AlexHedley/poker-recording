@@ -38,7 +38,7 @@ jobs:
         working-directory: src/Poker
 
       - name: 🔨 Build
-        run: dotnet build --no-restore
+        run: dotnet build Poker.sln --no-restore
         working-directory: src/Poker
 
       # - name: Unit Testing
