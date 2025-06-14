@@ -1,12 +1,10 @@
 using Microsoft.AspNetCore.Components;
+
 using Poker.Common.Models;
-using Poker.Shared;
 using Poker.Shared.Services;
-using System.Text.Json;
-using System.Text.Json.Serialization;
-using static System.Net.Mime.MediaTypeNames;
 
 namespace Poker.Server.WebApp.Pages;
+
 public partial class Index
 {
     #region Properties
@@ -21,10 +19,6 @@ public partial class Index
     private Stats Stats;
 
     [Inject]
-    IHttpClientFactory ClientFactory { get; set; }
-    //AntiforgeryStateProvider Antiforgery;
-
-    [Inject]
     PokerService pokerService { get; set; }
 
     string StreamingOptionsFolder { get; set; }
@@ -33,7 +27,6 @@ public partial class Index
     Player Player2 { get; set; } = new Player();
     Player Player3 { get; set; } = new Player();
     Player Player4 { get; set; } = new Player();
-    //public Player CurrentPlayer { get; set; }
 
 
     #endregion Properties
@@ -191,15 +184,12 @@ public partial class Index
         Player4.Card2 = Stats.Player4Card2;
         Player4.PotOdds = Stats.Player4PotOdds;
         Player4.CameraUrl = Stats.Player4Camera;
-
-        //CurrentPlayer = Player1; // Default to Player 1
     }
 
     private string GetPlayerName(string playerNumber)
     {
         var path = Path.Combine(_playersPath, $"Player{playerNumber}.txt");
-        // return File.ReadAllText(path);
-        using FileStream fs = System.IO.File.Open(path, FileMode.Open, FileAccess.Read, FileShare.Read);
+        using FileStream fs = File.Open(path, FileMode.Open, FileAccess.Read, FileShare.Read);
         using (StreamReader reader = new StreamReader(fs))
             return reader.ReadToEnd();
     }
@@ -207,8 +197,7 @@ public partial class Index
     private string GetPlayerPotOdds(string playerNumber)
     {
         var path = Path.Combine(_playersPath, $"PotOddsPlayer{playerNumber}.txt");
-        // return File.ReadAllText(path);
-        using FileStream fs = System.IO.File.Open(path, FileMode.Open, FileAccess.Read, FileShare.Read);
+        using FileStream fs = File.Open(path, FileMode.Open, FileAccess.Read, FileShare.Read);
         using (StreamReader reader = new StreamReader(fs))
             return reader.ReadToEnd();
     }
@@ -219,7 +208,7 @@ public partial class Index
         var filePath = Path.Combine(playersFolder, card);
         var pathToCheck = Path.Combine(_path, filePath);
         
-        // Show backcard if card hasn't be scanned yet.
+        // Show backcard if card hasn't been scanned yet.
         if (!File.Exists(pathToCheck))
         {
             filePath = "_content/Poker.Components/images/playingcards_2/Backcard.png";
@@ -245,21 +234,6 @@ public partial class Index
 
     async void Reset()
     {
-        pokerService.DeleteAsync().GetAwaiter().GetResult();
-
-        ////var antiforgery = Antiforgery.GetAntiforgeryToken();
-        //var request = new HttpRequestMessage(HttpMethod.Delete, "http://localhost:5174/api/Poker");
-        //request.Headers.Add("Accept", "application/json");
-        //request.Headers.Add("User-Agent", "HttpClientFactory-Sample");
-        ////request.Headers.Add("RequestVerificationToken", antiforgery.RequestToken);
-
-        //var client = ClientFactory.CreateClient();
-
-        //var response = await client.SendAsync(request);
-
-        //if (response.IsSuccessStatusCode)
-        //{
-        //    using var responseStream = await response.Content.ReadAsStreamAsync();
-        //}
+        await pokerService.DeleteAsync().GetAwaiter().GetResult();
     }
 }
