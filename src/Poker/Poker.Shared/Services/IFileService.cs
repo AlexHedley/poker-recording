@@ -1,4 +1,4 @@
-﻿namespace Poker.Server.WebApp.Services
+﻿namespace Poker.Shared.Services
 {
     public interface IFileService
     {
