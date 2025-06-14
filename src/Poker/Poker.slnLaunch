@@ -11,5 +11,18 @@
         "Action": "Start"
       }
     ]
+  },
+  {
+    "Name": "Poker (Server)",
+    "Projects": [
+      {
+        "Path": "Poker.API\\Poker.API.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "Poker.Server.WebApp\\Poker.Server.WebApp.csproj",
+        "Action": "Start"
+      }
+    ]
   }
 ]
