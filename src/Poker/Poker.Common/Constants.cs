@@ -1,4 +1,4 @@
-﻿namespace Poker.Components
+﻿namespace Poker.Common
 {
     /// <summary>
     /// Constants

@@ -1,4 +1,4 @@
-﻿using Poker.Server.WebApp.Models;
+﻿using Poker.Common.Models;
 
 namespace Poker.Server.WebApp.Services
 {

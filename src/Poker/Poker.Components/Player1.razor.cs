@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Components;
 
-using Poker.Components.Models;
+using Poker.Common.Models;
 
 namespace Poker.Components;
 

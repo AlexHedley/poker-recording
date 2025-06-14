@@ -67,6 +67,7 @@
   
   <ItemGroup>
     <ProjectReference Include="..\Poker.Components\Poker.Components.csproj" />
+    <ProjectReference Include="..\Poker.Shared\Poker.Shared.csproj" />
   </ItemGroup>
 
 </Project>

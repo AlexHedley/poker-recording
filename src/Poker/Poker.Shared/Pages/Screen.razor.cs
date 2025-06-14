@@ -1,4 +1,4 @@
-using Poker.Components.Models;
+using Poker.Common.Models;
 
 namespace Poker.Shared.Pages;
 

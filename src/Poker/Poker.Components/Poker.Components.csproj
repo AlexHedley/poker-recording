@@ -15,6 +15,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Poker.Common\Poker.Common.csproj" />
     <ProjectReference Include="..\PokerHandEvaluator\PokerHandEvaluator.csproj" />
   </ItemGroup>
 

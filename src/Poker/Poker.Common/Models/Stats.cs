@@ -1,4 +1,4 @@
-﻿namespace Poker.Components.Models
+﻿namespace Poker.Common.Models
 {
     public class Stats
     {
