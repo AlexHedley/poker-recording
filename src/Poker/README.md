@@ -60,7 +60,7 @@ Output using [dotnet-tests-report](https://github.com/marketplace/actions/dotnet
 
 ### Blog
 
--   [Poker - Recording Games](https://alexhedley.com/blog/posts/recording-poker-games)
+-   [Poker - Recording Games](https://alexhedley.com/blog/posts/poker-recording-games)
 -   [Poker - Tracking cards](https://alexhedley.com/blog/posts/poker-tracking-cards)
 -   [Poker - Table top](https://alexhedley.com/blog/posts/poker-table-top)
 -   [Poker - Chip](https://alexhedley.com/blog/posts/poker-chip)

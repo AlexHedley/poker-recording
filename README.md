@@ -13,6 +13,13 @@
 
 [![Video](src/Poker/docs/images/video.png "Video")](https://youtu.be/wJCgOoJmJX0)
 
+## Diagram
+
+<!-- ```mermaid
+flowchart LR
+    id1[This is the text in the box]
+``` -->
+
 ## src
 
 [![Arduino](https://img.shields.io/badge/-Arduino-00979D?style=for-the-badge&logo=Arduino&logoColor=white)](https://www.arduino.cc/) [![C#](https://img.shields.io/badge/c%23-%23239120.svg?style=for-the-badge&logo=c-sharp&logoColor=white)](https://docs.microsoft.com/dotnet/csharp/)
@@ -47,7 +54,7 @@ Output using [dotnet-tests-report](https://github.com/marketplace/actions/dotnet
 
 ## Blog Posts
 
--   [Poker - Recording Games](https://alexhedley.com/blog/posts/recording-poker-games)
+-   [Poker - Recording Games](https://alexhedley.com/blog/posts/poker-recording-games)
 -   [Poker - Tracking cards](https://alexhedley.com/blog/posts/poker-tracking-cards)
 -   [Poker - Table top](https://alexhedley.com/blog/posts/poker-table-top)
 -   [Poker - Chip](https://alexhedley.com/blog/posts/poker-chip)
