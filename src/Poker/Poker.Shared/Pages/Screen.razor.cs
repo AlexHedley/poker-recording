@@ -25,10 +25,10 @@ public partial class Screen
         Stats.Player3 = "Simon";
         Stats.Player4 = "Calum";
 
-        Stats.PotOddsPlayer1 = "66%";
-        Stats.PotOddsPlayer2 = "10%";
-        Stats.PotOddsPlayer3 = "";
-        Stats.PotOddsPlayer4 = "";
+        Stats.Player1PotOdds = "66%";
+        Stats.Player2PotOdds = "10%";
+        Stats.Player3PotOdds = "";
+        Stats.Player4PotOdds = "";
 
         Stats.Player1Card1 = "_content/Poker.Components/images/cards/10-club.png";
         Stats.Player1Card2 = "_content/Poker.Components/images/cards/10-club.png";
