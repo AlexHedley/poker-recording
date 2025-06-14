@@ -11,7 +11,7 @@
     <div class="row">
         <!-- Player 1 -->
         <div class="col-3">
-            <CameraComponent Src="@Stats.Player1Camera" />
+            <CameraComponent Src="@Player1.CameraUrl" />
         </div>
         <div class="col-3">
             <PlayerComponent PlayerDetails="Player1" />
@@ -21,7 +21,7 @@
             <PlayerComponent PlayerDetails="Player2" />
         </div>
         <div class="col-3">
-            <CameraComponent Src="@Stats.Player2Camera" />
+            <CameraComponent Src="@Player2.CameraUrl" />
         </div>
     </div>
 
@@ -30,18 +30,16 @@
     <div class="row"> <!-- justify-content-md-center -->
         <!-- Board -->
         <div class="col-md-3">
-            <p>📹 Webcam</p>
-            <p><a href="@Stats.BoardCamera" target="_blank">@Stats.BoardCamera</a></p>
-            <iframe src="@Stats.BoardCamera" />
+            <CameraComponent Src="@Board.CameraUrl" />
         </div>
         <div class="col-md-6 text-center"> <!-- d-flex justify-content-center text-center -->
             <div>
-                <img src="@Stats.BoardFlopOne" alt="Board Flop 1" style="height:100px;" />
-                <img src="@Stats.BoardFlopTwo" alt="Board Flop 2" style="height:100px;" />
-                <img src="@Stats.BoardFlopThree" alt="Board Flop 3" style="height:100px;" />
-                <img src="@Stats.BoardTurn" alt="Board Turn" style="height:100px;" />
+                <img src="@Board.FlopOne" alt="Board Flop 1" style="height:100px;" />
+                <img src="@Board.FlopTwo" alt="Board Flop 2" style="height:100px;" />
+                <img src="@Board.FlopThree" alt="Board Flop 3" style="height:100px;" />
+                <img src="@Board.Turn" alt="Board Turn" style="height:100px;" />
                 @* <span>Turn</span> *@
-                <img src="@Stats.BoardRiver" alt="Board River" style="height:100px;" />
+                <img src="@Board.River" alt="Board River" style="height:100px;" />
                 @* <span>River</span> *@
             </div>
             <br />
@@ -50,9 +48,9 @@
             </div>
         </div>
         <div class="col-md-3">
-            <p>Pot: $100k</p>
-            <p>Small Blind: $5k</p>
-            <p>Big Blind: $10k</p>
+            <p>Pot: @Board.Pot</p>
+            <p>Small Blind: @Board.SmallBlind</p>
+            <p>Big Blind: @Board.BigBlind</p>
         </div>
     </div>
 
@@ -61,7 +59,7 @@
     <div class="row">
         <!-- Player 4 -->
         <div class="col-3">
-            <CameraComponent Src="@Stats.Player4Camera" />
+            <CameraComponent Src="@Player4.CameraUrl" />
         </div>
         <div class="col-3">
             <PlayerComponent PlayerDetails="Player4" />
@@ -71,7 +69,7 @@
             <PlayerComponent PlayerDetails="Player3" />
         </div>
         <div class="col-3">
-            <CameraComponent Src="@Stats.Player3Camera" />
+            <CameraComponent Src="@Player3.CameraUrl" />
         </div>
     </div>
 
@@ -105,45 +103,45 @@
                 <tr>
                     <td>Player1</td>
                     <td><span class="file">Player1.txt</span></td>
-                    <td>@Stats.Player1</td>
+                    <td>@Player1.Name</td>
                     <td><span class="file">PotOddsPlayer1.txt</span></td>
-                    <td>@Stats.Player1PotOdds</td>
+                    <td>@Player1.PotOdds</td>
                     <td>
-                        <img src="@Stats.Player1Card1" alt="" style="width:10%;" />
-                        <img src="@Stats.Player1Card2" alt="" style="width:10%;" />
+                        <img src="@Player1.Card1" alt="" style="width:10%;" />
+                        <img src="@Player1.Card2" alt="" style="width:10%;" />
                     </td>
                 </tr>
                 <tr>
                     <td>Player2</td>
                     <td><span class="file">Player2.txt</span></td>
-                    <td>@Stats.Player2</td>
+                    <td>@Player2.Name</td>
                     <td><span class="file">PotOddsPlayer2.txt</span></td>
-                    <td>@Stats.Player2PotOdds</td>
+                    <td>@Player2.PotOdds</td>
                     <td>
-                        <img src="@Stats.Player2Card1" alt="" style="width:10%;" />
-                        <img src="@Stats.Player2Card2" alt="" style="width:10%;" />
+                        <img src="@Player2.Card1" alt="" style="width:10%;" />
+                        <img src="@Player2.Card2" alt="" style="width:10%;" />
                     </td>
                 </tr>
                 <tr>
                     <td>Player3</td>
                     <td><span class="file">Player3.txt</span></td>
-                    <td>@Stats.Player3</td>
+                    <td>@Player3.Name</td>
                     <td><span class="file">PotOddsPlayer3.txt</span></td>
-                    <td>@Stats.Player3PotOdds</td>
+                    <td>@Player3.PotOdds</td>
                     <td>
-                        <img src="@Stats.Player3Card1" alt="" style="width:10%;" />
-                        <img src="@Stats.Player3Card2" alt="" style="width:10%;" />
+                        <img src="@Player3.Card1" alt="" style="width:10%;" />
+                        <img src="@Player3.Card2" alt="" style="width:10%;" />
                     </td>
                 </tr>
                 <tr>
                     <td>Player4</td>
                     <td><span class="file">Player4.txt</span></td>
-                    <td>@Stats.Player4</td>
+                    <td>@Player4.Name</td>
                     <td><span class="file">PotOddsPlayer4.txt</span></td>
-                    <td>@Stats.Player4PotOdds</td>
+                    <td>@Player4.PotOdds</td>
                     <td>
-                        <img src="@Stats.Player4Card1" alt="" style="width:10%;" />
-                        <img src="@Stats.Player4Card2" alt="" style="width:10%;" />
+                        <img src="@Player4.Card1" alt="" style="width:10%;" />
+                        <img src="@Player4.Card2" alt="" style="width:10%;" />
                     </td>
                 </tr>
             </tbody>
@@ -153,13 +151,13 @@
 
     <div class="col-6">
 
-        <h1>Board</h1>
+        <h2>Board</h2>
         <p>
-            <img src="@Stats.BoardFlopOne" alt="Board Flop One" style="width:10%;" />
-            <img src="@Stats.BoardFlopTwo" alt="Board Flop Two" style="width:10%;" />
-            <img src="@Stats.BoardFlopThree" alt="Board Flop Three" style="width:10%;" />
-            <img src="@Stats.BoardTurn" alt="Board Turn" style="width:10%;" />
-            <img src="@Stats.BoardRiver" alt="Board River" style="width:10%;" />
+            <img src="@Board.FlopOne" alt="Board Flop One" style="width:10%;" />
+            <img src="@Board.FlopTwo" alt="Board Flop Two" style="width:10%;" />
+            <img src="@Board.FlopThree" alt="Board Flop Three" style="width:10%;" />
+            <img src="@Board.Turn" alt="Board Turn" style="width:10%;" />
+            <img src="@Board.River" alt="Board River" style="width:10%;" />
         </p>
 
     </div>

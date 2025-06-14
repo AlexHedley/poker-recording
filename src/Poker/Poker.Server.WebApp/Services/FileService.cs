@@ -20,6 +20,8 @@ namespace Poker.Server.WebApp.Services
 
         private FileSystemWatcher watcher;
 
+        public event Notify ProcessCompleted;
+
         public Stats Stats { get { return _stats; } }
 
         public string FilePath { get { return _path; } }
@@ -142,6 +144,8 @@ namespace Poker.Server.WebApp.Services
             _stats.Player3Camera = GetCamera("Three");
             _stats.Player4Camera = GetCamera("Four");
             _stats.BoardCamera = GetCamera("Five");
+
+            ProcessCompleted?.Invoke();
         }
 
         private string GetPlayerName(string playerNumber)
