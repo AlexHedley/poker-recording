@@ -1,9 +1,10 @@
-using Poker.Server.WebApp.Models;
-using static System.Net.Mime.MediaTypeNames;
-
+using Microsoft.AspNetCore.Components;
+using Poker.Common.Models;
+using Poker.Shared;
+using Poker.Shared.Services;
 using System.Text.Json;
 using System.Text.Json.Serialization;
-using Microsoft.AspNetCore.Components;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace Poker.Server.WebApp.Pages;
 public partial class Index
@@ -22,6 +23,9 @@ public partial class Index
     [Inject]
     IHttpClientFactory ClientFactory { get; set; }
     //AntiforgeryStateProvider Antiforgery;
+
+    [Inject]
+    PokerService pokerService { get; set; }
 
     #endregion Properties
 
@@ -189,19 +193,21 @@ public partial class Index
 
     async void Reset()
     {
-        //var antiforgery = Antiforgery.GetAntiforgeryToken();
-        var request = new HttpRequestMessage(HttpMethod.Delete, "http://localhost:5174/api/Poker");
-        request.Headers.Add("Accept", "application/json");
-        request.Headers.Add("User-Agent", "HttpClientFactory-Sample");
-        //request.Headers.Add("RequestVerificationToken", antiforgery.RequestToken);
+        pokerService.DeleteAsync().GetAwaiter().GetResult();
 
-        var client = ClientFactory.CreateClient();
+        ////var antiforgery = Antiforgery.GetAntiforgeryToken();
+        //var request = new HttpRequestMessage(HttpMethod.Delete, "http://localhost:5174/api/Poker");
+        //request.Headers.Add("Accept", "application/json");
+        //request.Headers.Add("User-Agent", "HttpClientFactory-Sample");
+        ////request.Headers.Add("RequestVerificationToken", antiforgery.RequestToken);
 
-        var response = await client.SendAsync(request);
+        //var client = ClientFactory.CreateClient();
 
-        if (response.IsSuccessStatusCode)
-        {
-            using var responseStream = await response.Content.ReadAsStreamAsync();
-        }
+        //var response = await client.SendAsync(request);
+
+        //if (response.IsSuccessStatusCode)
+        //{
+        //    using var responseStream = await response.Content.ReadAsStreamAsync();
+        //}
     }
 }

@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Web;
 using Microsoft.Extensions.FileProviders;
 using Poker.Server.WebApp.Services;
+using Poker.Shared.Services;
 using System.Diagnostics;
 
 namespace Poker.Server.WebApp
@@ -17,6 +18,7 @@ namespace Poker.Server.WebApp
             builder.Services.AddServerSideBlazor();
             builder.Services.AddHttpClient();
             //builder.Services.AddSingleton<IFileService, FileService>();
+            builder.Services.AddHttpClient<PokerService>();
 
             // Configuration
             builder.Configuration.GetSection(ApplicationSettings.StreamingUrl).Bind(ApplicationSettings.StreamingOptions);
