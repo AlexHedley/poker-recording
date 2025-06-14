@@ -1,0 +1,15 @@
+[
+  {
+    "Name": "Poker",
+    "Projects": [
+      {
+        "Path": "Poker.API\\Poker.API.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "Poker.WebApp\\Poker.WebApp.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]

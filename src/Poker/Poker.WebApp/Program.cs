@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
 using Microsoft.FluentUI.AspNetCore.Components;
 
 using Poker.Shared;
+using Poker.Shared.Services;
 
 namespace Poker.WebApp
 {
@@ -16,6 +17,8 @@ namespace Poker.WebApp
 
             builder.Services.AddFluentUIComponents();
             builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri(builder.HostEnvironment.BaseAddress) });
+            //builder.Services.AddHttpClient();
+            builder.Services.AddHttpClient<PokerService>();
 
             await builder.Build().RunAsync();
         }

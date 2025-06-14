@@ -4,13 +4,11 @@ VisualStudioVersion = 17.6.33712.159
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{D9E2F7EE-F9BA-4B98-ADAD-BBCD1FF28E8E}"
 	ProjectSection(SolutionItems) = preProject
-		..\..\docs\API.md = ..\..\docs\API.md
 		..\..\.github\workflows\build-docs.yml = ..\..\.github\workflows\build-docs.yml
 		..\..\.github\workflows\build-test.yml = ..\..\.github\workflows\build-test.yml
 		..\..\.github\workflows\depcheck.yml = ..\..\.github\workflows\depcheck.yml
 		..\..\.github\workflows\deploy-site.yml = ..\..\.github\workflows\deploy-site.yml
 		global.json = global.json
-		README.md = README.md
 	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Poker.API", "Poker.API\Poker.API.csproj", "{D769639B-AA7F-4E05-90BE-67FD7BC55BB5}"
@@ -44,6 +42,30 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Poker.Shared", "Poker.Shared\Poker.Shared.csproj", "{8A99AB02-6090-46DF-9D3A-42291207830F}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PokerOddsPro.WebAssembly", "PokerOddsPro.WebAssembly\PokerOddsPro.WebAssembly.csproj", "{75F6BB13-D2E5-4DF8-8FD4-54923BD1CDBB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\docs\ACKNOWLEDGEMENTS.md = ..\..\docs\ACKNOWLEDGEMENTS.md
+		..\..\docs\API.md = ..\..\docs\API.md
+		docs\API.md = docs\API.md
+		..\..\docs\CAMERAWEBSERVER.md = ..\..\docs\CAMERAWEBSERVER.md
+		docs\CARDS.md = docs\CARDS.md
+		..\..\docs\CHANGELOG.md = ..\..\docs\CHANGELOG.md
+		..\..\docs\CONTRIBUTORS.md = ..\..\docs\CONTRIBUTORS.md
+		..\..\docs\DOXYGEN.md = ..\..\docs\DOXYGEN.md
+		..\..\docs\POKER-HAND-EVALUATOR.md = ..\..\docs\POKER-HAND-EVALUATOR.md
+		..\..\docs\POKER.md = ..\..\docs\POKER.md
+		docs\POKERHANDEVALUATOR.md = docs\POKERHANDEVALUATOR.md
+		docs\POKERODDSPRO.md = docs\POKERODDSPRO.md
+		..\..\docs\POKERODDSPRO.md = ..\..\docs\POKERODDSPRO.md
+		README.md = README.md
+		docs\README.md = docs\README.md
+		..\README.md = ..\README.md
+		..\..\docs\README.md = ..\..\docs\README.md
+		..\..\docs\RFID.md = ..\..\docs\RFID.md
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Poker.Common", "Poker.Common\Poker.Common.csproj", "{1F5DFC5A-DA49-43B1-B681-70EEE8B774F9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -115,6 +137,10 @@ Global
 		{75F6BB13-D2E5-4DF8-8FD4-54923BD1CDBB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{75F6BB13-D2E5-4DF8-8FD4-54923BD1CDBB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{75F6BB13-D2E5-4DF8-8FD4-54923BD1CDBB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F5DFC5A-DA49-43B1-B681-70EEE8B774F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F5DFC5A-DA49-43B1-B681-70EEE8B774F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F5DFC5A-DA49-43B1-B681-70EEE8B774F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F5DFC5A-DA49-43B1-B681-70EEE8B774F9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

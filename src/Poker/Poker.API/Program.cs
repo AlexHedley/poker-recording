@@ -16,6 +16,17 @@ namespace Poker.API
             builder.Services.AddSwaggerGen();
             builder.Services.AddTransient<ICardService, CardService>();
 
+            // TODO: Don't do this... CORS
+            builder.Services.AddCors(options =>
+            {
+                options.AddDefaultPolicy(builder =>
+                {
+                    builder.AllowAnyOrigin()
+                           .AllowAnyMethod()
+                           .AllowAnyHeader();
+                });
+            });
+
             // Configuration
             builder.Configuration.GetSection(ApplicationSettings.StreamingUrl).Bind(ApplicationSettings.StreamingOptions);
 
@@ -32,6 +43,8 @@ namespace Poker.API
             }
 
             app.UseHttpsRedirection();
+
+            app.UseCors();
 
             app.UseAuthorization();
             app.MapControllers();

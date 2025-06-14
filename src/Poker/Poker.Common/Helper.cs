@@ -1,6 +1,6 @@
-﻿using Poker.API.Models;
+﻿using Poker.Common.Models;
 
-namespace Poker.API
+namespace Poker.Common
 {
     /// <summary>
     /// Helper

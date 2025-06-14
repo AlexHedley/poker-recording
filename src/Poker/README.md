@@ -19,6 +19,8 @@
 
 | Project                       | Type                                | Info                 |
 | ----------------------------- | ----------------------------------- | -------------------- |
+| Poker.Common                  | Microsoft.NET.Sdk                   | Library              |
+|                               |                                     |                      |
 | Poker.API                     | Microsoft.NET.Sdk.Web               | API                  |
 | Poker.API.Tests               | Microsoft.NET.Sdk                   | xUnit                |
 |                               |                                     |                      |
@@ -58,10 +60,12 @@ Output using [dotnet-tests-report](https://github.com/marketplace/actions/dotnet
 
 ### Blog
 
-- [Poker - Recording Games](https://alexhedley.com/blog/posts/poker-recording-games)
-- [Poker - Tracking cards](https://alexhedley.com/blog/posts/poker-tracking-cards)
-- [Poker - Table top](https://alexhedley.com/blog/posts/poker-table-top)
-- [Poker - Chip](https://alexhedley.com/blog/posts/poker-chip)
-- [Poker - API](https://alexhedley.com/blog/posts/poker-api)
-- [Poker - Stats](https://alexhedley.com/blog/posts/poker-stats)
-- [Poker - App](https://alexhedley.com/blog/posts/poker-app)
+-   [Poker - Recording Games](https://alexhedley.com/blog/posts/recording-poker-games)
+-   [Poker - Tracking cards](https://alexhedley.com/blog/posts/poker-tracking-cards)
+-   [Poker - Table top](https://alexhedley.com/blog/posts/poker-table-top)
+-   [Poker - Chip](https://alexhedley.com/blog/posts/poker-chip)
+-   [Poker - API](https://alexhedley.com/blog/posts/poker-api)
+-   [Poker - Stats](https://alexhedley.com/blog/posts/poker-stats)
+-   [Poker - App](https://alexhedley.com/blog/posts/poker-app)
+-   [Poker - Docs](https://alexhedley.com/blog/posts/poker-docs)
+-   [Poker - HUD](https://alexhedley.com/blog/posts/poker-hud)

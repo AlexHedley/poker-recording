@@ -1,0 +1,91 @@
+﻿@page "/demo"
+@using Poker.Common.Models
+@using Poker.Shared.Services
+
+@inject PokerService pokerService
+
+<PageTitle>Demo</PageTitle>
+
+<h3>Demo</h3>
+
+<div>
+    <p>Allow for testing the endpoints to update the screen.</p>
+</div>
+
+<div class="row">
+    <div class="col">
+        @* <p>Player: <input type="number" value="1" min="1" max="4" /> </p> *@
+        <p>Player: <InputNumber @bind-Value="Player" max="4" min="1" step="1" /></p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col">
+        @* <p>Player: </p> *@
+        <form>
+          <fieldset id="players">
+            <legend>Players:</legend>
+            <label for="player_1">Player 1</label>
+            <input type="radio" id="player_1" value="1" name="players">
+            @* <input type="radio" id="player_1" value="1" name="players" checked="@(Player == 1)" onchange="@(() => Player = 1)"> *@
+            <label for="player_2">Player 2</label>
+            <input type="radio" id="player_2" value="2" name="players">
+            @* <input type="radio" id="player_2" value="2" name="players" checked="@(Player == 2)" onchange="@(() => Player = 2)"> *@
+            <label for="player_3">Player 3</label>
+                <input type="radio" id="player_3" value="3" name="players">
+            @* <input type="radio" id="player_3" value="3" name="players" checked="@(Player == 3)" onchange="@(() => Player = 3)"> *@
+            <label for="player_4">Player 4</label>
+            <input type="radio" id="player_4" value="4" name="players">
+            @* <input type="radio" id="player_4" value="4" name="players" checked="@(Player == 4)" onchange="@(() => Player = 4)"> *@
+            
+            @* <InputRadioGroup Name="Players" @bind-Value="Player">
+                    <InputRadio Name="Players" Value="Player 1" />
+                    <InputRadio Name="Players" Value="Player 2" />
+                    <InputRadio Name="Players" Value="Player 3" />
+                    <InputRadio Name="Players" Value="Player 4" />
+            </InputRadioGroup> *@
+
+          </fieldset>
+        </form>
+    </div>
+</div>
+
+<br />
+
+<div class="row">
+@foreach (var mapping in Helper.Mappings())
+{
+    <div class="col-sm-1">
+        @* <h4>@mapping.CardName</h4> *@
+        <button class="btn btn-primary" @onclick="() => UpdateScreen(mapping)">
+            @* @mapping.ImageName *@
+            <img src="_content/Poker.Components/images/playingcards_2/@(mapping.ImageName).png" alt="@mapping.CardName" width="20" />
+        </button>
+    </div>
+}
+</div>
+
+<br />
+
+<div class="row">
+    <div class="col">
+        <p>Clear cards: <button type="button" class="btn btn-danger" @onclick="Delete">Delete</button></p>
+    </div>
+</div>
+
+@code {
+    int Player = 1;
+
+    async void UpdateScreen(Mapping card)
+    {
+        Console.WriteLine($"Player: {Player}");
+        Console.WriteLine($"Updating screen with card: {card.CardHex}");
+
+        await pokerService.PutPlayerAndCardAsync(Player, card.CardHex);
+    }
+
+    async void Delete()
+    {
+        await pokerService.DeleteAsync();
+    }
+}

@@ -1,4 +1,4 @@
-﻿namespace Poker.API.Models
+﻿namespace Poker.Common.Models
 {
     public class Mapping
     {

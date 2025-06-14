@@ -1,4 +1,6 @@
-﻿namespace Poker.API.Services
+﻿using Poker.Common;
+
+namespace Poker.API.Services
 {
     /// <summary>
     /// Card Service
@@ -79,7 +81,8 @@
                 try
                 {
                     // D:\Twitch\Scenes\Poker\Cards\sj.webp => D:\Twitch\Scenes\Poker\players\P1C1.png
-                    File.Copy(cardToSwap, Path.Combine(_playersPath, fileName));
+                    bool overwrite = true;
+                    File.Copy(cardToSwap, Path.Combine(_playersPath, fileName), overwrite);
                 }
                 catch (Exception ex)
                 {

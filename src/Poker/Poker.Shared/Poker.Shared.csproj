@@ -19,6 +19,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Poker.Common\Poker.Common.csproj" />
     <ProjectReference Include="..\Poker.Components\Poker.Components.csproj" />
   </ItemGroup>
 
