@@ -18,6 +18,9 @@ on:
 #   pages: write
 #   #id-token: write
 
+env:
+  SOLUTION_FILE: "Poker.sln"
+
 jobs:
     build-test:
         # use ubuntu-latest image to run steps on
@@ -36,21 +39,18 @@ jobs:
               uses: actions/setup-dotnet@v4
               with:
                   dotnet-version: "9.0.x"
-                  # include-prerelease: true
 
             - name: ⬇️ Restore dependencies
-              run: dotnet restore
+              run: dotnet restore $SOLUTION_FILE
               working-directory: src/Poker
 
             - name: 🔨 Build
-              run: dotnet build --no-restore
+              run: dotnet build $SOLUTION_FILE --no-restore
               working-directory: src/Poker
 
             # Run Tests
             - name: 🧪 Unit Testing
-              # run: dotnet test BlazorInteractive.Tests/BlazorInteractive.Tests.csproj --collect:"XPlat Code Coverage"
-              # run: dotnet test BlazorInteractive.Compilation.Tests/BlazorInteractive.Compilation.Tests.csproj --collect:"XPlat Code Coverage"
-              run: dotnet test --collect:"XPlat Code Coverage"
+              run: dotnet test $SOLUTION_FILE --collect:"XPlat Code Coverage"
               working-directory: src/Poker
 
             - name: ⬆ Publish Test Results
