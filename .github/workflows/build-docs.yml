@@ -36,7 +36,7 @@ jobs:
     #     branch: gh-pages
     #     folder: release/wwwroot
 
-    - name: Deploy
+    - name: 🚀 Deploy
       uses: peaceiris/actions-gh-pages@v4
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
