@@ -7,6 +7,7 @@
 <div id="poker-table">
 
     <div class="row">
+        <!-- Player 1 -->
         <div class="col-3">
             <p>📹 Webcam: <a href="@Stats.Player1Camera" target="_blank">@Stats.Player1Camera</a></p>
             <iframe src="@Stats.Player1Camera" />
@@ -17,46 +18,57 @@
             <p><span class="file">PotOddsPlayer1.txt</span>: @Stats.PotOddsPlayer1</p>
             <img src="@Stats.Player1Card1" alt="" style="width:10%;" />
             <img src="@Stats.Player1Card2" alt="" style="width:10%;" />
+            <p>Button</p>
         </div>
+        <!-- Player 2 -->
         <div class="col-3">
-            <p>📹 Webcam: <a href="@Stats.Player2Camera" target="_blank">@Stats.Player2Camera</a></p>
-            <iframe src="@Stats.Player2Camera" />
-        </div>
-        <div class="col-3 text-right">
             <strong>Player 2</strong>
             <p><span class="file">Player2.txt</span>: @Stats.Player2</p>
             <p><span class="file">PotOddsPlayer2.txt</span>: @Stats.PotOddsPlayer2</p>
             <img src="@Stats.Player2Card1" alt="" style="width:10%;" />
             <img src="@Stats.Player2Card2" alt="" style="width:10%;" />
         </div>
+        <div class="col-3">
+            <p>📹 Webcam: <a href="@Stats.Player2Camera" target="_blank">@Stats.Player2Camera</a></p>
+            <iframe src="@Stats.Player2Camera" />
+        </div>
     </div>
 
     <hr />
 
-    <div class="row justify-content-md-center">
+    <div class="row"> <!-- justify-content-md-center -->
+        <!-- Board -->
         <div class="col-md-3">
             <p>📹 Webcam</p>
             <p><a href="@Stats.BoardCamera" target="_blank">@Stats.BoardCamera</a></p>
             <iframe src="@Stats.BoardCamera" />
         </div>
-        <div class="col-md-9">
-            <img src="@Stats.BoardFlopOne" alt="Board Flop 1" style="height:100px;" />
-            <img src="@Stats.BoardFlopTwo" alt="Board Flop 2" style="height:100px;" />
-            <img src="@Stats.BoardFlopThree" alt="Board Flop 3" style="height:100px;" />
-            <img src="@Stats.BoardTurn" alt="Board Turn" style="height:100px;" />
-            @* <span>Turn</span> *@
-            <img src="@Stats.BoardRiver" alt="Board River" style="height:100px;" />
-            @* <span>River</span> *@
+        <div class="col-md-6 text-center"> <!-- d-flex justify-content-center text-center -->
+            <div>
+                <img src="@Stats.BoardFlopOne" alt="Board Flop 1" style="height:100px;" />
+                <img src="@Stats.BoardFlopTwo" alt="Board Flop 2" style="height:100px;" />
+                <img src="@Stats.BoardFlopThree" alt="Board Flop 3" style="height:100px;" />
+                <img src="@Stats.BoardTurn" alt="Board Turn" style="height:100px;" />
+                @* <span>Turn</span> *@
+                <img src="@Stats.BoardRiver" alt="Board River" style="height:100px;" />
+                @* <span>River</span> *@
+            </div>
             <br />
-            <span class="brand">Hedley Casino</span>
+            <div>
+                <span class="brand">Hedley Casino</span>
+            </div>
         </div>
-        @* <div class="col">
-        </div> *@
+        <div class="col-md-3">
+            <p>Pot: $100k</p>
+            <p>Small Blind: $5k</p>
+            <p>Big Blind: $10k</p>
+        </div>
     </div>
 
     <hr />
 
     <div class="row">
+        <!-- Player 3 -->
         <div class="col-3">
             <p>📹 Webcam: <a href="@Stats.Player3Camera" target="_blank">@Stats.Player3Camera</a></p>
             <iframe src="@Stats.Player3Camera" />
@@ -68,16 +80,17 @@
             <img src="@Stats.Player3Card1" alt="" style="width:10%;" />
             <img src="@Stats.Player3Card2" alt="" style="width:10%;" />
         </div>
+        <!-- Player 4 -->
         <div class="col-3">
-            <p>📹 Webcam: <a href="@Stats.Player4Camera" target="_blank">@Stats.Player4Camera</a></p>
-            <iframe src="@Stats.Player4Camera" />
-        </div>
-        <div class="col-3 text-right">
             <strong>Player 4</strong>
             <p><span class="file">Player4.txt</span>: @Stats.Player4</p>
             <p><span class="file">PotOddsPlayer4.txt</span>: @Stats.PotOddsPlayer4</p>
             <img src="@Stats.Player4Card1" alt="" style="width:10%;" />
             <img src="@Stats.Player4Card2" alt="" style="width:10%;" />
+        </div>
+        <div class="col-3">
+            <p>📹 Webcam: <a href="@Stats.Player4Camera" target="_blank">@Stats.Player4Camera</a></p>
+            <iframe src="@Stats.Player4Camera" />
         </div>
     </div>
 
