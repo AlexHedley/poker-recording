@@ -39,15 +39,17 @@ flowchart LR
 ## Tests
 
 [![Poker API Tests](https://gist.githubusercontent.com/alexhedley/e81db3939d78a6f3bf73f657d803d723/raw/poker_api_tests.md_badge.svg "Poker API Tests")](https://gist.github.com/alexhedley/e81db3939d78a6f3bf73f657d803d723)
+[![Poker.WebApp Tests](https://gist.githubusercontent.com/alexhedley/8c84c970be1a96ca94aa5b69ad2b4825/raw/poker_webapp_tests.md_badge.svg "Poker.WebApp Tests")](https://gist.github.com/alexhedley/8c84c970be1a96ca94aa5b69ad2b4825)
+[![Poker.Server.WebApp Tests](https://gist.githubusercontent.com/alexhedley/31e5a7dcd73eda1227507917aee86735/raw/poker_server_webapp_tests.md_badge.svg "Poker.Server.WebApp Tests")](https://gist.github.com/alexhedley/31e5a7dcd73eda1227507917aee86735)
+[![PokerHandEvaluator Tests](https://gist.githubusercontent.com/alexhedley/56c7effd59d86b0765f710a7e5325857/raw/pokerhandevaluator_tests.md_badge.svg "PokerHandEvaluator Tests")](https://gist.github.com/alexhedley/56c7effd59d86b0765f710a7e5325857)
 
 - [Poker API Tests](https://gist.github.com/alexhedley/e81db3939d78a6f3bf73f657d803d723)
+- [Poker.WebApp Tests](https://gist.github.com/AlexHedley/8c84c970be1a96ca94aa5b69ad2b4825)
+- [Poker.Server.WebApp Tests](https://gist.github.com/AlexHedley/31e5a7dcd73eda1227507917aee86735)
+- [PokerHandEvaluator Tests](https://gist.github.com/AlexHedley/56c7effd59d86b0765f710a7e5325857)
+- _Poker.API.PlaywrightTests_
 
 Output using [dotnet-tests-report](https://github.com/marketplace/actions/dotnet-tests-report) ([Code](https://github.com/zyborg/dotnet-tests-report))
-
-- _Poker.API.PlaywrightTests_
-- Poker.Server.WebApp.Tests
-- Poker.WebApp.Tests
-- PokerHandEvaluator.Tests
 
 ## Resources
 
