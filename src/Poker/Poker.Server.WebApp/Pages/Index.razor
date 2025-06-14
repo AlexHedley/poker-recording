@@ -1,5 +1,7 @@
 ﻿@page "/"
 @using Poker.Common.Models
+@using Poker.Server.WebApp.Components.CameraComponent;
+@using Poker.Server.WebApp.Components.PlayerComponent;
 @* @inject IFileService FileService *@
 
 <PageTitle>Poker</PageTitle>
@@ -9,28 +11,17 @@
     <div class="row">
         <!-- Player 1 -->
         <div class="col-3">
-            <p>📹 Webcam: <a href="@Stats.Player1Camera" target="_blank">@Stats.Player1Camera</a></p>
-            <iframe src="@Stats.Player1Camera" />
+            <CameraComponent Src="@Stats.Player1Camera" />
         </div>
         <div class="col-3">
-            <strong>Player 1</strong>
-            <p><span class="file">Player1.txt</span>: @Stats.Player1</p>
-            <p><span class="file">PotOddsPlayer1.txt</span>: @Stats.PotOddsPlayer1</p>
-            <img src="@Stats.Player1Card1" alt="" style="width:10%;" />
-            <img src="@Stats.Player1Card2" alt="" style="width:10%;" />
-            <p>Button</p>
+            <PlayerComponent PlayerDetails="Player1" />
         </div>
         <!-- Player 2 -->
         <div class="col-3">
-            <strong>Player 2</strong>
-            <p><span class="file">Player2.txt</span>: @Stats.Player2</p>
-            <p><span class="file">PotOddsPlayer2.txt</span>: @Stats.PotOddsPlayer2</p>
-            <img src="@Stats.Player2Card1" alt="" style="width:10%;" />
-            <img src="@Stats.Player2Card2" alt="" style="width:10%;" />
+            <PlayerComponent PlayerDetails="Player2" />
         </div>
         <div class="col-3">
-            <p>📹 Webcam: <a href="@Stats.Player2Camera" target="_blank">@Stats.Player2Camera</a></p>
-            <iframe src="@Stats.Player2Camera" />
+            <CameraComponent Src="@Stats.Player2Camera" />
         </div>
     </div>
 
@@ -68,29 +59,19 @@
     <hr />
 
     <div class="row">
-        <!-- Player 3 -->
-        <div class="col-3">
-            <p>📹 Webcam: <a href="@Stats.Player3Camera" target="_blank">@Stats.Player3Camera</a></p>
-            <iframe src="@Stats.Player3Camera" />
-        </div>
-        <div class="col-3">
-            <strong>Player 3</strong>
-            <p><span class="file">Player3.txt</span>: @Stats.Player3</p>
-            <p><span class="file">PotOddsPlayer3.txt</span>: @Stats.PotOddsPlayer3</p>
-            <img src="@Stats.Player3Card1" alt="" style="width:10%;" />
-            <img src="@Stats.Player3Card2" alt="" style="width:10%;" />
-        </div>
         <!-- Player 4 -->
         <div class="col-3">
-            <strong>Player 4</strong>
-            <p><span class="file">Player4.txt</span>: @Stats.Player4</p>
-            <p><span class="file">PotOddsPlayer4.txt</span>: @Stats.PotOddsPlayer4</p>
-            <img src="@Stats.Player4Card1" alt="" style="width:10%;" />
-            <img src="@Stats.Player4Card2" alt="" style="width:10%;" />
+            <CameraComponent Src="@Stats.Player4Camera" />
         </div>
         <div class="col-3">
-            <p>📹 Webcam: <a href="@Stats.Player4Camera" target="_blank">@Stats.Player4Camera</a></p>
-            <iframe src="@Stats.Player4Camera" />
+            <PlayerComponent PlayerDetails="Player4" />
+        </div>
+        <!-- Player 3 -->
+        <div class="col-3">
+            <PlayerComponent PlayerDetails="Player3" />
+        </div>
+        <div class="col-3">
+            <CameraComponent Src="@Stats.Player3Camera" />
         </div>
     </div>
 
@@ -126,7 +107,7 @@
                     <td><span class="file">Player1.txt</span></td>
                     <td>@Stats.Player1</td>
                     <td><span class="file">PotOddsPlayer1.txt</span></td>
-                    <td>@Stats.PotOddsPlayer1</td>
+                    <td>@Stats.Player1PotOdds</td>
                     <td>
                         <img src="@Stats.Player1Card1" alt="" style="width:10%;" />
                         <img src="@Stats.Player1Card2" alt="" style="width:10%;" />
@@ -137,7 +118,7 @@
                     <td><span class="file">Player2.txt</span></td>
                     <td>@Stats.Player2</td>
                     <td><span class="file">PotOddsPlayer2.txt</span></td>
-                    <td>@Stats.PotOddsPlayer2</td>
+                    <td>@Stats.Player2PotOdds</td>
                     <td>
                         <img src="@Stats.Player2Card1" alt="" style="width:10%;" />
                         <img src="@Stats.Player2Card2" alt="" style="width:10%;" />
@@ -148,7 +129,7 @@
                     <td><span class="file">Player3.txt</span></td>
                     <td>@Stats.Player3</td>
                     <td><span class="file">PotOddsPlayer3.txt</span></td>
-                    <td>@Stats.PotOddsPlayer3</td>
+                    <td>@Stats.Player3PotOdds</td>
                     <td>
                         <img src="@Stats.Player3Card1" alt="" style="width:10%;" />
                         <img src="@Stats.Player3Card2" alt="" style="width:10%;" />
@@ -159,7 +140,7 @@
                     <td><span class="file">Player4.txt</span></td>
                     <td>@Stats.Player4</td>
                     <td><span class="file">PotOddsPlayer4.txt</span></td>
-                    <td>@Stats.PotOddsPlayer4</td>
+                    <td>@Stats.Player4PotOdds</td>
                     <td>
                         <img src="@Stats.Player4Card1" alt="" style="width:10%;" />
                         <img src="@Stats.Player4Card2" alt="" style="width:10%;" />

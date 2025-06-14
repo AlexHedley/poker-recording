@@ -6,10 +6,11 @@
         public string Player2 { get; set; }
         public string Player3 { get; set; }
         public string Player4 { get; set; }
-        public string PotOddsPlayer1 { get; set; }
-        public string PotOddsPlayer2 { get; set; }
-        public string PotOddsPlayer3 { get; set; }
-        public string PotOddsPlayer4 { get; set; }
+
+        public string Player1PotOdds { get; set; }
+        public string Player2PotOdds { get; set; }
+        public string Player3PotOdds { get; set; }
+        public string Player4PotOdds { get; set; }
 
         public string Player1Card1 { get; set; } = $"P1C1.png";
         public string Player1Card2 { get; set; } = $"P1C2.png";

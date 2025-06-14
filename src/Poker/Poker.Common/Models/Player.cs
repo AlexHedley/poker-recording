@@ -2,6 +2,8 @@
 {
     public class Player
     {
+        public long Id { get; set; }
+
         public string? Name { get; set; }
 
         public string? Picture { get; set; }
@@ -21,5 +23,11 @@
         public string? Chips { get; set; }
 
         public string? Info { get; set; }
+
+        public string CameraUrl { get; set; }
+
+        public bool IsDealer { get; set; } = false;
+        public bool IsSmallBlind { get; set; } = false;
+        public bool IsBigBlind { get; set; } = false;
     }
 }

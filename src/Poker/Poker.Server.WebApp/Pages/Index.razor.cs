@@ -29,6 +29,13 @@ public partial class Index
 
     string StreamingOptionsFolder { get; set; }
 
+    Player Player1 { get; set; } = new Player();
+    Player Player2 { get; set; } = new Player();
+    Player Player3 { get; set; } = new Player();
+    Player Player4 { get; set; } = new Player();
+    //public Player CurrentPlayer { get; set; }
+
+
     #endregion Properties
 
     protected override void OnInitialized()
@@ -127,10 +134,10 @@ public partial class Index
         Stats.Player3 = GetPlayerName("3");
         Stats.Player4 = GetPlayerName("4");
 
-        Stats.PotOddsPlayer1 = GetPlayerPotOdds("1");
-        Stats.PotOddsPlayer2 = GetPlayerPotOdds("2");
-        Stats.PotOddsPlayer3 = GetPlayerPotOdds("3");
-        Stats.PotOddsPlayer4 = GetPlayerPotOdds("4");
+        Stats.Player1PotOdds = GetPlayerPotOdds("1");
+        Stats.Player2PotOdds = GetPlayerPotOdds("2");
+        Stats.Player3PotOdds = GetPlayerPotOdds("3");
+        Stats.Player4PotOdds = GetPlayerPotOdds("4");
 
         Stats.Player1Card1 = GetCard(Stats.Player1Card1);
         Stats.Player1Card2 = GetCard(Stats.Player1Card2);
@@ -152,6 +159,40 @@ public partial class Index
         Stats.Player3Camera = GetCamera("Three");
         Stats.Player4Camera = GetCamera("Four");
         Stats.BoardCamera = GetCamera("Five");
+
+        // Player 1
+        Player1.Id = 1;
+        Player1.Name = Stats.Player1;
+        Player1.Card1 = Stats.Player1Card1;
+        Player1.Card2 = Stats.Player1Card2;
+        Player1.PotOdds = Stats.Player1PotOdds;
+        Player1.CameraUrl = Stats.Player1Camera;
+        Player1.IsDealer = true;
+        // Player 2
+        Player2.Id = 2;
+        Player2.Name = Stats.Player2;
+        Player2.Card1 = Stats.Player2Card1;
+        Player2.Card2 = Stats.Player2Card2;
+        Player2.PotOdds = Stats.Player2PotOdds;
+        Player2.CameraUrl = Stats.Player2Camera;
+        Player2.IsSmallBlind = true;
+        // Player 3
+        Player3.Id = 3;
+        Player3.Name = Stats.Player3;
+        Player3.Card1 = Stats.Player3Card1;
+        Player3.Card2 = Stats.Player3Card2;
+        Player3.PotOdds = Stats.Player3PotOdds;
+        Player3.CameraUrl = Stats.Player3Camera;
+        Player3.IsBigBlind = true;
+        // Player 4
+        Player4.Id = 4;
+        Player4.Name = Stats.Player4;
+        Player4.Card1 = Stats.Player4Card1;
+        Player4.Card2 = Stats.Player4Card2;
+        Player4.PotOdds = Stats.Player4PotOdds;
+        Player4.CameraUrl = Stats.Player4Camera;
+
+        //CurrentPlayer = Player1; // Default to Player 1
     }
 
     private string GetPlayerName(string playerNumber)

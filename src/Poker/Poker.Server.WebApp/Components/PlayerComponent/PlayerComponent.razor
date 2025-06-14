@@ -1,0 +1,18 @@
+﻿<strong>Player @PlayerDetails.Id</strong>
+<p><span class="file">Player@(PlayerDetails.Id).txt</span>: @PlayerDetails.Name</p>
+<p><span class="file">PotOddsPlayer@(PlayerDetails.Id).txt</span>: @PlayerDetails.PotOdds</p>
+<img src="@PlayerDetails.Card1" alt="" style="width:10%;" />
+<img src="@PlayerDetails.Card2" alt="" style="width:10%;" />
+
+@if (PlayerDetails.IsDealer)
+{
+    <p><span class="poker-button dealer">Dealer</span></p>
+}
+@if (PlayerDetails.IsBigBlind)
+{
+    <p><span class="poker-button big-blind">Big Blind</span></p>
+}
+@if (PlayerDetails.IsSmallBlind)
+{
+    <p><span class="poker-button small-blind">Small Blind</span></p>
+}

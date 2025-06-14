@@ -102,10 +102,10 @@ namespace Poker.Server.WebApp.Services
             stats.Player3 = GetPlayerName("3");
             stats.Player4 = GetPlayerName("4");
 
-            stats.PotOddsPlayer1 = GetPlayerPotOdds("1");
-            stats.PotOddsPlayer2 = GetPlayerPotOdds("2");
-            stats.PotOddsPlayer3 = GetPlayerPotOdds("3");
-            stats.PotOddsPlayer4 = GetPlayerPotOdds("4");
+            stats.Player1PotOdds = GetPlayerPotOdds("1");
+            stats.Player2PotOdds = GetPlayerPotOdds("2");
+            stats.Player3PotOdds = GetPlayerPotOdds("3");
+            stats.Player4PotOdds = GetPlayerPotOdds("4");
         }
 
         private string GetPlayerName(string playerNumber)
