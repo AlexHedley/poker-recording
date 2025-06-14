@@ -27,6 +27,8 @@ public partial class Index
     [Inject]
     PokerService pokerService { get; set; }
 
+    string StreamingOptionsFolder { get; set; }
+
     #endregion Properties
 
     protected override void OnInitialized()
@@ -36,6 +38,7 @@ public partial class Index
         // _path = FileService.FilePath;
 
         _path = ApplicationSettings.StreamingOptions.Folder;
+        StreamingOptionsFolder = _path;
         var playersFolder = ApplicationSettings.StreamingOptions.PlayersFolder;
         var cardFolder = ApplicationSettings.StreamingOptions.CardFolder;
 
@@ -171,9 +174,17 @@ public partial class Index
 
     private string GetCard(string card)
     {
-        // return Path.Combine(_playersPath, card);
         var playersFolder = ApplicationSettings.StreamingOptions.PlayersFolder;
-        return Path.Combine("/", playersFolder, card) + "?DummyId=" + DateTime.Now.Ticks;
+        var filePath = Path.Combine(playersFolder, card);
+        var pathToCheck = Path.Combine(_path, filePath);
+        
+        // Show backcard if card hasn't be scanned yet.
+        if (!File.Exists(pathToCheck))
+        {
+            filePath = "_content/Poker.Components/images/playingcards_2/Backcard.png";
+        }
+
+        return filePath + "?DummyId=" + DateTime.Now.Ticks;
     }
 
     private string GetCamera(string camera)
