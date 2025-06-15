@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Poker.Shared.Services
 {
-    public class PokerService
+    public class PokerService : IPokerService
     {
         private readonly HttpClient _httpClient;
 
