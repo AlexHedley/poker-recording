@@ -22,10 +22,26 @@
 
 ## Diagram
 
-<!-- ```mermaid
+```mermaid
 flowchart LR
-    id1[This is the text in the box]
-``` -->
+    RFID -->|ID| API
+    Camera -->|Stream| Device
+
+    subgraph API
+        A[Update Card]
+        B[Clear Cards]
+    end
+
+    subgraph RFID
+        C[RC522] --> D
+        D[ESP8266]
+    end
+
+    subgraph Camera
+        E[OV2640] --> F
+        F[ESP32-CAM]
+    end
+```
 
 ## src
 
