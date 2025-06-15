@@ -16,5 +16,6 @@ namespace Poker.Common.Models
         public string Pot { get; set; }
         public string SmallBlind { get; set; }
         public string BigBlind { get; set; }
+        public string Ante { get; set; }
     }
 }

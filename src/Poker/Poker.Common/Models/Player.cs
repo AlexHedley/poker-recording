@@ -29,5 +29,10 @@
         public bool IsDealer { get; set; } = false;
         public bool IsSmallBlind { get; set; } = false;
         public bool IsBigBlind { get; set; } = false;
+
+        // PokerHandEvaluator - HandRank
+        public string RankName { get; set; }
+        public double Rank { get; set; }
+        public bool Winner { get; set; }
     }
 }

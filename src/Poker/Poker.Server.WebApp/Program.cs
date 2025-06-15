@@ -18,6 +18,7 @@ namespace Poker.Server.WebApp
             builder.Services.AddServerSideBlazor();
             builder.Services.AddHttpClient();
             builder.Services.AddSingleton<IFileService, FileService>();
+            builder.Services.AddSingleton<IGameService, GameService>();
             builder.Services.AddHttpClient<PokerService>();
 
             // Configuration

@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Poker.API.Tests", "Poker.AP
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Poker.Shared", "Poker.Shared\Poker.Shared.csproj", "{A26DDDA4-5F27-AE16-FF80-AE501A3CE225}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PokerHandEvaluator", "PokerHandEvaluator\PokerHandEvaluator.csproj", "{5EFC8712-1B6C-B6A4-5E66-F9BAF9B18390}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{A26DDDA4-5F27-AE16-FF80-AE501A3CE225}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A26DDDA4-5F27-AE16-FF80-AE501A3CE225}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A26DDDA4-5F27-AE16-FF80-AE501A3CE225}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5EFC8712-1B6C-B6A4-5E66-F9BAF9B18390}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5EFC8712-1B6C-B6A4-5E66-F9BAF9B18390}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5EFC8712-1B6C-B6A4-5E66-F9BAF9B18390}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5EFC8712-1B6C-B6A4-5E66-F9BAF9B18390}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

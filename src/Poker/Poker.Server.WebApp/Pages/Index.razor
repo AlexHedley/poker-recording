@@ -11,17 +11,17 @@
     <div class="row">
         <!-- Player 1 -->
         <div class="col-3">
-            <CameraComponent Src="@Player1.CameraUrl" />
+            <CameraComponent Src="@Game.Player1.CameraUrl" />
         </div>
         <div class="col-3">
-            <PlayerComponent PlayerDetails="Player1" />
+            <PlayerComponent PlayerDetails="Game.Player1" />
         </div>
         <!-- Player 2 -->
         <div class="col-3">
-            <PlayerComponent PlayerDetails="Player2" />
+            <PlayerComponent PlayerDetails="Game.Player2" />
         </div>
         <div class="col-3">
-            <CameraComponent Src="@Player2.CameraUrl" />
+            <CameraComponent Src="@Game.Player2.CameraUrl" />
         </div>
     </div>
 
@@ -30,16 +30,16 @@
     <div class="row"> <!-- justify-content-md-center -->
         <!-- Board -->
         <div class="col-md-3">
-            <CameraComponent Src="@Board.CameraUrl" />
+            <CameraComponent Src="@Game.Board.CameraUrl" />
         </div>
         <div class="col-md-6 text-center"> <!-- d-flex justify-content-center text-center -->
             <div>
-                <img src="@Board.FlopOne" alt="Board Flop 1" style="height:100px;" />
-                <img src="@Board.FlopTwo" alt="Board Flop 2" style="height:100px;" />
-                <img src="@Board.FlopThree" alt="Board Flop 3" style="height:100px;" />
-                <img src="@Board.Turn" alt="Board Turn" style="height:100px;" />
+                <img src="@Game.Board.FlopOne" alt="Board Flop 1" style="height:100px;" />
+                <img src="@Game.Board.FlopTwo" alt="Board Flop 2" style="height:100px;" />
+                <img src="@Game.Board.FlopThree" alt="Board Flop 3" style="height:100px;" />
+                <img src="@Game.Board.Turn" alt="Board Turn" style="height:100px;" />
                 @* <span>Turn</span> *@
-                <img src="@Board.River" alt="Board River" style="height:100px;" />
+                <img src="@Game.Board.River" alt="Board River" style="height:100px;" />
                 @* <span>River</span> *@
             </div>
             <br />
@@ -48,9 +48,10 @@
             </div>
         </div>
         <div class="col-md-3">
-            <p>Pot: @Board.Pot</p>
-            <p>Small Blind: @Board.SmallBlind</p>
-            <p>Big Blind: @Board.BigBlind</p>
+            <p>Pot: @Game.Board.Pot</p>
+            <p>Small Blind: @Game.Board.SmallBlind</p>
+            <p>Big Blind: @Game.Board.BigBlind</p>
+            <p>Ante: @Game.Board.Ante</p>
         </div>
     </div>
 
@@ -59,17 +60,17 @@
     <div class="row">
         <!-- Player 4 -->
         <div class="col-3">
-            <CameraComponent Src="@Player4.CameraUrl" />
+            <CameraComponent Src="@Game.Player4.CameraUrl" />
         </div>
         <div class="col-3">
-            <PlayerComponent PlayerDetails="Player4" />
+            <PlayerComponent PlayerDetails="Game.Player4" />
         </div>
         <!-- Player 3 -->
         <div class="col-3">
-            <PlayerComponent PlayerDetails="Player3" />
+            <PlayerComponent PlayerDetails="Game.Player3" />
         </div>
         <div class="col-3">
-            <CameraComponent Src="@Player3.CameraUrl" />
+            <CameraComponent Src="@Game.Player3.CameraUrl" />
         </div>
     </div>
 
@@ -103,45 +104,45 @@
                 <tr>
                     <td>Player1</td>
                     <td><span class="file">Player1.txt</span></td>
-                    <td>@Player1.Name</td>
+                    <td>@Game.Player1.Name</td>
                     <td><span class="file">PotOddsPlayer1.txt</span></td>
-                    <td>@Player1.PotOdds</td>
+                    <td>@Game.Player1.PotOdds</td>
                     <td>
-                        <img src="@Player1.Card1" alt="" style="width:10%;" />
-                        <img src="@Player1.Card2" alt="" style="width:10%;" />
+                        <img src="@Game.Player1.Card1" alt="" style="width:10%;" />
+                        <img src="@Game.Player1.Card2" alt="" style="width:10%;" />
                     </td>
                 </tr>
                 <tr>
                     <td>Player2</td>
                     <td><span class="file">Player2.txt</span></td>
-                    <td>@Player2.Name</td>
+                    <td>@Game.Player2.Name</td>
                     <td><span class="file">PotOddsPlayer2.txt</span></td>
-                    <td>@Player2.PotOdds</td>
+                    <td>@Game.Player2.PotOdds</td>
                     <td>
-                        <img src="@Player2.Card1" alt="" style="width:10%;" />
-                        <img src="@Player2.Card2" alt="" style="width:10%;" />
+                        <img src="@Game.Player2.Card1" alt="" style="width:10%;" />
+                        <img src="@Game.Player2.Card2" alt="" style="width:10%;" />
                     </td>
                 </tr>
                 <tr>
                     <td>Player3</td>
                     <td><span class="file">Player3.txt</span></td>
-                    <td>@Player3.Name</td>
+                    <td>@Game.Player3.Name</td>
                     <td><span class="file">PotOddsPlayer3.txt</span></td>
-                    <td>@Player3.PotOdds</td>
+                    <td>@Game.Player3.PotOdds</td>
                     <td>
-                        <img src="@Player3.Card1" alt="" style="width:10%;" />
-                        <img src="@Player3.Card2" alt="" style="width:10%;" />
+                        <img src="@Game.Player3.Card1" alt="" style="width:10%;" />
+                        <img src="@Game.Player3.Card2" alt="" style="width:10%;" />
                     </td>
                 </tr>
                 <tr>
                     <td>Player4</td>
                     <td><span class="file">Player4.txt</span></td>
-                    <td>@Player4.Name</td>
+                    <td>@Game.Player4.Name</td>
                     <td><span class="file">PotOddsPlayer4.txt</span></td>
-                    <td>@Player4.PotOdds</td>
+                    <td>@Game.Player4.PotOdds</td>
                     <td>
-                        <img src="@Player4.Card1" alt="" style="width:10%;" />
-                        <img src="@Player4.Card2" alt="" style="width:10%;" />
+                        <img src="@Game.Player4.Card1" alt="" style="width:10%;" />
+                        <img src="@Game.Player4.Card2" alt="" style="width:10%;" />
                     </td>
                 </tr>
             </tbody>
@@ -153,11 +154,11 @@
 
         <h2>Board</h2>
         <p>
-            <img src="@Board.FlopOne" alt="Board Flop One" style="width:10%;" />
-            <img src="@Board.FlopTwo" alt="Board Flop Two" style="width:10%;" />
-            <img src="@Board.FlopThree" alt="Board Flop Three" style="width:10%;" />
-            <img src="@Board.Turn" alt="Board Turn" style="width:10%;" />
-            <img src="@Board.River" alt="Board River" style="width:10%;" />
+            <img src="@Game.Board.FlopOne" alt="Board Flop One" style="width:10%;" />
+            <img src="@Game.Board.FlopTwo" alt="Board Flop Two" style="width:10%;" />
+            <img src="@Game.Board.FlopThree" alt="Board Flop Three" style="width:10%;" />
+            <img src="@Game.Board.Turn" alt="Board Turn" style="width:10%;" />
+            <img src="@Game.Board.River" alt="Board River" style="width:10%;" />
         </p>
 
     </div>
