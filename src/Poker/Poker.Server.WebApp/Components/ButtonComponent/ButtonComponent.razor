@@ -1,0 +1,18 @@
+﻿@using Poker.Common.Enums;
+
+@if (@ButtonType == ButtonType.Dealer)
+{
+    <p><span class="poker-button dealer">Dealer</span></p>
+}
+else if (@ButtonType == ButtonType.BigBlind)
+{
+    <p><span class="poker-button big-blind">Big Blind</span></p>
+} 
+else if (@ButtonType == ButtonType.SmallBlind)
+{
+    <p><span class="poker-button small-blind">Small Blind</span></p>
+} 
+else
+{
+    <span class="poker-button">Player</span>
+}

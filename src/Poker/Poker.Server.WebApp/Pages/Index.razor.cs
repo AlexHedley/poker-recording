@@ -7,15 +7,10 @@ namespace Poker.Server.WebApp.Pages;
 
 public partial class Index
 {
-    #region Properties
-
     [Inject]
     PokerService pokerService { get; set; }
 
-    [Inject]
-    IGameService gameService { get; set; }
-
-    Game Game { get; set; } = new Game();
+    #region Properties
 
     string StreamingOptionsFolder { get; set; }
 
@@ -24,9 +19,6 @@ public partial class Index
     protected override void OnInitialized()
     {
         StreamingOptionsFolder = ""; //gameService.fileService.FilePath;
-
-        gameService.InitializeGame();
-        Game = gameService.game;
     }
 
     async Task Reset()
