@@ -1,27 +1,22 @@
 using Microsoft.AspNetCore.Components;
 using Poker.Common.Models;
-using Poker.Shared.Services;
 
-namespace Poker.Server.WebApp.Components.TableComponent;
+namespace Poker.Components.TableComponent;
+
 public partial class TableComponent
 {
-    [Inject]
-    IGameService gameService { get; set; }
-
     #region Properties
 
-    Game Game { get; set; } = new Game();
-
-    #endregion Properties
+    [Parameter]
+    public Game Game { get; set; }
 
     string StreamingOptionsFolder { get; set; }
+
+    #endregion Properties
 
     protected override void OnInitialized()
     {
         StreamingOptionsFolder = ""; //gameService.fileService.FilePath;
-
-        gameService.InitializeGame();
-        Game = gameService.game;
     }
 
 }

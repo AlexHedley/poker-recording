@@ -8,9 +8,14 @@ namespace Poker.Server.WebApp.Pages;
 public partial class Index
 {
     [Inject]
-    PokerService pokerService { get; set; }
+    PokerService PokerService { get; set; }
+
+    [Inject]
+    IGameService GameService { get; set; }
 
     #region Properties
+
+    Game Game { get; set; } = new Game();
 
     string StreamingOptionsFolder { get; set; }
 
@@ -19,10 +24,13 @@ public partial class Index
     protected override void OnInitialized()
     {
         StreamingOptionsFolder = ""; //gameService.fileService.FilePath;
+
+        GameService.InitializeGame();
+        Game = GameService.game;
     }
 
     async Task Reset()
     {
-        await pokerService.DeleteAsync();
+        await PokerService.DeleteAsync();
     }
 }

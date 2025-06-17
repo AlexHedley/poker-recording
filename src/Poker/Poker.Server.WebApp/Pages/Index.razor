@@ -1,12 +1,11 @@
 ﻿@page "/"
 @using Poker.Common.Models
-@using Poker.Server.WebApp.Components.TableComponent;
-@* @inject IFileService FileService *@
+@using Poker.Components.TableComponent;
 
 <PageTitle>Poker</PageTitle>
 
 <div>
-    <TableComponent />
+    <TableComponent Game="@Game" />
 </div>
 
 <hr />
