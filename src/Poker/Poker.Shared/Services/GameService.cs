@@ -24,7 +24,8 @@ namespace Poker.Shared.Services
             // Logic to initialize the board can be added here
             // For example, setting up initial cards or player states
             fileService.ProcessCompleted += OnProcessCompleted;
-            fileService.SetupWatcher();
+            // Is this needed if it's called in FileService Constructor??
+            //fileService.SetupWatcher();
             fileService.UpdateStats();
         }
 

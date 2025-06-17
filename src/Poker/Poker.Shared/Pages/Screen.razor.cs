@@ -1,56 +1,36 @@
+using Microsoft.AspNetCore.Components;
 using Poker.Common.Models;
+using Poker.Shared.Services;
 
 namespace Poker.Shared.Pages;
 
 public partial class Screen
 {
+    //[Inject]
+    //PokerService PokerService { get; set; }
+
+    [Inject]
+    IGameService GameService { get; set; }
+
     #region Properties
 
-    private Stats Stats;
+    Game Game { get; set; } = new Game();
+
+    string StreamingOptionsFolder { get; set; }
 
     #endregion Properties
 
     protected override void OnInitialized()
     {
-        Stats = new Stats();
-        UpdateStats();
+        StreamingOptionsFolder = ""; //gameService.fileService.FilePath;
+
+        GameService.InitializeGame();
+        Game = GameService.game;
     }
 
-    #region Stats Helper
+    //async Task Reset()
+    //{
+    //    await PokerService.DeleteAsync();
+    //}
 
-    private void UpdateStats()
-    {
-        Stats.Player1 = "Alex";
-        Stats.Player2 = "Jonathan";
-        Stats.Player3 = "Simon";
-        Stats.Player4 = "Calum";
-
-        Stats.Player1PotOdds = "66%";
-        Stats.Player2PotOdds = "10%";
-        Stats.Player3PotOdds = "";
-        Stats.Player4PotOdds = "";
-
-        Stats.Player1Card1 = "_content/Poker.Components/images/cards/10-club.png";
-        Stats.Player1Card2 = "_content/Poker.Components/images/cards/10-club.png";
-        Stats.Player2Card1 = "_content/Poker.Components/images/cards/10-club.png";
-        Stats.Player2Card2 = "_content/Poker.Components/images/cards/10-club.png";
-        Stats.Player3Card1 = "_content/Poker.Components/images/cards/10-club.png";
-        Stats.Player3Card2 = "_content/Poker.Components/images/cards/10-club.png";
-        Stats.Player4Card1 = "_content/Poker.Components/images/cards/10-club.png";
-        Stats.Player4Card2 = "_content/Poker.Components/images/cards/10-club.png";
-
-        Stats.BoardFlopOne = "_content/Poker.Components/images/cards/10-club.png";
-        Stats.BoardFlopTwo = "_content/Poker.Components/images/cards/10-club.png";
-        Stats.BoardFlopThree = "_content/Poker.Components/images/cards/10-club.png";
-        Stats.BoardTurn = "_content/Poker.Components/images/cards/10-club.png";
-        Stats.BoardRiver = "_content/Poker.Components/images/cards/10-club.png";
-
-        Stats.Player1Camera = "http://127.0.0.1:81/stream";
-        Stats.Player2Camera = "http://127.0.0.1:81/stream";
-        Stats.Player3Camera = "http://127.0.0.1:81/stream";
-        Stats.Player4Camera = "http://127.0.0.1:81/stream";
-        Stats.BoardCamera = "http://127.0.0.1:81/stream";
-    }
-
-    #endregion Stats Helper
 }

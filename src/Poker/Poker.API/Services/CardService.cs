@@ -10,7 +10,7 @@ namespace Poker.API.Services
         #region Properties
 
         private readonly ILogger<CardService> _logger;
-        private string _path;
+        private string _path = String.Empty;
 
         private string _playersPath;
         private string _cardsPath;

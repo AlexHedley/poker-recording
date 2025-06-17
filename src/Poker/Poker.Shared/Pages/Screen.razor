@@ -1,10 +1,15 @@
 ﻿@page "/screen"
 
 @using Poker.Components.Models
+@using Poker.Components.TableComponent
 
 <PageTitle>Screen</PageTitle>
 
-<div id="poker-table">
+<div>
+    <TableComponent Game="@Game" />
+</div>
+
+@* <div id="poker-table">
 
     <div class="row">
         <div class="col-3">
@@ -83,11 +88,11 @@
         </div>
     </div>
 
-</div>
+</div> *@
 
-<hr />
+@* <hr /> *@
 
-<div>
+@* <div>
 
     <table>
         <thead>
@@ -159,7 +164,7 @@
         </p>
     </div>
 
-</div>
+</div> *@
 
 @code {
     // See Code Behind

@@ -13,10 +13,10 @@ namespace Poker.Server.WebApp.Services
 
         private readonly ILogger<FileService> _logger;
         
-        private string _path;
+        private string _path = String.Empty;
         private Stats _stats = new Stats();
-        private string _playersPath;
-        private string _cardsPath;
+        private string _playersPath = String.Empty;
+        private string _cardsPath = String.Empty;
 
         private FileSystemWatcher watcher;
 
@@ -44,6 +44,7 @@ namespace Poker.Server.WebApp.Services
 
             watcher = new FileSystemWatcher(_path);
 
+            // TODO: This is also called in FileService constructor...
             SetupWatcher();
         }
 
