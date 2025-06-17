@@ -187,8 +187,8 @@ public partial class LoadScenario : ComponentBase
         {
             byte[] box = new byte[1];
             do provider.GetBytes(box);
-            while (!(box[0] < n * (Byte.MaxValue / n)));
-            int k = (box[0] % n);
+            while (!(box[0] < n * (byte.MaxValue / n)));
+            int k = box[0] % n;
             n--;
             T value = list[k];
             list[k] = list[n];

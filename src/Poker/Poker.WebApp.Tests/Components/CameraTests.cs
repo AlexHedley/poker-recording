@@ -1,5 +1,5 @@
 ﻿using Bunit;
-using Poker.Components.Camera;
+using Poker.Components.Legacy.Camera;
 
 namespace Poker.WebApp.Tests.Components
 {

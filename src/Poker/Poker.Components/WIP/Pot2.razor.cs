@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Components;
 
-namespace Poker.Components;
+namespace Poker.Components.WIP;
 
 public partial class Pot2
 {

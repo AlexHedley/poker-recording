@@ -1,5 +1,5 @@
 ﻿using Bunit;
-using Poker.Components.PlayerComponent;
+using Poker.Components.Legacy.PlayerComponent;
 
 namespace Poker.WebApp.Tests.Components
 {
