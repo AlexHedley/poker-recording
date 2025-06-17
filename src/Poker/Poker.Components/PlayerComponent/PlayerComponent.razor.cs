@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Components;
 using Poker.Common.Models;
 
-namespace Poker.Server.WebApp.Components.PlayerComponent;
+namespace Poker.Components.PlayerComponent;
 
 public partial class PlayerComponent
 {

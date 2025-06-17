@@ -1,13 +1,14 @@
 using Microsoft.AspNetCore.Components;
-using Poker.Common.Enums;
+using Poker.Common.Models;
 
-namespace Poker.Server.WebApp.Components.ButtonComponent;
-public partial class ButtonComponent
+namespace Poker.Components.BoardInfoComponent;
+
+public partial class BoardInfoComponent
 {
     #region Properties
 
     [Parameter]
-    public ButtonType ButtonType { get; set; }
+    public Game Game { get; set; }
 
     #endregion Properties
 

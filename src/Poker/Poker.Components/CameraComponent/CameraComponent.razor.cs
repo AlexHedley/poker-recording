@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Components;
 
-namespace Poker.Server.WebApp.Components.CameraComponent;
+namespace Poker.Components.CameraComponent;
 
 public partial class CameraComponent
 {
