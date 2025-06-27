@@ -31,8 +31,11 @@
 - [4](PlayingCards_4/README.md)
 
 <!-- ![Mini Cards](PlayingCards_4/mini-cards.png "Mini Cards") -->
-![10 Clubs](PlayingCards_4/C10.svg "10 Clubs")
+![10 Clubs](PlayingCards_4/mini/C10.svg "10 Clubs")
 ![10 Clubs](PlayingCards_4/fronts/clubs_10.svg "10 Clubs")
+
+- 🃏[cardmeister](https://cardmeister.github.io/)
+  - [code](https://github.com/cardmeister/cardmeister.github.io)
 
 ## 8 Bit Deck
 

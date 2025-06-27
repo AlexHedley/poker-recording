@@ -47,7 +47,8 @@ namespace Poker.WebApp.Services
             Stats.Player3PotOdds = "";
             Stats.Player4PotOdds = "";
 
-            Stats.Player1Card1 = "_content/Poker.Components/images/cards/10-club.png";
+            //Stats.Player1Card1 = "_content/Poker.Components/images/cards/10-club.png";
+            Stats.Player1Card1 = "_content/Poker.Components/images/mini/C10.svg";
             Stats.Player1Card2 = "_content/Poker.Components/images/cards/10-club.png";
             Stats.Player2Card1 = "_content/Poker.Components/images/cards/10-club.png";
             Stats.Player2Card2 = "_content/Poker.Components/images/cards/10-club.png";
