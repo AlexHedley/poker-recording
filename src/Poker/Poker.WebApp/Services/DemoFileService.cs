@@ -57,17 +57,17 @@ namespace Poker.WebApp.Services
             Stats.Player4Card1 = "_content/Poker.Components/images/cards/10-club.png";
             Stats.Player4Card2 = "_content/Poker.Components/images/cards/10-club.png";
 
-            Stats.BoardFlopOne = "_content/Poker.Components/images/cards/10-club.png";
-            Stats.BoardFlopTwo = "_content/Poker.Components/images/cards/10-club.png";
-            Stats.BoardFlopThree = "_content/Poker.Components/images/cards/10-club.png";
-            Stats.BoardTurn = "_content/Poker.Components/images/cards/10-club.png";
-            Stats.BoardRiver = "_content/Poker.Components/images/cards/10-club.png";
+            Stats.BoardFlopOne = "_content/Poker.Components/images/mini/C10.svg";
+            Stats.BoardFlopTwo = "_content/Poker.Components/images/mini/D13.svg";
+            Stats.BoardFlopThree = "_content/Poker.Components/images/mini/S2.svg";
+            Stats.BoardTurn = "_content/Poker.Components/images/mini/HA.svg";
+            Stats.BoardRiver = "_content/Poker.Components/images/mini/Background.svg";
 
             Stats.Player1Camera = "http://127.0.0.1:81/stream";
-            Stats.Player2Camera = "http://127.0.0.1:81/stream";
-            Stats.Player3Camera = "http://127.0.0.1:81/stream";
-            Stats.Player4Camera = "http://127.0.0.1:81/stream";
-            Stats.BoardCamera = "http://127.0.0.1:81/stream";
+            Stats.Player2Camera = "http://127.0.0.1:82/stream";
+            Stats.Player3Camera = "http://127.0.0.1:83/stream";
+            Stats.Player4Camera = "http://127.0.0.1:84/stream";
+            Stats.BoardCamera = "http://127.0.0.1:85/stream";
 
             ProcessCompleted?.Invoke();
         }
