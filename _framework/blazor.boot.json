@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "Poker.WebApp",
   "resources": {
-    "hash": "sha256-z1eeLZgkyAD7BVGI6HBx1sAGC03P9wRBjJ5MAujlm1c=",
+    "hash": "sha256-5tecA5L4/d97l7Dd/jFCvaAM+jav89AbTuRdi/qpVIY=",
     "fingerprinting": {
       "Microsoft.AspNetCore.Components.7fe1emb06x.wasm": "Microsoft.AspNetCore.Components.wasm",
       "Microsoft.AspNetCore.Components.Forms.ibpa721m1d.wasm": "Microsoft.AspNetCore.Components.Forms.wasm",
@@ -69,11 +69,11 @@
       "System.Xml.XDocument.28lj1ijytg.wasm": "System.Xml.XDocument.wasm",
       "System.cunp5qiwjj.wasm": "System.wasm",
       "System.Private.CoreLib.nxyjhkzobo.wasm": "System.Private.CoreLib.wasm",
-      "Poker.Common.43v2lm13td.wasm": "Poker.Common.wasm",
-      "Poker.Components.t345vhot1x.wasm": "Poker.Components.wasm",
-      "Poker.Shared.eww9zhumjg.wasm": "Poker.Shared.wasm",
-      "PokerHandEvaluator.6bhkt7exnx.wasm": "PokerHandEvaluator.wasm",
-      "Poker.WebApp.y4k9ft6dse.wasm": "Poker.WebApp.wasm",
+      "Poker.Common.zws4urv2sa.wasm": "Poker.Common.wasm",
+      "Poker.Components.8dz9iu4p3q.wasm": "Poker.Components.wasm",
+      "Poker.Shared.7cc4eplik7.wasm": "Poker.Shared.wasm",
+      "PokerHandEvaluator.dg0mxe74wt.wasm": "PokerHandEvaluator.wasm",
+      "Poker.WebApp.xpyll39i1g.wasm": "Poker.WebApp.wasm",
       "dotnet.js": "dotnet.js",
       "dotnet.native.rtblh4npr3.js": "dotnet.native.js",
       "dotnet.native.aqhezbunpl.wasm": "dotnet.native.wasm",
@@ -165,11 +165,11 @@
       "System.Xml.ReaderWriter.zdhgungwzg.wasm": "sha256-B1adm9xPGRQYklVsNIjD57NkkfiQSk+Ufc87e8vNbYQ=",
       "System.Xml.XDocument.28lj1ijytg.wasm": "sha256-zjT5irorAs27nSid+JPfzi1sOxysrSxVySkuCH7PGCg=",
       "System.cunp5qiwjj.wasm": "sha256-DM5iEENhrifGKn33Y7cqRzxC0OtHXYOKO13icwIazj8=",
-      "Poker.Common.43v2lm13td.wasm": "sha256-INnetKGxmtywBx3OEtqFHVsJWMDL/VM9Vv+ww7H/RJk=",
-      "Poker.Components.t345vhot1x.wasm": "sha256-9zjhnqqXcYCbLJkhgxwqEI1lZhXfvVTlGBSs5++As3M=",
-      "Poker.Shared.eww9zhumjg.wasm": "sha256-zlXdiprRo3B/td5KV0Cfx+UPk+JrhpaKZ8WJDtvjEmk=",
-      "PokerHandEvaluator.6bhkt7exnx.wasm": "sha256-om2U4yBYYolYdEdm5ehSjRzzXcA3olWy1guqMJsu6y4=",
-      "Poker.WebApp.y4k9ft6dse.wasm": "sha256-zo4MyLNAT3+8SznfOgz8HhqIVzkbc2CN0REFGiX38YA="
+      "Poker.Common.zws4urv2sa.wasm": "sha256-YwUXNVehwfkXn3HKL4+tRmKRmWjqKOuGGWcQG7V56uM=",
+      "Poker.Components.8dz9iu4p3q.wasm": "sha256-tNrA7gtgPfyzG/m4XlwRyZ5bOf+eAjjEP2Rw5/STlUY=",
+      "Poker.Shared.7cc4eplik7.wasm": "sha256-d7lgmIuw2LskszSYDdalq7tmFvwzKqQmjRXQmDWlzBE=",
+      "PokerHandEvaluator.dg0mxe74wt.wasm": "sha256-Myt3hW/NXuvdnXMDqBjlNXIDtgWBG7O+8nLG5EVaLj0=",
+      "Poker.WebApp.xpyll39i1g.wasm": "sha256-BdTCK5SPAconwU3r0HZuHwt7aEavqd/wuj+8Np/nXT4="
     },
     "libraryInitializers": {
       "_content/Microsoft.FluentUI.AspNetCore.Components/Microsoft.FluentUI.AspNetCore.Components.lib.module.js": "sha256-saocpjMzEV/5RzpPqa9RdvQ2/NJEkHJesyHry6qfD4U="
