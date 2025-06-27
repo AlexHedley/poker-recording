@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="10.847917mm"
+   height="16.139584mm"
+   viewBox="0 0 10.847917 16.139584"
+   version="1.1"
+   id="heart5"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs3237" />
+  <g
+     id="layer1"
+     transform="translate(158.76051,-137.74324)">
+    <g
+       id="g7759"
+       transform="matrix(0.26458333,0,0,0.26458333,-214.1907,-84.999463)">
+      <rect
+         rx="10"
+         ry="12"
+         y="842.36218"
+         x="209.99994"
+         height="60"
+         width="40"
+         id="rect3050-0-5-4"
+         style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <text
+         id="text3001-14"
+         y="866.98938"
+         x="220.14787"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:0%;font-family:Verdana;-inkscape-font-specification:'Verdana Bold';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ff0000;fill-opacity:1;stroke:none"
+         xml:space="preserve"><tspan
+           y="866.98938"
+           x="220.14787"
+           id="tspan3003-3"
+           style="font-size:28px;line-height:1.25">5</tspan></text>
+      <path
+         id="path30-6"
+         d="m 229.89712,897.9011 c -1.64995,-5.74494 -6.11885,-10.03943 -9.78138,-14.60692 -1.91943,-2.30884 -3.73636,-5.29811 -2.92648,-8.3832 0.93498,-3.25106 4.88045,-5.06616 8.09497,-3.99452 2.14715,0.65155 3.88697,2.34606 4.71633,4.37161 0.74028,-1.11431 1.32155,-2.36966 2.46728,-3.15993 2.75287,-2.25981 7.38199,-1.91705 9.56284,0.95374 1.60648,2.01798 1.26276,4.83467 0.18396,7.00546 -1.78465,3.75785 -5.04154,6.53694 -7.50712,9.84171 -1.86578,2.38559 -3.54283,4.98202 -4.41091,7.88678 -0.0595,0.13832 -0.29561,0.24519 -0.39949,0.0853 z"
+         style="fill:#ff0000;fill-opacity:1" />
+    </g>
+  </g>
+</svg>

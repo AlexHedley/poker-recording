@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="10.847917mm"
+   height="16.139584mm"
+   viewBox="0 0 10.847917 16.139584"
+   version="1.1"
+   id="clubqueen"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs5750" />
+  <g
+     id="layer1"
+     transform="translate(72.777397,-138.45977)">
+    <g
+       id="g7437"
+       transform="matrix(0.26458333,0,0,0.26458333,-220.81177,-121.3246)">
+      <rect
+         rx="10"
+         ry="12"
+         y="982.36218"
+         x="560"
+         height="60"
+         width="40"
+         id="rect3050-0-1"
+         style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <text
+         transform="scale(1.0623729,0.94128908)"
+         id="text3029"
+         y="1066.8604"
+         x="535.74713"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:0%;font-family:Verdana;-inkscape-font-specification:'Verdana Bold';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
+         xml:space="preserve"><tspan
+           y="1066.8604"
+           x="535.74713"
+           id="tspan3031"
+           style="font-size:26.3561px;line-height:1.25">Q</tspan></text>
+      <path
+         style="color:#000000;display:block;overflow:visible;visibility:visible;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.134058;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dashoffset:0;stroke-opacity:1;marker:none"
+         d="m 577.97185,1022.4329 c -4.28686,-2.1123 -10.5927,0.4071 -9.10075,6.0907 1.45392,5.5386 7.73279,4.3231 9.90402,0.9516 -0.9058,6.3925 -2.49661,7.3877 -3.4501,8.7753 h 10.12307 c -1.02567,-1.4839 -2.88812,-2.3828 -3.98033,-8.8629 2.18785,3.3658 8.76507,4.5326 10.19799,-0.9259 1.40956,-5.3697 -4.9443,-8.4276 -9.16947,-5.9968 4.05153,-2.8063 5.50654,-12.0228 -2.16706,-12.0228 -7.74934,0 -6.45639,9.3966 -2.35737,11.9908 z"
+         id="rect3667-8-8" />
+    </g>
+  </g>
+</svg>
