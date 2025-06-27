@@ -3,9 +3,15 @@
 
 <div class="player @(PlayerDetails.Winner ? "first" : "")">
     <strong>Player @PlayerDetails.Id</strong>
+    <img src="@PlayerDetails.Picture" alt="Picture" width="50" />
+    <img src="@PlayerDetails.Flag" alt="Flag" />
     <p><span class="file">Player@(PlayerDetails.Id).txt</span>: @PlayerDetails.Name</p>
     <p><span class="file">PotOddsPlayer@(PlayerDetails.Id).txt</span>: @PlayerDetails.PotOdds</p>
-
+    <p>Chips: @PlayerDetails.Chips</p>
+    <p>Move: @PlayerDetails.Move</p>
+    @* <p>Info: @PlayerDetails.Info</p> *@
+    @* <p>Unknown: @PlayerDetails.Unknown</p> *@
+    
     <div class="hole-cards">
         <img src="@PlayerDetails.Card1" alt="" style="width:10%;" />
         <img src="@PlayerDetails.Card2" alt="" style="width:10%;" />

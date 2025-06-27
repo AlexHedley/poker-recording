@@ -58,6 +58,10 @@ namespace Poker.Shared.Services
             game.Player1.Card1 = stats.Player1Card1;
             game.Player1.Card2 = stats.Player1Card2;
             game.Player1.PotOdds = stats.Player1PotOdds;
+            game.Player1.Picture = "_content/Poker.Components/images/players/man1.svg";
+            game.Player1.Flag = "_content/Poker.Components/images/flags/uk.jpg";
+            game.Player1.Chips = "100k";
+            game.Player1.Move = "Call";
             game.Player1.CameraUrl = stats.Player1Camera;
             game.Player1.IsDealer = true;
 
