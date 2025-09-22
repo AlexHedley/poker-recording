@@ -178,6 +178,7 @@
   </ItemGroup>
   
   <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Sdk.WebAssembly.Pack" Version="9.0.9" />
     <ProjectReference Include="..\Poker.Common\Poker.Common.csproj" />
     <ProjectReference Include="..\Poker.Components\Poker.Components.csproj" />
     <ProjectReference Include="..\Poker.Shared\Poker.Shared.csproj" />

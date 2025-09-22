@@ -13,6 +13,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Sdk.WebAssembly.Pack" Version="9.0.9" />
     <ProjectReference Include="..\PokerOddsPro.OddsEngine\PokerOddsPro.OddsEngine.csproj" />
     <ProjectReference Include="..\PokerOddsPro.Shared\PokerOddsPro.Shared.csproj" />
   </ItemGroup>
