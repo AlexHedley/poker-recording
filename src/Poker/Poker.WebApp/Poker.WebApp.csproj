@@ -178,7 +178,7 @@
   </ItemGroup>
   
   <ItemGroup>
-    <PackageReference Include="Microsoft.NET.ILLink.Tasks" Version="9.0.9" />
+    <PackageReference Include="Microsoft.NET.ILLink.Tasks" Version="9.0.12" />
     <ProjectReference Include="..\Poker.Common\Poker.Common.csproj" />
     <ProjectReference Include="..\Poker.Components\Poker.Components.csproj" />
     <ProjectReference Include="..\Poker.Shared\Poker.Shared.csproj" />
