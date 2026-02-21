@@ -3,14 +3,14 @@ using Poker.Components.Legacy.Stats;
 
 namespace Poker.WebApp.Tests.Components
 {
-    public class StatsTests : TestContext
+    public class StatsTests : BunitContext
     {
         public StatsTests() { }
 
         [Fact]
         public void StatsShow() 
         {
-            var cut = RenderComponent<StatsComponent>();
+            var cut = Render<StatsComponent>();
             string markup = "<h3>StatsComponent</h3>";
             cut.FindAll("h3")[0].MarkupMatches(markup);
 

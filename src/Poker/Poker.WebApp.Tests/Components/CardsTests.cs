@@ -3,14 +3,14 @@ using Poker.Components.Legacy.Cards;
 
 namespace Poker.WebApp.Tests.Components
 {
-    public class CardsTests : TestContext
+    public class CardsTests : BunitContext
     {
         public CardsTests() { }
 
         //[Fact]
         public void CardsShow()
         {
-            var cut = RenderComponent<CardsComponent>();
+            var cut = Render<CardsComponent>();
             string markup = "<h3>CardsComponent</h3>";
             cut.FindAll("h3")[0].MarkupMatches(markup);
 
