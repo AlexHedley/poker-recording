@@ -4,7 +4,7 @@ using Index = Poker.Shared.Pages.Index;
 
 namespace Poker.WebApp.Tests.Pages
 {
-    public class IndexTests : TestContext
+    public class IndexTests : BunitContext
     {
         public IndexTests() { }
 
@@ -12,10 +12,10 @@ namespace Poker.WebApp.Tests.Pages
         public void Test1()
         {
             // arrange
-            var ctx = new TestContext();
+            var ctx = new BunitContext();
 
             // act
-            var comp = ctx.RenderComponent<Index>();
+            var comp = ctx.Render<Index>();
 
             // assert
             string markup = "<h1>Poker ♣♦♥♠</h1>";
